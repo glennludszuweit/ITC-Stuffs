@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Playgrounds">
+      <FileRef
+         location = "group:Variables.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Enums.playground">
+      </FileRef>
+      <FileRef
+         location = "group:HigherOrderFuctions.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Protocols.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Classes.playground">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Storyboard/Storyboard.xcodeproj">
+   </FileRef>
+</Workspace>
