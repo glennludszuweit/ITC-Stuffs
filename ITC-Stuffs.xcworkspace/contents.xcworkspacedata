@@ -21,6 +21,6 @@
       </FileRef>
    </Group>
    <FileRef
-      location = "group:Storyboard/Storyboard.xcodeproj">
+      location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Storyboard/Assignments.xcodeproj">
    </FileRef>
 </Workspace>

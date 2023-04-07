@@ -13,6 +13,13 @@
 		D48BF11929DEBC1F008E1E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48BF11729DEBC1F008E1E4E /* Main.storyboard */; };
 		D48BF11B29DEBC21008E1E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48BF11A29DEBC21008E1E4E /* Assets.xcassets */; };
 		D48BF11E29DEBC21008E1E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48BF11C29DEBC21008E1E4E /* LaunchScreen.storyboard */; };
+		D48BF12729DEBFC5008E1E4E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF12629DEBFC5008E1E4E /* WebViewController.swift */; };
+		D48BF12A29DEC0BF008E1E4E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF12929DEC0BF008E1E4E /* TableViewController.swift */; };
+		D48BF12D29DEC19C008E1E4E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF12C29DEC19C008E1E4E /* CollectionViewController.swift */; };
+		D48BF13229DECAE7008E1E4E /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = D48BF13129DECAE7008E1E4E /* users.json */; };
+		D48BF13429DECC3D008E1E4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF13329DECC3D008E1E4E /* User.swift */; };
+		D48BF13929DECD8B008E1E4E /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF13829DECD8B008E1E4E /* UsersTableViewController.swift */; };
+		D48BF13B29DECF82008E1E4E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF13A29DECF82008E1E4E /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		D48BF11A29DEBC21008E1E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48BF11D29DEBC21008E1E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D48BF11F29DEBC21008E1E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48BF12629DEBFC5008E1E4E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D48BF12929DEC0BF008E1E4E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D48BF12C29DEC19C008E1E4E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D48BF13129DECAE7008E1E4E /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		D48BF13329DECC3D008E1E4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D48BF13829DECD8B008E1E4E /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		D48BF13A29DECF82008E1E4E /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,13 @@
 		D48BF11029DEBC1F008E1E4E /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D48BF13729DECD5B008E1E4E /* User */,
+				D48BF13029DEC53F008E1E4E /* Models */,
+				D48BF12F29DEC52D008E1E4E /* Data */,
+				D48BF12E29DEC223008E1E4E /* Auth */,
+				D48BF12B29DEC17C008E1E4E /* CollectionView */,
+				D48BF12829DEC098008E1E4E /* TableView */,
+				D48BF12529DEBCDB008E1E4E /* WebView */,
 				D48BF11129DEBC1F008E1E4E /* AppDelegate.swift */,
 				D48BF11329DEBC1F008E1E4E /* SceneDelegate.swift */,
 				D48BF11529DEBC1F008E1E4E /* ViewController.swift */,
@@ -65,6 +86,62 @@
 				D48BF11F29DEBC21008E1E4E /* Info.plist */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D48BF12529DEBCDB008E1E4E /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D48BF12629DEBFC5008E1E4E /* WebViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		D48BF12829DEC098008E1E4E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D48BF12929DEC0BF008E1E4E /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		D48BF12B29DEC17C008E1E4E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D48BF12C29DEC19C008E1E4E /* CollectionViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		D48BF12E29DEC223008E1E4E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D48BF12F29DEC52D008E1E4E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D48BF13129DECAE7008E1E4E /* users.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D48BF13029DEC53F008E1E4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D48BF13329DECC3D008E1E4E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D48BF13729DECD5B008E1E4E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				D48BF13829DECD8B008E1E4E /* UsersTableViewController.swift */,
+				D48BF13A29DECF82008E1E4E /* UserTableViewCell.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D48BF10929DEBC1F008E1E4E /* Build configuration list for PBXProject "Storyboard" */;
+			buildConfigurationList = D48BF10929DEBC1F008E1E4E /* Build configuration list for PBXProject "Assignments" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48BF13229DECAE7008E1E4E /* users.json in Resources */,
 				D48BF11E29DEBC21008E1E4E /* LaunchScreen.storyboard in Resources */,
 				D48BF11B29DEBC21008E1E4E /* Assets.xcassets in Resources */,
 				D48BF11929DEBC1F008E1E4E /* Main.storyboard in Resources */,
@@ -138,9 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48BF12D29DEC19C008E1E4E /* CollectionViewController.swift in Sources */,
+				D48BF13B29DECF82008E1E4E /* UserTableViewCell.swift in Sources */,
 				D48BF11629DEBC1F008E1E4E /* ViewController.swift in Sources */,
+				D48BF13929DECD8B008E1E4E /* UsersTableViewController.swift in Sources */,
 				D48BF11229DEBC1F008E1E4E /* AppDelegate.swift in Sources */,
 				D48BF11429DEBC1F008E1E4E /* SceneDelegate.swift in Sources */,
+				D48BF12A29DEC0BF008E1E4E /* TableViewController.swift in Sources */,
+				D48BF12729DEBFC5008E1E4E /* WebViewController.swift in Sources */,
+				D48BF13429DECC3D008E1E4E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +421,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D48BF10929DEBC1F008E1E4E /* Build configuration list for PBXProject "Storyboard" */ = {
+		D48BF10929DEBC1F008E1E4E /* Build configuration list for PBXProject "Assignments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D48BF12029DEBC21008E1E4E /* Debug */,
