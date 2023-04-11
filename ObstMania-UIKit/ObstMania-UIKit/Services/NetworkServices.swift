@@ -7,13 +7,13 @@
 
 import Foundation
 
-class FruitService {
+class NetworkServices {
     var delegate: DelegateData?
     var fruit: Fruit?
     let decoder = JSONDecoder()
     let apiUrl = "https://fruityvice.com/api/fruit/all"
     
-    func getFruitByClosure(handler: @escaping (Result<[Fruit], Error>) -> Void) {
+    func getAllData<T: Decodable>(handler: @escaping (Result<[T], Error>) -> Void) {
         guard let url = URL(string: apiUrl) else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -22,7 +22,7 @@ class FruitService {
             guard let data = data else { return }
             
             do {
-                let result = try self.decoder.decode([Fruit].self, from: data)
+                let result = try self.decoder.decode([T].self, from: data)
                 handler(.success(result))
             } catch {
                 handler(.failure(error.localizedDescription as! Error))
@@ -54,3 +54,5 @@ protocol DelegateData {
     func didReceive(_ data: [Fruit])
     func didFail(with error: Error)
 }
+
+

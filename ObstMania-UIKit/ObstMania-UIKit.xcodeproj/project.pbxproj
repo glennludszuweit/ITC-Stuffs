@@ -20,7 +20,7 @@
 		D41B476629E07A80008201F6 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41B476429E07A80008201F6 /* CollectionViewCell.xib */; };
 		D41B476829E07BFD008201F6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476729E07BFD008201F6 /* DetailsViewController.swift */; };
 		D41B476A29E07CBB008201F6 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476929E07CBB008201F6 /* Fruit.swift */; };
-		D41B476F29E08804008201F6 /* FruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476E29E08804008201F6 /* FruitService.swift */; };
+		D41B476F29E08804008201F6 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476E29E08804008201F6 /* NetworkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		D41B476429E07A80008201F6 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		D41B476729E07BFD008201F6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D41B476929E07CBB008201F6 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
-		D41B476E29E08804008201F6 /* FruitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitService.swift; sourceTree = "<group>"; };
+		D41B476E29E08804008201F6 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 		D41B475C29E0787F008201F6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D41B476E29E08804008201F6 /* FruitService.swift */,
+				D41B476E29E08804008201F6 /* NetworkServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41B476A29E07CBB008201F6 /* Fruit.swift in Sources */,
-				D41B476F29E08804008201F6 /* FruitService.swift in Sources */,
+				D41B476F29E08804008201F6 /* NetworkServices.swift in Sources */,
 				D41B476129E07A65008201F6 /* TableViewCell.swift in Sources */,
 				D41B475E29E07A1B008201F6 /* CollectionViewController.swift in Sources */,
 				D41B476529E07A80008201F6 /* CollectionViewCell.swift in Sources */,

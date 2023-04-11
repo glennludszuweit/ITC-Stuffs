@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UIViewController {
     var fruitData = [Fruit]()
-    let fruitController = FruitService()
+    let fruitController = NetworkServices()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,7 +27,7 @@ class TableViewController: UIViewController {
     }
     
     func getFruitData() {
-        fruitController.getFruitByClosure { result in
+        fruitController.getAllData { (result: Result<[Fruit] , Error >) in
             switch result {
             case .success(let fruit):
                 self.fruitData = fruit

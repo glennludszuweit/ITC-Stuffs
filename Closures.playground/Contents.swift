@@ -37,3 +37,15 @@ let isEven1 = isEvenClosure(5)
 let isEven2 = isEvenClosure(6)
 print(isEven1)
 print(isEven2)
+
+// escaping colure
+func performAsyncOperation(completion: @escaping (String) -> Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        completion("Operation completed!")
+    }
+    print("This should print first")
+}
+
+performAsyncOperation { result in
+    print(result)
+}

@@ -9,7 +9,7 @@ import UIKit
 
 class CollectionViewController: UIViewController, DelegateData {
     var fruitData = [Fruit]()
-    let fruitController = FruitService()
+    let fruitController = NetworkServices()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
