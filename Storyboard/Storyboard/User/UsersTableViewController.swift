@@ -14,7 +14,7 @@ class UsersTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        // readJSONFile()
+        readJSONFile()
         callApiToGetData()
         // Do any additional setup after loading the view.
     }

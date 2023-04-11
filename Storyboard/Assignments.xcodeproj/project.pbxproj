@@ -20,6 +20,12 @@
 		D48BF13429DECC3D008E1E4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF13329DECC3D008E1E4E /* User.swift */; };
 		D48BF13929DECD8B008E1E4E /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF13829DECD8B008E1E4E /* UsersTableViewController.swift */; };
 		D48BF13B29DECF82008E1E4E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF13A29DECF82008E1E4E /* UserTableViewCell.swift */; };
+		D48BF14329DFF42C008E1E4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF14229DFF42C008E1E4E /* LoginViewController.swift */; };
+		D48BF14529DFF45A008E1E4E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF14429DFF45A008E1E4E /* RegisterViewController.swift */; };
+		D48BF14729DFF46D008E1E4E /* ResetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF14629DFF46D008E1E4E /* ResetPassViewController.swift */; };
+		D48BF14929DFF646008E1E4E /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF14829DFF646008E1E4E /* UserDetailViewController.swift */; };
+		D48BF14B29DFF6A2008E1E4E /* TableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF14A29DFF6A2008E1E4E /* TableDetailViewController.swift */; };
+		D48BF14D29DFF73A008E1E4E /* CollectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BF14C29DFF73A008E1E4E /* CollectionDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		D48BF13329DECC3D008E1E4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D48BF13829DECD8B008E1E4E /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		D48BF13A29DECF82008E1E4E /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		D48BF14229DFF42C008E1E4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Storyboard/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		D48BF14429DFF45A008E1E4E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Storyboard/RegisterViewController.swift; sourceTree = SOURCE_ROOT; };
+		D48BF14629DFF46D008E1E4E /* ResetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResetPassViewController.swift; path = Storyboard/ResetPassViewController.swift; sourceTree = SOURCE_ROOT; };
+		D48BF14829DFF646008E1E4E /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		D48BF14A29DFF6A2008E1E4E /* TableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDetailViewController.swift; sourceTree = "<group>"; };
+		D48BF14C29DFF73A008E1E4E /* CollectionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D48BF12929DEC0BF008E1E4E /* TableViewController.swift */,
+				D48BF14A29DFF6A2008E1E4E /* TableDetailViewController.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D48BF12C29DEC19C008E1E4E /* CollectionViewController.swift */,
+				D48BF14C29DFF73A008E1E4E /* CollectionDetailViewController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -115,6 +129,9 @@
 		D48BF12E29DEC223008E1E4E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				D48BF14229DFF42C008E1E4E /* LoginViewController.swift */,
+				D48BF14429DFF45A008E1E4E /* RegisterViewController.swift */,
+				D48BF14629DFF46D008E1E4E /* ResetPassViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -140,6 +157,7 @@
 			children = (
 				D48BF13829DECD8B008E1E4E /* UsersTableViewController.swift */,
 				D48BF13A29DECF82008E1E4E /* UserTableViewCell.swift */,
+				D48BF14829DFF646008E1E4E /* UserDetailViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -216,7 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48BF14B29DFF6A2008E1E4E /* TableDetailViewController.swift in Sources */,
 				D48BF12D29DEC19C008E1E4E /* CollectionViewController.swift in Sources */,
+				D48BF14529DFF45A008E1E4E /* RegisterViewController.swift in Sources */,
+				D48BF14929DFF646008E1E4E /* UserDetailViewController.swift in Sources */,
 				D48BF13B29DECF82008E1E4E /* UserTableViewCell.swift in Sources */,
 				D48BF11629DEBC1F008E1E4E /* ViewController.swift in Sources */,
 				D48BF13929DECD8B008E1E4E /* UsersTableViewController.swift in Sources */,
@@ -224,6 +245,9 @@
 				D48BF11429DEBC1F008E1E4E /* SceneDelegate.swift in Sources */,
 				D48BF12A29DEC0BF008E1E4E /* TableViewController.swift in Sources */,
 				D48BF12729DEBFC5008E1E4E /* WebViewController.swift in Sources */,
+				D48BF14D29DFF73A008E1E4E /* CollectionDetailViewController.swift in Sources */,
+				D48BF14729DFF46D008E1E4E /* ResetPassViewController.swift in Sources */,
+				D48BF14329DFF42C008E1E4E /* LoginViewController.swift in Sources */,
 				D48BF13429DECC3D008E1E4E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

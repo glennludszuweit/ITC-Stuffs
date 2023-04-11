@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:ObstMania-UIKit/ObstMania-UIKit.xcodeproj">
+   </FileRef>
    <Group
       location = "container:"
       name = "Playgrounds">
@@ -18,6 +21,9 @@
       </FileRef>
       <FileRef
          location = "group:Classes.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Closures.playground">
       </FileRef>
    </Group>
    <FileRef

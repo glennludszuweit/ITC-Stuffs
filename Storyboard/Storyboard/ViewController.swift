@@ -29,6 +29,11 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(webViewController, animated: true)
     }
     
+    @IBAction func goToAuthScreens(_ sender: Any) {
+        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.navigationController?.pushViewController(loginViewController, animated: true)
+    }
+    
     @IBAction func goToUsersTable(_ sender: Any) {
         let usersTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "UsersTableViewController") as! UsersTableViewController
         self.navigationController?.pushViewController(usersTableViewController, animated: true)
