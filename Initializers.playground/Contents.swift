@@ -6,6 +6,10 @@ struct StuffDetail {
     let value: Int
 }
 
+protocol PrintDetails {
+    func printDetails()
+}
+
 class Stuff {
     var id: Int?
     var stuffDetail: StuffDetail?
@@ -16,24 +20,33 @@ class Stuff {
     }
 }
 
-class MyStuff: Stuff {
+class MyStuff: Stuff, PrintDetails {
     var owner: String = "John Doe"
     
     required init(id: Int, stuffDetail: StuffDetail, owner: String) {
         self.owner = owner
-        super.init(id: 1, stuffDetail: StuffDetail(name: "Car", description: "Mercedes Benz 500SL", value: 75000))
+        super.init(id: id, stuffDetail: stuffDetail)
     }
     
     required init(id: Int, stuffDetail: StuffDetail) {
         fatalError("init(id:stuffDetail:) has not been implemented")
     }
+    
+    func printDetails() {
+        print("\(self.owner) have a \(self.stuffDetail?.name ?? "") \(self.stuffDetail?.description ?? "") that cost \(self.stuffDetail?.value ?? 0)")
+    }
 }
 
 
-let stuffDetail: StuffDetail = {
+let mobile: StuffDetail = {
     StuffDetail(name: "Mobile", description: "Apple 15 pro max", value: 500)
 }()
+let car: StuffDetail = {
+    StuffDetail(name: "Car", description: "Mercedes Benz 500SL", value: 75000)
+}()
 
-let janesStuff = MyStuff(id: 2, stuffDetail: stuffDetail, owner: "Jane Doe")
+let janesStuff = MyStuff(id: 2, stuffDetail: car, owner: "Jane Doe")
+let jakeStuff = MyStuff(id: 3, stuffDetail: mobile, owner: "Jake Doe")
 
-print(janesStuff.stuffDetail)
+janesStuff.printDetails()
+jakeStuff.printDetails()
