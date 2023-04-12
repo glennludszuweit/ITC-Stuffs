@@ -13,40 +13,55 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="ObstMania_UIKit" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="318" height="62"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="318" height="62"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPF-NS-oDd">
-                        <rect key="frame" x="10" y="5" width="298" height="50"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPF-NS-oDd">
+                        <rect key="frame" x="15" y="5" width="173" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="1Zf-Xc-M5G"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
-                        <color key="textColor" systemColor="systemGray6Color"/>
-                        <color key="highlightedColor" systemColor="systemGray6Color"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" systemColor="systemOrangeColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-Gq-fk1">
+                        <rect key="frame" x="203" y="13" width="100" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="C7V-aC-sN5"/>
+                            <constraint firstAttribute="height" constant="35" id="TUJ-BA-5DI"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Details">
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="goToDetailsView:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TKD-c4-Gu0"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="dPF-NS-oDd" secondAttribute="bottom" constant="5" id="0mc-kC-Q2M"/>
-                    <constraint firstItem="dPF-NS-oDd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PRG-dz-rMp"/>
+                    <constraint firstItem="yyz-Gq-fk1" firstAttribute="leading" secondItem="dPF-NS-oDd" secondAttribute="trailing" constant="15" id="12s-ey-X3p"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yyz-Gq-fk1" secondAttribute="bottom" constant="2" id="2GW-Vg-oaT"/>
+                    <constraint firstItem="yyz-Gq-fk1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FYp-sf-cyk"/>
+                    <constraint firstAttribute="trailing" secondItem="yyz-Gq-fk1" secondAttribute="trailing" constant="15" id="OMk-Qu-0Wv"/>
+                    <constraint firstItem="dPF-NS-oDd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="azg-tA-4uX"/>
                     <constraint firstAttribute="bottom" secondItem="dPF-NS-oDd" secondAttribute="bottom" id="etI-gn-YWk"/>
                     <constraint firstItem="dPF-NS-oDd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="fDz-B9-uK6"/>
-                    <constraint firstAttribute="trailing" secondItem="dPF-NS-oDd" secondAttribute="trailing" constant="10" id="r35-oV-RgU"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="buttonDetails" destination="yyz-Gq-fk1" id="WUK-GO-bYq"/>
                 <outlet property="labelFruitName" destination="dPF-NS-oDd" id="Waj-zB-hX5"/>
             </connections>
             <point key="canvasLocation" x="129.7709923664122" y="-4.9295774647887329"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

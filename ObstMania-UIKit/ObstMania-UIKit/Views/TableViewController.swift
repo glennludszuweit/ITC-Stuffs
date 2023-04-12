@@ -55,9 +55,18 @@ extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         let data = fruitData[indexPath.row]
+        
+        cell.selectionStyle = .none
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
+        
+        cell.fruit = data
         cell.labelFruitName.text = data.name
+        cell.passDetailsData = { fruit in
+            let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+            detailsViewController.fruit = fruit
+            self.navigationController?.pushViewController(detailsViewController, animated: true)
+        }
         return cell
     }
 }
@@ -67,6 +76,10 @@ extension TableViewController: UITableViewDelegate {
         let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
         let data = fruitData[indexPath.row]
         detailsViewController.fruit = data
-        self.navigationController?.pushViewController(detailsViewController, animated: true)
+//        disable cell selection
+        tableView.allowsSelection = false
+//        self.navigationController?.pushViewController(detailsViewController, animated: true)
     }
 }
+
+

@@ -10,43 +10,73 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="ObstMania_UIKit" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="ObstMania_UIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwA-Hk-HB9">
-                        <rect key="frame" x="5" y="5" width="110" height="50"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krl-LV-XbY">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DwA-Hk-HB9">
+                                <rect key="frame" x="5" y="17" width="110" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3vR-ch-NgC"/>
+                                    <constraint firstAttribute="width" constant="110" id="WkT-G5-Gzl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1N-Xl-AG4">
+                                <rect key="frame" x="22.666666666666671" y="87" width="75" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Xo8-8T-6mO"/>
+                                    <constraint firstAttribute="height" constant="25" id="YDE-43-uLI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Details">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToDetailsView:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cok-42-CcI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="3vR-ch-NgC"/>
-                            <constraint firstAttribute="width" constant="110" id="WkT-G5-Gzl"/>
+                            <constraint firstItem="U1N-Xl-AG4" firstAttribute="bottom" secondItem="Krl-LV-XbY" secondAttribute="bottomMargin" id="9Qc-ut-0f4"/>
+                            <constraint firstItem="U1N-Xl-AG4" firstAttribute="top" secondItem="DwA-Hk-HB9" secondAttribute="bottom" constant="20" id="NDU-tb-bo5"/>
+                            <constraint firstItem="U1N-Xl-AG4" firstAttribute="centerX" secondItem="DwA-Hk-HB9" secondAttribute="centerX" id="Rck-i8-XM2"/>
+                            <constraint firstItem="DwA-Hk-HB9" firstAttribute="centerX" secondItem="Krl-LV-XbY" secondAttribute="centerX" id="emJ-YK-gTd"/>
+                            <constraint firstAttribute="width" constant="120" id="nfN-Fr-KEN"/>
+                            <constraint firstAttribute="height" constant="120" id="tqq-R0-DJQ"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
-                        <color key="textColor" systemColor="systemGray6Color"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu" propertyAccessControl="all"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="DwA-Hk-HB9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="0u3-qE-cta"/>
-                <constraint firstAttribute="trailing" secondItem="DwA-Hk-HB9" secondAttribute="trailing" constant="5" id="gaz-7o-Du1"/>
-                <constraint firstItem="DwA-Hk-HB9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ybM-kn-8lA"/>
-                <constraint firstAttribute="bottom" secondItem="DwA-Hk-HB9" secondAttribute="bottom" constant="5" id="zwN-uh-Nhp"/>
+                <constraint firstAttribute="trailing" secondItem="Krl-LV-XbY" secondAttribute="trailing" id="ebT-kj-YW0"/>
+                <constraint firstItem="Krl-LV-XbY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="joq-wM-p4t"/>
+                <constraint firstItem="Krl-LV-XbY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p3W-Ch-Kfz"/>
+                <constraint firstAttribute="bottom" secondItem="Krl-LV-XbY" secondAttribute="bottom" id="qb1-4s-Whh"/>
             </constraints>
             <size key="customSize" width="661" height="506"/>
             <connections>
+                <outlet property="buttonDetails" destination="U1N-Xl-AG4" id="tpH-G9-zv8"/>
                 <outlet property="labelFruitName" destination="DwA-Hk-HB9" id="kZU-1Z-hHi"/>
             </connections>
-            <point key="canvasLocation" x="613.74045801526711" y="172.53521126760563"/>
+            <point key="canvasLocation" x="611.45038167938924" y="171.47887323943664"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

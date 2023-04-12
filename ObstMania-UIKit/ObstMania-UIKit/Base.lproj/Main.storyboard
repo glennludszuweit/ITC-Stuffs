@@ -34,40 +34,155 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-2Z-SGK">
-                                <rect key="frame" x="25" y="109" width="343" height="100"/>
+                                <rect key="frame" x="25" y="109" width="343" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="98w-dV-8Gm"/>
+                                    <constraint firstAttribute="height" constant="75" id="98w-dV-8Gm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fht-aJ-ftk">
-                                <rect key="frame" x="25" y="234" width="343" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fht-aJ-ftk">
+                                <rect key="frame" x="25" y="209" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2b-Ph-9o3">
+                                <rect key="frame" x="25" y="241" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genus" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-zO-uwz">
+                                <rect key="frame" x="25" y="273" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srp-eh-qyA">
+                                <rect key="frame" x="25" y="310" width="343" height="29"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Nutrition">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="rMz-kN-lYU" kind="presentation" identifier="ViewNutrition" id="187-aM-3Ub"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ebt-4c-PG5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ebt-4c-PG5" firstAttribute="trailing" secondItem="ig1-2Z-SGK" secondAttribute="trailing" constant="25" id="6XV-Ft-JZE"/>
+                            <constraint firstItem="Q2b-Ph-9o3" firstAttribute="leading" secondItem="Ebt-4c-PG5" secondAttribute="leading" constant="25" id="8am-Tt-SEW"/>
+                            <constraint firstItem="Srp-eh-qyA" firstAttribute="top" secondItem="bGg-zO-uwz" secondAttribute="bottom" constant="20" id="C4P-RD-Bi2"/>
+                            <constraint firstItem="Ebt-4c-PG5" firstAttribute="trailing" secondItem="Srp-eh-qyA" secondAttribute="trailing" constant="25" id="E82-d8-ADb"/>
+                            <constraint firstItem="bGg-zO-uwz" firstAttribute="leading" secondItem="Ebt-4c-PG5" secondAttribute="leading" constant="25" id="EEt-RS-JMU"/>
                             <constraint firstItem="Ebt-4c-PG5" firstAttribute="trailing" secondItem="fht-aJ-ftk" secondAttribute="trailing" constant="25" id="GJx-Jv-d3F"/>
                             <constraint firstItem="ig1-2Z-SGK" firstAttribute="top" secondItem="Ebt-4c-PG5" secondAttribute="top" constant="50" id="OpO-Ne-abh"/>
                             <constraint firstItem="ig1-2Z-SGK" firstAttribute="leading" secondItem="Ebt-4c-PG5" secondAttribute="leading" constant="25" id="QTc-Oe-BaB"/>
+                            <constraint firstItem="Srp-eh-qyA" firstAttribute="leading" secondItem="Ebt-4c-PG5" secondAttribute="leading" constant="25" id="SRK-Gu-iRd"/>
                             <constraint firstItem="fht-aJ-ftk" firstAttribute="leading" secondItem="Ebt-4c-PG5" secondAttribute="leading" constant="25" id="TbJ-Ly-K6D"/>
+                            <constraint firstItem="Ebt-4c-PG5" firstAttribute="trailing" secondItem="Q2b-Ph-9o3" secondAttribute="trailing" constant="25" id="gB1-GA-oVX"/>
+                            <constraint firstItem="Ebt-4c-PG5" firstAttribute="trailing" secondItem="bGg-zO-uwz" secondAttribute="trailing" constant="25" id="gNv-qq-Sva"/>
                             <constraint firstItem="fht-aJ-ftk" firstAttribute="top" secondItem="ig1-2Z-SGK" secondAttribute="bottom" constant="25" id="iXt-pa-jt5"/>
+                            <constraint firstItem="Q2b-Ph-9o3" firstAttribute="top" secondItem="fht-aJ-ftk" secondAttribute="bottom" constant="15" id="q6d-OB-ens"/>
+                            <constraint firstItem="bGg-zO-uwz" firstAttribute="top" secondItem="Q2b-Ph-9o3" secondAttribute="bottom" constant="15" id="uVt-hm-1ih"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="labelFruitFamily" destination="fht-aJ-ftk" id="bc3-YN-3vl"/>
+                        <outlet property="labelFruitGenus" destination="bGg-zO-uwz" id="HlX-To-1Xu"/>
                         <outlet property="labelFruitName" destination="ig1-2Z-SGK" id="eeV-jU-fkv"/>
+                        <outlet property="labelFruitOrder" destination="Q2b-Ph-9o3" id="CAe-he-est"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vza-k6-0Cg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="872.51908396946567" y="-44.366197183098592"/>
+        </scene>
+        <!--Nutrition View Controller-->
+        <scene sceneID="edu-mF-ayn">
+            <objects>
+                <viewController storyboardIdentifier="NutritionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rMz-kN-lYU" customClass="NutritionViewController" customModule="ObstMania_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FAR-jK-Crf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sF3-rT-uTG">
+                                <rect key="frame" x="25" y="159" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZn-q3-S0v">
+                                <rect key="frame" x="25" y="191" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-4n-90z">
+                                <rect key="frame" x="25" y="223" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrates" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-ZP-xQa">
+                                <rect key="frame" x="25" y="255" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protien" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu1-jt-k3S">
+                                <rect key="frame" x="25" y="287" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVS-ty-tOt">
+                                <rect key="frame" x="328" y="84" width="40" height="32"/>
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="closeModal:" destination="rMz-kN-lYU" eventType="touchUpInside" id="hzq-WC-7Mc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n9I-3S-vir"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sF3-rT-uTG" firstAttribute="leading" secondItem="n9I-3S-vir" secondAttribute="leading" constant="25" id="1Xn-J7-IWU"/>
+                            <constraint firstItem="n9I-3S-vir" firstAttribute="trailing" secondItem="eZn-q3-S0v" secondAttribute="trailing" constant="25" id="4nP-sW-EPa"/>
+                            <constraint firstItem="sF3-rT-uTG" firstAttribute="top" secondItem="n9I-3S-vir" secondAttribute="top" constant="100" id="59K-h8-1gZ"/>
+                            <constraint firstItem="n6g-4n-90z" firstAttribute="leading" secondItem="n9I-3S-vir" secondAttribute="leading" constant="25" id="7gI-a7-DYu"/>
+                            <constraint firstItem="n9I-3S-vir" firstAttribute="trailing" secondItem="n6g-4n-90z" secondAttribute="trailing" constant="25" id="C5s-Sl-cpP"/>
+                            <constraint firstItem="uVS-ty-tOt" firstAttribute="top" secondItem="n9I-3S-vir" secondAttribute="top" constant="25" id="FUK-Ul-tH3"/>
+                            <constraint firstItem="n9I-3S-vir" firstAttribute="trailing" secondItem="tu1-jt-k3S" secondAttribute="trailing" constant="25" id="J9Y-gS-srw"/>
+                            <constraint firstItem="eZn-q3-S0v" firstAttribute="leading" secondItem="n9I-3S-vir" secondAttribute="leading" constant="25" id="MUk-e1-rgQ"/>
+                            <constraint firstItem="tu1-jt-k3S" firstAttribute="leading" secondItem="n9I-3S-vir" secondAttribute="leading" constant="25" id="QBK-ua-FeN"/>
+                            <constraint firstItem="QLb-ZP-xQa" firstAttribute="leading" secondItem="n9I-3S-vir" secondAttribute="leading" constant="25" id="fmY-3c-FCB"/>
+                            <constraint firstItem="QLb-ZP-xQa" firstAttribute="top" secondItem="n6g-4n-90z" secondAttribute="bottom" constant="15" id="gD3-SF-oRe"/>
+                            <constraint firstItem="n9I-3S-vir" firstAttribute="trailing" secondItem="QLb-ZP-xQa" secondAttribute="trailing" constant="25" id="hG0-RY-kF6"/>
+                            <constraint firstItem="tu1-jt-k3S" firstAttribute="top" secondItem="QLb-ZP-xQa" secondAttribute="bottom" constant="15" id="hZM-46-nFg"/>
+                            <constraint firstItem="n9I-3S-vir" firstAttribute="trailing" secondItem="sF3-rT-uTG" secondAttribute="trailing" constant="25" id="lpw-IV-FU0"/>
+                            <constraint firstItem="n6g-4n-90z" firstAttribute="top" secondItem="eZn-q3-S0v" secondAttribute="bottom" constant="15" id="mik-jn-Wvc"/>
+                            <constraint firstItem="eZn-q3-S0v" firstAttribute="top" secondItem="sF3-rT-uTG" secondAttribute="bottom" constant="15" id="wd4-Dz-tcs"/>
+                            <constraint firstItem="n9I-3S-vir" firstAttribute="trailing" secondItem="uVS-ty-tOt" secondAttribute="trailing" constant="25" id="y5E-Im-oSB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelCalories" destination="sF3-rT-uTG" id="XHL-8Q-za5"/>
+                        <outlet property="labelCarbohydrates" destination="QLb-ZP-xQa" id="VNw-WE-ruJ"/>
+                        <outlet property="labelFat" destination="eZn-q3-S0v" id="AHg-l4-XcE"/>
+                        <outlet property="labelProtien" destination="tu1-jt-k3S" id="YM0-jd-0Cd"/>
+                        <outlet property="labelSugar" destination="n6g-4n-90z" id="L2S-zl-Qeh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fp7-3Z-Zed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582" y="-44"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="jSR-kU-ZRE">
@@ -78,11 +193,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHx-4R-K54">
-                                <rect key="frame" x="307.66666666666669" y="103" width="85.333333333333314" height="27"/>
+                                <rect key="frame" x="297.66666666666669" y="103" width="85.333333333333314" height="27"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Grid View">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
-                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                    <color key="baseForegroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="switchToGrid:" destination="BLJ-0v-1aH" eventType="touchUpInside" id="vDg-Sa-pqB"/>
@@ -107,9 +222,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0Fk-jC-0lE" firstAttribute="leading" secondItem="mUQ-Yy-RcP" secondAttribute="leading" id="4bK-oD-aC4"/>
-                            <constraint firstItem="mUQ-Yy-RcP" firstAttribute="trailing" secondItem="EHx-4R-K54" secondAttribute="trailing" id="4ns-xj-MJ5"/>
                             <constraint firstItem="EHx-4R-K54" firstAttribute="top" secondItem="mUQ-Yy-RcP" secondAttribute="top" id="DYh-5j-cff"/>
                             <constraint firstItem="0Fk-jC-0lE" firstAttribute="top" secondItem="EHx-4R-K54" secondAttribute="bottom" id="Vl2-Zu-3sy"/>
+                            <constraint firstAttribute="trailing" secondItem="EHx-4R-K54" secondAttribute="trailing" constant="10" id="Wp8-rC-MUR"/>
                             <constraint firstItem="mUQ-Yy-RcP" firstAttribute="bottom" secondItem="0Fk-jC-0lE" secondAttribute="bottom" id="bDo-VJ-gaS"/>
                             <constraint firstItem="mUQ-Yy-RcP" firstAttribute="trailing" secondItem="0Fk-jC-0lE" secondAttribute="trailing" id="vJc-dt-3Zv"/>
                         </constraints>
@@ -152,11 +267,11 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z05-Qx-ijW">
-                                <rect key="frame" x="311.33333333333331" y="59" width="81.666666666666686" height="27"/>
+                                <rect key="frame" x="301.33333333333331" y="59" width="81.666666666666686" height="27"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="List View">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
-                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                    <color key="baseForegroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="switchToList:" destination="w1p-hx-VtB" eventType="touchUpInside" id="I32-mm-iIG"/>
@@ -171,7 +286,7 @@
                             <constraint firstItem="rwe-5r-Vnd" firstAttribute="top" secondItem="Z05-Qx-ijW" secondAttribute="bottom" id="aXy-ma-BS2"/>
                             <constraint firstItem="HRv-XO-4MJ" firstAttribute="trailing" secondItem="rwe-5r-Vnd" secondAttribute="trailing" id="jHg-fP-nq3"/>
                             <constraint firstItem="Z05-Qx-ijW" firstAttribute="top" secondItem="HRv-XO-4MJ" secondAttribute="top" id="pSg-Ww-FUG"/>
-                            <constraint firstAttribute="trailing" secondItem="Z05-Qx-ijW" secondAttribute="trailing" id="wst-sv-9Uc"/>
+                            <constraint firstAttribute="trailing" secondItem="Z05-Qx-ijW" secondAttribute="trailing" constant="10" id="wst-sv-9Uc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6qB-VT-PtM"/>
@@ -187,6 +302,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

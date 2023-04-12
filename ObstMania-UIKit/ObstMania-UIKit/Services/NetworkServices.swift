@@ -55,4 +55,8 @@ protocol DelegateData {
     func didFail(with error: Error)
 }
 
+protocol DetailsViewDelegate {
+    func delegateData(data: Fruit)
+}
+
 

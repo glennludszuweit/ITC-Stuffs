@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionViewController: UIViewController, DelegateData {
+class CollectionViewController: UIViewController {
     var fruitData = [Fruit]()
     let fruitController = NetworkServices()
     
@@ -28,17 +28,6 @@ class CollectionViewController: UIViewController, DelegateData {
         fruitController.getFruitByDelegate()
     }
     
-    func didReceive(_ data: [Fruit]) {
-        self.fruitData = data
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
-    }
-    
-    func didFail(with error: Error) {
-        print(error.localizedDescription)
-    }
-    
     @IBAction func switchToList(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
@@ -52,6 +41,9 @@ extension CollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         let data = fruitData[indexPath.item]
+        
+        cell.delegate = self
+        cell.fruit = data
         cell.labelFruitName.text = data.name
         return cell
     }
@@ -59,8 +51,32 @@ extension CollectionViewController: UICollectionViewDataSource {
 
 extension CollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier:  "DetailsViewController") as! DetailsViewController
         let data = fruitData[indexPath.item]
+        detailsViewController.fruit = data
+//        disable cell selection
+        collectionView.allowsSelection = false
+//        self.navigationController?.pushViewController(detailsViewController, animated: true)
+    }
+}
+
+extension CollectionViewController: DelegateData {
+    func didReceive(_ data: [Fruit]) {
+        self.fruitData = data
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
+    }
+    
+    func didFail(with error: Error) {
+        print(error.localizedDescription)
+    }
+}
+
+extension CollectionViewController: DetailsViewDelegate {
+    func delegateData(data: Fruit) {
+        let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
         detailsViewController.fruit = data
         self.navigationController?.pushViewController(detailsViewController, animated: true)
     }

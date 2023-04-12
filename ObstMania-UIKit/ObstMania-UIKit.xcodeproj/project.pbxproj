@@ -21,6 +21,7 @@
 		D41B476829E07BFD008201F6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476729E07BFD008201F6 /* DetailsViewController.swift */; };
 		D41B476A29E07CBB008201F6 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476929E07CBB008201F6 /* Fruit.swift */; };
 		D41B476F29E08804008201F6 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476E29E08804008201F6 /* NetworkServices.swift */; };
+		D43D27F629E6BCE3004E4555 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D27F529E6BCE3004E4555 /* NutritionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D41B476729E07BFD008201F6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D41B476929E07CBB008201F6 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		D41B476E29E08804008201F6 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		D43D27F529E6BCE3004E4555 /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				D41B476329E07A80008201F6 /* CollectionViewCell.swift */,
 				D41B476429E07A80008201F6 /* CollectionViewCell.xib */,
 				D41B476729E07BFD008201F6 /* DetailsViewController.swift */,
+				D43D27F529E6BCE3004E4555 /* NutritionViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41B476A29E07CBB008201F6 /* Fruit.swift in Sources */,
+				D43D27F629E6BCE3004E4555 /* NutritionViewController.swift in Sources */,
 				D41B476F29E08804008201F6 /* NetworkServices.swift in Sources */,
 				D41B476129E07A65008201F6 /* TableViewCell.swift in Sources */,
 				D41B475E29E07A1B008201F6 /* CollectionViewController.swift in Sources */,
