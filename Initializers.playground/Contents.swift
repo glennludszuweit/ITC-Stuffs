@@ -22,18 +22,20 @@ class Stuff {
 
 class MyStuff: Stuff, PrintDetails {
     var owner: String = "John Doe"
+    var height: Int?
     
-    required init(id: Int, stuffDetail: StuffDetail, owner: String) {
+    init(height: Int, id: Int, stuffDetail: StuffDetail, owner: String){
+        self.height = height
         self.owner = owner
         super.init(id: id, stuffDetail: stuffDetail)
     }
     
     required init(id: Int, stuffDetail: StuffDetail) {
-        fatalError("init(id:stuffDetail:) has not been implemented")
+        super.init(id: id, stuffDetail: stuffDetail)
     }
     
     func printDetails() {
-        print("\(self.owner) have a \(self.stuffDetail?.name ?? "") \(self.stuffDetail?.description ?? "") that cost \(self.stuffDetail?.value ?? 0)")
+        print("\(self.owner) who is \(self.height ?? 0)cm tall, have a \(self.stuffDetail?.name ?? ""), \(self.stuffDetail?.description ?? "") that cost \(self.stuffDetail?.value ?? 0)")
     }
 }
 
@@ -45,8 +47,8 @@ let car: StuffDetail = {
     StuffDetail(name: "Car", description: "Mercedes Benz 500SL", value: 75000)
 }()
 
-let janesStuff = MyStuff(id: 2, stuffDetail: car, owner: "Jane Doe")
-let jakeStuff = MyStuff(id: 3, stuffDetail: mobile, owner: "Jake Doe")
+let janesStuff = MyStuff(height: 173, id: 2, stuffDetail: car, owner: "Jane Doe")
+let jakeStuff = MyStuff(height: 165, id: 3, stuffDetail: mobile, owner: "Jake Doe")
 
 janesStuff.printDetails()
 jakeStuff.printDetails()

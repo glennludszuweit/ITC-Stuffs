@@ -22,7 +22,27 @@
 		D41B476A29E07CBB008201F6 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476929E07CBB008201F6 /* Fruit.swift */; };
 		D41B476F29E08804008201F6 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B476E29E08804008201F6 /* NetworkServices.swift */; };
 		D43D27F629E6BCE3004E4555 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D27F529E6BCE3004E4555 /* NutritionViewController.swift */; };
+		D4EC9EF629E6E62E005EEE12 /* ObstMania_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC9EF529E6E62E005EEE12 /* ObstMania_UIKitUITests.swift */; };
+		D4EC9EF829E6E62E005EEE12 /* ObstMania_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC9EF729E6E62E005EEE12 /* ObstMania_UIKitUITestsLaunchTests.swift */; };
+		D4EC9F0529E6E640005EEE12 /* ObstMania_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC9F0429E6E640005EEE12 /* ObstMania_UIKitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4EC9EF929E6E62E005EEE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41B473B29E07843008201F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D41B474229E07843008201F6;
+			remoteInfo = "ObstMania-UIKit";
+		};
+		D4EC9F0629E6E640005EEE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41B473B29E07843008201F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D41B474229E07843008201F6;
+			remoteInfo = "ObstMania-UIKit";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D41B474329E07843008201F6 /* ObstMania-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObstMania-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +62,29 @@
 		D41B476929E07CBB008201F6 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		D41B476E29E08804008201F6 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		D43D27F529E6BCE3004E4555 /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
+		D4EC9EF329E6E62E005EEE12 /* ObstMania-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObstMania-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EC9EF529E6E62E005EEE12 /* ObstMania_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstMania_UIKitUITests.swift; sourceTree = "<group>"; };
+		D4EC9EF729E6E62E005EEE12 /* ObstMania_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstMania_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4EC9F0229E6E640005EEE12 /* ObstMania-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObstMania-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EC9F0429E6E640005EEE12 /* ObstMania_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstMania_UIKitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D41B474029E07843008201F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EC9EF029E6E62E005EEE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EC9EFF29E6E640005EEE12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				D41B474529E07843008201F6 /* ObstMania-UIKit */,
+				D4EC9F0329E6E640005EEE12 /* ObstMania-UIKitTests */,
+				D4EC9EF429E6E62E005EEE12 /* ObstMania-UIKitUITests */,
 				D41B474429E07843008201F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				D41B474329E07843008201F6 /* ObstMania-UIKit.app */,
+				D4EC9EF329E6E62E005EEE12 /* ObstMania-UIKitUITests.xctest */,
+				D4EC9F0229E6E640005EEE12 /* ObstMania-UIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +161,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		D4EC9EF429E6E62E005EEE12 /* ObstMania-UIKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC9EF529E6E62E005EEE12 /* ObstMania_UIKitUITests.swift */,
+				D4EC9EF729E6E62E005EEE12 /* ObstMania_UIKitUITestsLaunchTests.swift */,
+			);
+			path = "ObstMania-UIKitUITests";
+			sourceTree = "<group>";
+		};
+		D4EC9F0329E6E640005EEE12 /* ObstMania-UIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC9F0429E6E640005EEE12 /* ObstMania_UIKitTests.swift */,
+			);
+			path = "ObstMania-UIKitTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +198,42 @@
 			productReference = D41B474329E07843008201F6 /* ObstMania-UIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D4EC9EF229E6E62E005EEE12 /* ObstMania-UIKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4EC9EFD29E6E62E005EEE12 /* Build configuration list for PBXNativeTarget "ObstMania-UIKitUITests" */;
+			buildPhases = (
+				D4EC9EEF29E6E62E005EEE12 /* Sources */,
+				D4EC9EF029E6E62E005EEE12 /* Frameworks */,
+				D4EC9EF129E6E62E005EEE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4EC9EFA29E6E62E005EEE12 /* PBXTargetDependency */,
+			);
+			name = "ObstMania-UIKitUITests";
+			productName = "ObstMania-UIKitUITests";
+			productReference = D4EC9EF329E6E62E005EEE12 /* ObstMania-UIKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D4EC9F0129E6E640005EEE12 /* ObstMania-UIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4EC9F0829E6E640005EEE12 /* Build configuration list for PBXNativeTarget "ObstMania-UIKitTests" */;
+			buildPhases = (
+				D4EC9EFE29E6E640005EEE12 /* Sources */,
+				D4EC9EFF29E6E640005EEE12 /* Frameworks */,
+				D4EC9F0029E6E640005EEE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4EC9F0729E6E640005EEE12 /* PBXTargetDependency */,
+			);
+			name = "ObstMania-UIKitTests";
+			productName = "ObstMania-UIKitTests";
+			productReference = D4EC9F0229E6E640005EEE12 /* ObstMania-UIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +246,14 @@
 				TargetAttributes = {
 					D41B474229E07843008201F6 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					D4EC9EF229E6E62E005EEE12 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D41B474229E07843008201F6;
+					};
+					D4EC9F0129E6E640005EEE12 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D41B474229E07843008201F6;
 					};
 				};
 			};
@@ -167,6 +271,8 @@
 			projectRoot = "";
 			targets = (
 				D41B474229E07843008201F6 /* ObstMania-UIKit */,
+				D4EC9EF229E6E62E005EEE12 /* ObstMania-UIKitUITests */,
+				D4EC9F0129E6E640005EEE12 /* ObstMania-UIKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +287,20 @@
 				D41B475029E07844008201F6 /* Assets.xcassets in Resources */,
 				D41B474E29E07843008201F6 /* Main.storyboard in Resources */,
 				D41B476629E07A80008201F6 /* CollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EC9EF129E6E62E005EEE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EC9F0029E6E640005EEE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +324,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4EC9EEF29E6E62E005EEE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EC9EF829E6E62E005EEE12 /* ObstMania_UIKitUITestsLaunchTests.swift in Sources */,
+				D4EC9EF629E6E62E005EEE12 /* ObstMania_UIKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EC9EFE29E6E640005EEE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EC9F0529E6E640005EEE12 /* ObstMania_UIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4EC9EFA29E6E62E005EEE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D41B474229E07843008201F6 /* ObstMania-UIKit */;
+			targetProxy = D4EC9EF929E6E62E005EEE12 /* PBXContainerItemProxy */;
+		};
+		D4EC9F0729E6E640005EEE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D41B474229E07843008201F6 /* ObstMania-UIKit */;
+			targetProxy = D4EC9F0629E6E640005EEE12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D41B474C29E07843008201F6 /* Main.storyboard */ = {
@@ -394,6 +544,72 @@
 			};
 			name = Release;
 		};
+		D4EC9EFB29E6E62E005EEE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.ObstMania-UIKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ObstMania-UIKit";
+			};
+			name = Debug;
+		};
+		D4EC9EFC29E6E62E005EEE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.ObstMania-UIKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ObstMania-UIKit";
+			};
+			name = Release;
+		};
+		D4EC9F0929E6E640005EEE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.ObstMania-UIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObstMania-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObstMania-UIKit";
+			};
+			name = Debug;
+		};
+		D4EC9F0A29E6E640005EEE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.ObstMania-UIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObstMania-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObstMania-UIKit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +627,24 @@
 			buildConfigurations = (
 				D41B475829E07845008201F6 /* Debug */,
 				D41B475929E07845008201F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4EC9EFD29E6E62E005EEE12 /* Build configuration list for PBXNativeTarget "ObstMania-UIKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EC9EFB29E6E62E005EEE12 /* Debug */,
+				D4EC9EFC29E6E62E005EEE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4EC9F0829E6E640005EEE12 /* Build configuration list for PBXNativeTarget "ObstMania-UIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EC9F0929E6E640005EEE12 /* Debug */,
+				D4EC9F0A29E6E640005EEE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
