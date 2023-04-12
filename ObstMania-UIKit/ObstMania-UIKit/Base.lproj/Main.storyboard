@@ -68,6 +68,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="goToNutrition:" destination="xNg-Gl-uuu" eventType="touchUpInside" id="Ob1-bs-GAj"/>
                                     <segue destination="rMz-kN-lYU" kind="presentation" identifier="ViewNutrition" id="187-aM-3Ub"/>
                                 </connections>
                             </button>

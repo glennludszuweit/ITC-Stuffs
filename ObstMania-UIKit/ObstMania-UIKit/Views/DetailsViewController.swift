@@ -30,4 +30,9 @@ class DetailsViewController: UIViewController {
             nutritionViewController?.nutrition = self.fruit?.nutritions
         }
     }
+    
+    
+    @IBAction func goToNutrition(_ sender: Any) {
+        performSegue(withIdentifier: "ViewNutrition", sender: self)
+    }
 }
