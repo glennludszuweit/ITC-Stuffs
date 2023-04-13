@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="UserViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserViewCell" id="KGk-i7-Jjw" customClass="UserViewCell" customModule="Users_UIKit_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAc-l8-DsX">
+                        <rect key="frame" x="25" y="20" width="225" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHq-1G-EaZ">
+                        <rect key="frame" x="25" y="45.333333333333336" width="225" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wg9-v0-jGg">
+                        <rect key="frame" x="260" y="10" width="50" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="wtt-Lf-yvs"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="getUserDetails:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nVM-bG-HTw"/>
+                            <action selector="viewUserDetail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="406-AO-dXa"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtI-K0-EAb">
+                        <rect key="frame" x="23" y="70.666666666666671" width="227" height="28.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TtI-K0-EAb" firstAttribute="top" secondItem="CHq-1G-EaZ" secondAttribute="bottom" constant="5" id="6e6-eV-RLb"/>
+                    <constraint firstItem="Wg9-v0-jGg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8e3-O3-O5V"/>
+                    <constraint firstAttribute="trailing" secondItem="Wg9-v0-jGg" secondAttribute="trailing" constant="10" id="97i-Bf-AvL"/>
+                    <constraint firstItem="PAc-l8-DsX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="CoE-bQ-zmX"/>
+                    <constraint firstItem="Wg9-v0-jGg" firstAttribute="leading" secondItem="CHq-1G-EaZ" secondAttribute="trailing" constant="10" id="OgZ-Aa-gc5"/>
+                    <constraint firstItem="CHq-1G-EaZ" firstAttribute="top" secondItem="PAc-l8-DsX" secondAttribute="bottom" constant="5" id="Y2O-kL-HfM"/>
+                    <constraint firstItem="CHq-1G-EaZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="cdR-MM-F0c"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TtI-K0-EAb" secondAttribute="bottom" constant="10" id="ctK-Ip-7hB"/>
+                    <constraint firstItem="Wg9-v0-jGg" firstAttribute="leading" secondItem="PAc-l8-DsX" secondAttribute="trailing" constant="10" id="f3V-hj-lYP"/>
+                    <constraint firstAttribute="bottom" secondItem="Wg9-v0-jGg" secondAttribute="bottom" constant="10" id="kL6-uR-CTN"/>
+                    <constraint firstItem="Wg9-v0-jGg" firstAttribute="leading" secondItem="TtI-K0-EAb" secondAttribute="trailing" constant="10" id="nyv-nZ-uMN"/>
+                    <constraint firstItem="PAc-l8-DsX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="p2v-uF-ccd"/>
+                    <constraint firstItem="TtI-K0-EAb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="ppC-x8-wFn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelUserEmail" destination="CHq-1G-EaZ" id="zSc-tx-6S5"/>
+                <outlet property="labelUserName" destination="PAc-l8-DsX" id="DJU-fw-NJ8"/>
+                <outlet property="labelUserWebsite" destination="TtI-K0-EAb" id="C86-i2-LQV"/>
+            </connections>
+            <point key="canvasLocation" x="123.66412213740458" y="-11.971830985915494"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

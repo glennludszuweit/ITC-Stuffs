@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Users-UIKit-MVVM/Users-UIKit-MVVM.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ObstMania-UIKit/ObstMania-UIKit.xcodeproj">
    </FileRef>
    <Group

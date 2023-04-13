@@ -52,3 +52,4 @@ let jakeStuff = MyStuff(height: 165, id: 3, stuffDetail: mobile, owner: "Jake Do
 
 janesStuff.printDetails()
 jakeStuff.printDetails()
+
