@@ -1,8 +1,8 @@
 //
-//  UsersViewModel.swift
-//  Users-UIKit-MVVM
+//  UserViewModel.swift
+//  Tabs-UIKit
 //
-//  Created by Glenn Ludszuweit on 13/04/2023.
+//  Created by Glenn Ludszuweit on 14/04/2023.
 //
 
 import Foundation

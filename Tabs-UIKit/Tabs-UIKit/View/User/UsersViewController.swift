@@ -1,8 +1,8 @@
 //
 //  UsersViewController.swift
-//  Users-UIKit-MVVM
+//  Tabs-UIKit
 //
-//  Created by Glenn Ludszuweit on 13/04/2023.
+//  Created by Glenn Ludszuweit on 14/04/2023.
 //
 
 import UIKit
@@ -14,8 +14,8 @@ class UsersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cellXib = UINib(nibName: "UserViewCell", bundle: nil)
-        tableView.register(cellXib, forCellReuseIdentifier: "UserViewCell")
+        let cellXib = UINib(nibName: "UserTableViewCell", bundle: nil)
+        tableView.register(cellXib, forCellReuseIdentifier: "UserTableViewCell")
         
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.dataSource = self
@@ -39,11 +39,11 @@ extension UsersViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserViewCell", for: indexPath) as! UserViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as! UserTableViewCell
         let data = userViewModel.users[indexPath.row]
-        cell.labelUserName.text = data.name
-        cell.labelUserEmail.text = data.email
-        cell.labelUserWebsite.text = data.website.capitalized
+        cell.labelUserNameView.text = data.name
+        cell.labelUserEmailView.text = data.email
+        cell.labelUserWebsiteView.text = data.website.capitalized
         cell.user = data
         cell.passUserData = { user in
             let userViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserViewController") as! UserViewController

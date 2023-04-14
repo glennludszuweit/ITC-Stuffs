@@ -26,6 +26,7 @@
 		D4EC9F7829E80F27005EEE12 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC9F7729E80F27005EEE12 /* AuthViewModel.swift */; };
 		D4EC9F7A29E81B1A005EEE12 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC9F7929E81B1A005EEE12 /* UserViewModelTests.swift */; };
 		D4EC9F7C29E81B2F005EEE12 /* AuthViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC9F7B29E81B2F005EEE12 /* AuthViewModelTests.swift */; };
+		D4EC9F7F29E84E5F005EEE12 /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC9F7E29E84E5F005EEE12 /* MockUserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D4EC9F7729E80F27005EEE12 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D4EC9F7929E81B1A005EEE12 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
 		D4EC9F7B29E81B2F005EEE12 /* AuthViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
+		D4EC9F7E29E84E5F005EEE12 /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		D4EC9F3229E7E9E5005EEE12 /* Users-UIKit-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D4EC9F7D29E84E4B005EEE12 /* Mock */,
 				D4EC9F6E29E7F9CD005EEE12 /* Service */,
 				D4EC9F6D29E7F9C1005EEE12 /* Model */,
 				D4EC9F6C29E7F9A3005EEE12 /* ViewModel */,
@@ -203,6 +206,14 @@
 				D4EC9F3729E7E9E5005EEE12 /* LoginViewController.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		D4EC9F7D29E84E4B005EEE12 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC9F7E29E84E5F005EEE12 /* MockUserService.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +355,7 @@
 				D4EC9F6829E7EDCD005EEE12 /* UserViewCell.swift in Sources */,
 				D4EC9F6529E7ED32005EEE12 /* UsersViewController.swift in Sources */,
 				D4EC9F3429E7E9E5005EEE12 /* AppDelegate.swift in Sources */,
+				D4EC9F7F29E84E5F005EEE12 /* MockUserService.swift in Sources */,
 				D4EC9F3629E7E9E5005EEE12 /* SceneDelegate.swift in Sources */,
 				D4EC9F7429E7FD2F005EEE12 /* UserViewModel.swift in Sources */,
 				D4EC9F7029E7F9EB005EEE12 /* User.swift in Sources */,

@@ -1,19 +1,19 @@
 //
-//  UserViewCell.swift
-//  Users-UIKit-MVVM
+//  UserTableViewCell.swift
+//  Tabs-UIKit
 //
-//  Created by Glenn Ludszuweit on 13/04/2023.
+//  Created by Glenn Ludszuweit on 14/04/2023.
 //
 
 import UIKit
 
-class UserViewCell: UITableViewCell {
+class UserTableViewCell: UITableViewCell {
     var user: User?
     var passUserData: ((User) -> Void)?
     
-    @IBOutlet weak var labelUserName: UILabel!
-    @IBOutlet weak var labelUserEmail: UILabel!
-    @IBOutlet weak var labelUserWebsite: UILabel!
+    @IBOutlet weak var labelUserEmailView: UILabel!
+    @IBOutlet weak var labelUserNameView: UILabel!
+    @IBOutlet weak var labelUserWebsiteView: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

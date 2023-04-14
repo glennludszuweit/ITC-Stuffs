@@ -1,18 +1,16 @@
 //
-//  UserViewModelTests.swift
-//  Users-UIKit-MVVMTests
+//  UIKit_TabsTests.swift
+//  UIKit-TabsTests
 //
-//  Created by Glenn Ludszuweit on 13/04/2023.
+//  Created by Glenn Ludszuweit on 14/04/2023.
 //
 
 import XCTest
-@testable import Users_UIKit_MVVM
+@testable import UIKit_Tabs
 
-final class UserViewModelTests: XCTestCase {
-    var userViewModel: UserViewModel!
+final class UIKit_TabsTests: XCTestCase {
 
     override func setUpWithError() throws {
-        userViewModel = UserViewModel(userService: FakeUserService())
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 

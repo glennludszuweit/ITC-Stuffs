@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="UserViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserViewCell" id="KGk-i7-Jjw" customClass="UserViewCell" customModule="Users_UIKit_MVVM" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="UserViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserViewCell" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="Users_UIKit_MVVM" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -38,7 +38,6 @@
                         <buttonConfiguration key="configuration" style="plain"/>
                         <connections>
                             <action selector="getUserDetails:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nVM-bG-HTw"/>
-                            <action selector="viewUserDetail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="406-AO-dXa"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtI-K0-EAb">
@@ -66,9 +65,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="labelUserEmail" destination="CHq-1G-EaZ" id="zSc-tx-6S5"/>
-                <outlet property="labelUserName" destination="PAc-l8-DsX" id="DJU-fw-NJ8"/>
-                <outlet property="labelUserWebsite" destination="TtI-K0-EAb" id="C86-i2-LQV"/>
+                <outlet property="labelUserEmailView" destination="CHq-1G-EaZ" id="zSc-tx-6S5"/>
+                <outlet property="labelUserNameView" destination="PAc-l8-DsX" id="DJU-fw-NJ8"/>
+                <outlet property="labelUserWebsiteView" destination="TtI-K0-EAb" id="C86-i2-LQV"/>
             </connections>
             <point key="canvasLocation" x="123.66412213740458" y="-11.971830985915494"/>
         </tableViewCell>

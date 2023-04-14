@@ -29,6 +29,9 @@ class LoginViewController: UIViewController {
             self.navigationController?.pushViewController(usersViewController, animated: true)
         } else {
             print("Invalid user!")
+            let alert = UIAlertController(title: "Alert", message: "Invalid login details!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default))
+            self.present(alert, animated: true)
         }
     }
     
