@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Tabs-UIKit/MVVM-Tabs-Dependency-Generics-Tests.xcodeproj">
+      location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Tabs-UIKit/Tabs-UIKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Users-UIKit-MVVM/Users-UIKit-MVVM.xcodeproj">

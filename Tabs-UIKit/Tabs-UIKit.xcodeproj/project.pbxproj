@@ -53,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D41B3DEF29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Tabs-Dependency-Generics-Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B3DEF29E950AF0038DD79 /* Tabs-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabs-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B3DF229E950AF0038DD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41B3DF429E950AF0038DD79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D41B3DF629E950AF0038DD79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,9 +61,9 @@
 		D41B3DFB29E950B10038DD79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D41B3DFE29E950B10038DD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D41B3E0029E950B10038DD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D41B3E0529E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Tabs-Dependency-Generics-TestsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B3E0529E950B10038DD79 /* Tabs-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabs-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B3E0929E950B10038DD79 /* Tabs_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs_UIKitTests.swift; sourceTree = "<group>"; };
-		D41B3E0F29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Tabs-Dependency-Generics-TestsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B3E0F29E950B10038DD79 /* Tabs-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabs-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B3E1329E950B10038DD79 /* Tabs_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs_UIKitUITests.swift; sourceTree = "<group>"; };
 		D41B3E1529E950B10038DD79 /* Tabs_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D41B3E2529E959A70038DD79 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +123,9 @@
 		D41B3DF029E950AF0038DD79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D41B3DEF29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests.app */,
-				D41B3E0529E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests.xctest */,
-				D41B3E0F29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests.xctest */,
+				D41B3DEF29E950AF0038DD79 /* Tabs-UIKit.app */,
+				D41B3E0529E950B10038DD79 /* Tabs-UIKitTests.xctest */,
+				D41B3E0F29E950B10038DD79 /* Tabs-UIKitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,9 +237,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */ = {
+		D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-Tests" */;
+			buildConfigurationList = D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKit" */;
 			buildPhases = (
 				D41B3DEB29E950AF0038DD79 /* Sources */,
 				D41B3DEC29E950AF0038DD79 /* Frameworks */,
@@ -249,14 +249,14 @@
 			);
 			dependencies = (
 			);
-			name = "MVVM-Tabs-Dependency-Generics-Tests";
+			name = "Tabs-UIKit";
 			productName = "Tabs-UIKit";
-			productReference = D41B3DEF29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests.app */;
+			productReference = D41B3DEF29E950AF0038DD79 /* Tabs-UIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D41B3E0429E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests */ = {
+		D41B3E0429E950B10038DD79 /* Tabs-UIKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsTests" */;
+			buildConfigurationList = D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitTests" */;
 			buildPhases = (
 				D41B3E0129E950B10038DD79 /* Sources */,
 				D41B3E0229E950B10038DD79 /* Frameworks */,
@@ -267,14 +267,14 @@
 			dependencies = (
 				D41B3E0729E950B10038DD79 /* PBXTargetDependency */,
 			);
-			name = "MVVM-Tabs-Dependency-Generics-TestsTests";
+			name = "Tabs-UIKitTests";
 			productName = "Tabs-UIKitTests";
-			productReference = D41B3E0529E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests.xctest */;
+			productReference = D41B3E0529E950B10038DD79 /* Tabs-UIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D41B3E0E29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests */ = {
+		D41B3E0E29E950B10038DD79 /* Tabs-UIKitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsUITests" */;
+			buildConfigurationList = D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitUITests" */;
 			buildPhases = (
 				D41B3E0B29E950B10038DD79 /* Sources */,
 				D41B3E0C29E950B10038DD79 /* Frameworks */,
@@ -285,9 +285,9 @@
 			dependencies = (
 				D41B3E1129E950B10038DD79 /* PBXTargetDependency */,
 			);
-			name = "MVVM-Tabs-Dependency-Generics-TestsUITests";
+			name = "Tabs-UIKitUITests";
 			productName = "Tabs-UIKitUITests";
-			productReference = D41B3E0F29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests.xctest */;
+			productReference = D41B3E0F29E950B10038DD79 /* Tabs-UIKitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -313,7 +313,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "MVVM-Tabs-Dependency-Generics-Tests" */;
+			buildConfigurationList = D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "Tabs-UIKit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -326,9 +326,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */,
-				D41B3E0429E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests */,
-				D41B3E0E29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests */,
+				D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */,
+				D41B3E0429E950B10038DD79 /* Tabs-UIKitTests */,
+				D41B3E0E29E950B10038DD79 /* Tabs-UIKitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -410,12 +410,12 @@
 /* Begin PBXTargetDependency section */
 		D41B3E0729E950B10038DD79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */;
+			target = D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */;
 			targetProxy = D41B3E0629E950B10038DD79 /* PBXContainerItemProxy */;
 		};
 		D41B3E1129E950B10038DD79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */;
+			target = D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */;
 			targetProxy = D41B3E1029E950B10038DD79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -623,7 +623,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-Tabs-Dependency-Generics-Tests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM-Tabs-Dependency-Generics-Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabs-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabs-UIKit";
 			};
 			name = Debug;
 		};
@@ -642,7 +642,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-Tabs-Dependency-Generics-Tests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM-Tabs-Dependency-Generics-Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabs-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabs-UIKit";
 			};
 			name = Release;
 		};
@@ -683,7 +683,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "MVVM-Tabs-Dependency-Generics-Tests" */ = {
+		D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "Tabs-UIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E1729E950B10038DD79 /* Debug */,
@@ -692,7 +692,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-Tests" */ = {
+		D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E1A29E950B10038DD79 /* Debug */,
@@ -701,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsTests" */ = {
+		D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E1D29E950B10038DD79 /* Debug */,
@@ -710,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsUITests" */ = {
+		D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E2029E950B10038DD79 /* Debug */,

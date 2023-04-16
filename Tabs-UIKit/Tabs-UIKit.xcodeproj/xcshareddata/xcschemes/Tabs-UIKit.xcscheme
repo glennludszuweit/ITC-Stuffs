@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D41B3DEE29E950AF0038DD79"
-               BuildableName = "MVVM-Tabs-Dependency-Generics-Tests.app"
-               BlueprintName = "MVVM-Tabs-Dependency-Generics-Tests"
-               ReferencedContainer = "container:MVVM-Tabs-Dependency-Generics-Tests.xcodeproj">
+               BuildableName = "Tabs-UIKit.app"
+               BlueprintName = "Tabs-UIKit"
+               ReferencedContainer = "container:Tabs-UIKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D41B3E0429E950B10038DD79"
-               BuildableName = "MVVM-Tabs-Dependency-Generics-TestsTests.xctest"
-               BlueprintName = "MVVM-Tabs-Dependency-Generics-TestsTests"
-               ReferencedContainer = "container:MVVM-Tabs-Dependency-Generics-Tests.xcodeproj">
+               BuildableName = "Tabs-UIKitTests.xctest"
+               BlueprintName = "Tabs-UIKitTests"
+               ReferencedContainer = "container:Tabs-UIKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,9 +45,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D41B3E0E29E950B10038DD79"
-               BuildableName = "MVVM-Tabs-Dependency-Generics-TestsUITests.xctest"
-               BlueprintName = "MVVM-Tabs-Dependency-Generics-TestsUITests"
-               ReferencedContainer = "container:MVVM-Tabs-Dependency-Generics-Tests.xcodeproj">
+               BuildableName = "Tabs-UIKitUITests.xctest"
+               BlueprintName = "Tabs-UIKitUITests"
+               ReferencedContainer = "container:Tabs-UIKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D41B3DEE29E950AF0038DD79"
-            BuildableName = "MVVM-Tabs-Dependency-Generics-Tests.app"
-            BlueprintName = "MVVM-Tabs-Dependency-Generics-Tests"
-            ReferencedContainer = "container:MVVM-Tabs-Dependency-Generics-Tests.xcodeproj">
+            BuildableName = "Tabs-UIKit.app"
+            BlueprintName = "Tabs-UIKit"
+            ReferencedContainer = "container:Tabs-UIKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D41B3DEE29E950AF0038DD79"
-            BuildableName = "MVVM-Tabs-Dependency-Generics-Tests.app"
-            BlueprintName = "MVVM-Tabs-Dependency-Generics-Tests"
-            ReferencedContainer = "container:MVVM-Tabs-Dependency-Generics-Tests.xcodeproj">
+            BuildableName = "Tabs-UIKit.app"
+            BlueprintName = "Tabs-UIKit"
+            ReferencedContainer = "container:Tabs-UIKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
