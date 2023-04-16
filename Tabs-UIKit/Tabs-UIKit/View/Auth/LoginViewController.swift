@@ -21,12 +21,14 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func goToResetPassword(_ sender: Any) {
-        let resetPassViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResetPassViewController") as! ResetPassViewController
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+        let resetPassViewController = storyboard.instantiateViewController(withIdentifier: "ResetPassViewController") as! ResetPassViewController
         self.navigationController?.pushViewController(resetPassViewController, animated: true)
     }
     
     @IBAction func goToRegister(_ sender: Any) {
-        let registerViewController = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+        let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
         self.navigationController?.pushViewController(registerViewController, animated: true)
     }
     

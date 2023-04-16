@@ -8,7 +8,7 @@
 import UIKit
 
 class UsersViewController: UIViewController {
-    let userViewModel = UserViewModel(userService: UserService())
+    let userViewModel = UserViewModel(networkManager: NetworkManager())
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -41,12 +41,13 @@ extension UsersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as! UserTableViewCell
         let data = userViewModel.users[indexPath.row]
-        cell.labelUserNameView.text = data.name
-        cell.labelUserEmailView.text = data.email
-        cell.labelUserWebsiteView.text = data.website.capitalized
+        cell.labelName.text = data.name
+        cell.labelEmail.text = data.email
+        cell.labelWebsite.text = data.website.capitalized
         cell.user = data
         cell.passUserData = { user in
-            let userViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserViewController") as! UserViewController
+            let storyboard = UIStoryboard(name: "User", bundle: nil)
+            let userViewController = storyboard.instantiateViewController(withIdentifier: "UserViewController") as! UserViewController
             userViewController.user = user
             self.navigationController?.pushViewController(userViewController, animated: true)
         }

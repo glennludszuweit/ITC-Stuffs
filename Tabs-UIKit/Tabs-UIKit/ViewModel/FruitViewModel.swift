@@ -1,5 +1,5 @@
 //
-//  UserViewModel.swift
+//  FruitViewModel.swift
 //  Tabs-UIKit
 //
 //  Created by Glenn Ludszuweit on 14/04/2023.
@@ -7,19 +7,21 @@
 
 import Foundation
 
-class UserViewModel {
+import Foundation
+
+class FruitViewModel {
     let networkManager: NetworkProtocol
-    var users = [User]()
+    var fruit = [Fruit]()
     
     init(networkManager: NetworkManager) {
         self.networkManager = networkManager
     }
     
     func getUsers(completion: @escaping () -> Void) {
-        networkManager.getAll(apiURL: "https://jsonplaceholder.typicode.com/users") { (result: Result<[User], Error>) in
+        networkManager.getAll(apiURL: "https://fruityvice.com/api/fruit/all") { (result: Result<[Fruit], Error>) in
             switch result {
-            case .success(let users):
-                self.users = users
+            case .success(let fruit):
+                self.fruit = fruit
                 completion()
             case .failure(let error):
                 print(error.localizedDescription)

@@ -11,9 +11,10 @@ class UserTableViewCell: UITableViewCell {
     var user: User?
     var passUserData: ((User) -> Void)?
     
-    @IBOutlet weak var labelUserEmailView: UILabel!
-    @IBOutlet weak var labelUserNameView: UILabel!
-    @IBOutlet weak var labelUserWebsiteView: UILabel!
+    @IBOutlet weak var labelWebsite: UILabel!
+    
+    @IBOutlet weak var labelEmail: UILabel!
+    @IBOutlet weak var labelName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

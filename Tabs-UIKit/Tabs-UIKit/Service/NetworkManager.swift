@@ -7,11 +7,13 @@
 
 import Foundation
 
-class UserService {
+class NetworkManager: NetworkProtocol {
+    
+    
     let decoder = JSONDecoder()
     
-    func getUsers(userURL: String, handler: @escaping (Result<[User], Error>) -> Void) {
-        guard let url = URL(string: userURL) else { return }
+    func getAll<T: Decodable>(apiURL: String, handler: @escaping (Result<[T], Error>) -> Void) {
+        guard let url = URL(string: apiURL) else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else { return }
@@ -19,7 +21,7 @@ class UserService {
             guard let data = data else { return }
             
             do {
-                let result = try self.decoder.decode([User].self, from: data)
+                let result = try self.decoder.decode([T].self, from: data)
                 handler(.success(result))
             } catch {
                 handler(.failure(error.localizedDescription as! Error))

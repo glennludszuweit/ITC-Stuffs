@@ -20,12 +20,19 @@
 		D41B3E2829E959D50038DD79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E2729E959D50038DD79 /* LoginViewController.swift */; };
 		D41B3E2A29E959F90038DD79 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E2929E959F90038DD79 /* RegisterViewController.swift */; };
 		D41B3E2C29E95A270038DD79 /* ResetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E2B29E95A270038DD79 /* ResetPassViewController.swift */; };
-		D41B3E3129E95C970038DD79 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E3029E95C970038DD79 /* UserService.swift */; };
+		D41B3E3129E95C970038DD79 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E3029E95C970038DD79 /* NetworkManager.swift */; };
 		D41B3E3329E95CB30038DD79 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E3229E95CB30038DD79 /* User.swift */; };
 		D41B3E3529E95CF20038DD79 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E3429E95CF20038DD79 /* UserViewModel.swift */; };
 		D41B3E3A29E95DEB0038DD79 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E3829E95DEB0038DD79 /* UserTableViewCell.swift */; };
 		D41B3E3B29E95DEB0038DD79 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41B3E3929E95DEB0038DD79 /* UserTableViewCell.xib */; };
 		D41B3E3D29E95ED60038DD79 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E3C29E95ED60038DD79 /* UserViewController.swift */; };
+		D41B3E3F29E9BA970038DD79 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E3E29E9BA970038DD79 /* NetworkProtocol.swift */; };
+		D41B3E4129E9C0F90038DD79 /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E4029E9C0F90038DD79 /* FruitViewModel.swift */; };
+		D41B3E4329E9C12B0038DD79 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B3E4229E9C12B0038DD79 /* Fruit.swift */; };
+		D41B3E4729EBCE1E0038DD79 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B3E4629EBCE1E0038DD79 /* Auth.storyboard */; };
+		D41B3E4929EBCE370038DD79 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B3E4829EBCE370038DD79 /* User.storyboard */; };
+		D41B3E4B29EBCEEF0038DD79 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41B3E4A29EBCEEF0038DD79 /* Home.storyboard */; };
+		D4A566C629EBD92500124FD8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A566C529EBD92500124FD8 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D41B3DEF29E950AF0038DD79 /* Tabs-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabs-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B3DEF29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Tabs-Dependency-Generics-Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B3DF229E950AF0038DD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41B3DF429E950AF0038DD79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D41B3DF629E950AF0038DD79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,21 +61,28 @@
 		D41B3DFB29E950B10038DD79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D41B3DFE29E950B10038DD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D41B3E0029E950B10038DD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D41B3E0529E950B10038DD79 /* Tabs-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabs-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B3E0529E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Tabs-Dependency-Generics-TestsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B3E0929E950B10038DD79 /* Tabs_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs_UIKitTests.swift; sourceTree = "<group>"; };
-		D41B3E0F29E950B10038DD79 /* Tabs-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabs-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B3E0F29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Tabs-Dependency-Generics-TestsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B3E1329E950B10038DD79 /* Tabs_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs_UIKitUITests.swift; sourceTree = "<group>"; };
 		D41B3E1529E950B10038DD79 /* Tabs_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D41B3E2529E959A70038DD79 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		D41B3E2729E959D50038DD79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D41B3E2929E959F90038DD79 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D41B3E2B29E95A270038DD79 /* ResetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassViewController.swift; sourceTree = "<group>"; };
-		D41B3E3029E95C970038DD79 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D41B3E3029E95C970038DD79 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D41B3E3229E95CB30038DD79 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D41B3E3429E95CF20038DD79 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D41B3E3829E95DEB0038DD79 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		D41B3E3929E95DEB0038DD79 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		D41B3E3C29E95ED60038DD79 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		D41B3E3E29E9BA970038DD79 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		D41B3E4029E9C0F90038DD79 /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
+		D41B3E4229E9C12B0038DD79 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		D41B3E4629EBCE1E0038DD79 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		D41B3E4829EBCE370038DD79 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		D41B3E4A29EBCEEF0038DD79 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D4A566C529EBD92500124FD8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +123,9 @@
 		D41B3DF029E950AF0038DD79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D41B3DEF29E950AF0038DD79 /* Tabs-UIKit.app */,
-				D41B3E0529E950B10038DD79 /* Tabs-UIKitTests.xctest */,
-				D41B3E0F29E950B10038DD79 /* Tabs-UIKitUITests.xctest */,
+				D41B3DEF29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests.app */,
+				D41B3E0529E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests.xctest */,
+				D41B3E0F29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,15 +133,18 @@
 		D41B3DF129E950AF0038DD79 /* Tabs-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D41B3E2F29E95C650038DD79 /* Service */,
-				D41B3E2E29E95C4F0038DD79 /* ViewModel */,
 				D41B3E2D29E95C430038DD79 /* Model */,
 				D41B3E2229E950BF0038DD79 /* View */,
+				D41B3E2E29E95C4F0038DD79 /* ViewModel */,
+				D41B3E2F29E95C650038DD79 /* Service */,
+				D41B3DF829E950AF0038DD79 /* Main.storyboard */,
+				D41B3E4A29EBCEEF0038DD79 /* Home.storyboard */,
+				D41B3E4629EBCE1E0038DD79 /* Auth.storyboard */,
+				D41B3E4829EBCE370038DD79 /* User.storyboard */,
+				D41B3DFD29E950B10038DD79 /* LaunchScreen.storyboard */,
 				D41B3DF229E950AF0038DD79 /* AppDelegate.swift */,
 				D41B3DF429E950AF0038DD79 /* SceneDelegate.swift */,
-				D41B3DF829E950AF0038DD79 /* Main.storyboard */,
 				D41B3DFB29E950B10038DD79 /* Assets.xcassets */,
-				D41B3DFD29E950B10038DD79 /* LaunchScreen.storyboard */,
 				D41B3E0029E950B10038DD79 /* Info.plist */,
 			);
 			path = "Tabs-UIKit";
@@ -153,9 +170,10 @@
 		D41B3E2229E950BF0038DD79 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D4A566C729EBDA5A00124FD8 /* Home */,
 				D41B3E2429E958D50038DD79 /* Auth */,
 				D41B3E2329E957D90038DD79 /* User */,
-				D41B3DF629E950AF0038DD79 /* ViewController.swift */,
+				D4A566C529EBD92500124FD8 /* TabBarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				D41B3E3229E95CB30038DD79 /* User.swift */,
+				D41B3E4229E9C12B0038DD79 /* Fruit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D41B3E3429E95CF20038DD79 /* UserViewModel.swift */,
+				D41B3E4029E9C0F90038DD79 /* FruitViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,17 +220,26 @@
 		D41B3E2F29E95C650038DD79 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				D41B3E3029E95C970038DD79 /* UserService.swift */,
+				D41B3E3029E95C970038DD79 /* NetworkManager.swift */,
+				D41B3E3E29E9BA970038DD79 /* NetworkProtocol.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		D4A566C729EBDA5A00124FD8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D41B3DF629E950AF0038DD79 /* ViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */ = {
+		D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKit" */;
+			buildConfigurationList = D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-Tests" */;
 			buildPhases = (
 				D41B3DEB29E950AF0038DD79 /* Sources */,
 				D41B3DEC29E950AF0038DD79 /* Frameworks */,
@@ -220,14 +249,14 @@
 			);
 			dependencies = (
 			);
-			name = "Tabs-UIKit";
+			name = "MVVM-Tabs-Dependency-Generics-Tests";
 			productName = "Tabs-UIKit";
-			productReference = D41B3DEF29E950AF0038DD79 /* Tabs-UIKit.app */;
+			productReference = D41B3DEF29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D41B3E0429E950B10038DD79 /* Tabs-UIKitTests */ = {
+		D41B3E0429E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitTests" */;
+			buildConfigurationList = D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsTests" */;
 			buildPhases = (
 				D41B3E0129E950B10038DD79 /* Sources */,
 				D41B3E0229E950B10038DD79 /* Frameworks */,
@@ -238,14 +267,14 @@
 			dependencies = (
 				D41B3E0729E950B10038DD79 /* PBXTargetDependency */,
 			);
-			name = "Tabs-UIKitTests";
+			name = "MVVM-Tabs-Dependency-Generics-TestsTests";
 			productName = "Tabs-UIKitTests";
-			productReference = D41B3E0529E950B10038DD79 /* Tabs-UIKitTests.xctest */;
+			productReference = D41B3E0529E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D41B3E0E29E950B10038DD79 /* Tabs-UIKitUITests */ = {
+		D41B3E0E29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitUITests" */;
+			buildConfigurationList = D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsUITests" */;
 			buildPhases = (
 				D41B3E0B29E950B10038DD79 /* Sources */,
 				D41B3E0C29E950B10038DD79 /* Frameworks */,
@@ -256,9 +285,9 @@
 			dependencies = (
 				D41B3E1129E950B10038DD79 /* PBXTargetDependency */,
 			);
-			name = "Tabs-UIKitUITests";
+			name = "MVVM-Tabs-Dependency-Generics-TestsUITests";
 			productName = "Tabs-UIKitUITests";
-			productReference = D41B3E0F29E950B10038DD79 /* Tabs-UIKitUITests.xctest */;
+			productReference = D41B3E0F29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +313,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "Tabs-UIKit" */;
+			buildConfigurationList = D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "MVVM-Tabs-Dependency-Generics-Tests" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -297,9 +326,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */,
-				D41B3E0429E950B10038DD79 /* Tabs-UIKitTests */,
-				D41B3E0E29E950B10038DD79 /* Tabs-UIKitUITests */,
+				D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */,
+				D41B3E0429E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsTests */,
+				D41B3E0E29E950B10038DD79 /* MVVM-Tabs-Dependency-Generics-TestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,10 +338,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41B3E4B29EBCEEF0038DD79 /* Home.storyboard in Resources */,
 				D41B3E3B29E95DEB0038DD79 /* UserTableViewCell.xib in Resources */,
 				D41B3DFF29E950B10038DD79 /* LaunchScreen.storyboard in Resources */,
+				D41B3E4729EBCE1E0038DD79 /* Auth.storyboard in Resources */,
 				D41B3DFC29E950B10038DD79 /* Assets.xcassets in Resources */,
 				D41B3DFA29E950AF0038DD79 /* Main.storyboard in Resources */,
+				D41B3E4929EBCE370038DD79 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,16 +369,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A566C629EBD92500124FD8 /* TabBarViewController.swift in Sources */,
+				D41B3E4329E9C12B0038DD79 /* Fruit.swift in Sources */,
 				D41B3DF729E950AF0038DD79 /* ViewController.swift in Sources */,
 				D41B3E3D29E95ED60038DD79 /* UserViewController.swift in Sources */,
 				D41B3E2629E959A70038DD79 /* UsersViewController.swift in Sources */,
+				D41B3E4129E9C0F90038DD79 /* FruitViewModel.swift in Sources */,
 				D41B3E3A29E95DEB0038DD79 /* UserTableViewCell.swift in Sources */,
 				D41B3DF329E950AF0038DD79 /* AppDelegate.swift in Sources */,
 				D41B3E3529E95CF20038DD79 /* UserViewModel.swift in Sources */,
 				D41B3E2A29E959F90038DD79 /* RegisterViewController.swift in Sources */,
-				D41B3E3129E95C970038DD79 /* UserService.swift in Sources */,
+				D41B3E3129E95C970038DD79 /* NetworkManager.swift in Sources */,
 				D41B3E3329E95CB30038DD79 /* User.swift in Sources */,
 				D41B3E2829E959D50038DD79 /* LoginViewController.swift in Sources */,
+				D41B3E3F29E9BA970038DD79 /* NetworkProtocol.swift in Sources */,
 				D41B3E2C29E95A270038DD79 /* ResetPassViewController.swift in Sources */,
 				D41B3DF529E950AF0038DD79 /* SceneDelegate.swift in Sources */,
 			);
@@ -374,12 +410,12 @@
 /* Begin PBXTargetDependency section */
 		D41B3E0729E950B10038DD79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */;
+			target = D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */;
 			targetProxy = D41B3E0629E950B10038DD79 /* PBXContainerItemProxy */;
 		};
 		D41B3E1129E950B10038DD79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D41B3DEE29E950AF0038DD79 /* Tabs-UIKit */;
+			target = D41B3DEE29E950AF0038DD79 /* MVVM-Tabs-Dependency-Generics-Tests */;
 			targetProxy = D41B3E1029E950B10038DD79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -587,7 +623,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabs-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabs-UIKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-Tabs-Dependency-Generics-Tests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM-Tabs-Dependency-Generics-Tests";
 			};
 			name = Debug;
 		};
@@ -606,7 +642,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabs-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tabs-UIKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-Tabs-Dependency-Generics-Tests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM-Tabs-Dependency-Generics-Tests";
 			};
 			name = Release;
 		};
@@ -647,7 +683,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "Tabs-UIKit" */ = {
+		D41B3DEA29E950AF0038DD79 /* Build configuration list for PBXProject "MVVM-Tabs-Dependency-Generics-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E1729E950B10038DD79 /* Debug */,
@@ -656,7 +692,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKit" */ = {
+		D41B3E1929E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E1A29E950B10038DD79 /* Debug */,
@@ -665,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitTests" */ = {
+		D41B3E1C29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E1D29E950B10038DD79 /* Debug */,
@@ -674,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "Tabs-UIKitUITests" */ = {
+		D41B3E1F29E950B10038DD79 /* Build configuration list for PBXNativeTarget "MVVM-Tabs-Dependency-Generics-TestsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D41B3E2029E950B10038DD79 /* Debug */,
