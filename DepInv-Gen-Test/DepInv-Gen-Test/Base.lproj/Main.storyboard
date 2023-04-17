@@ -25,6 +25,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonFruitView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7QC-Aj-vsX"/>
+                                    <action selector="buttonFruitsView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1K-7a-bCy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-ET-Hmv">
@@ -34,7 +35,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonUsersView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIf-MX-Hqx"/>
+                                    <action selector="buttonUsersView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hoI-ih-cdb"/>
                                 </connections>
                             </button>
                         </subviews>

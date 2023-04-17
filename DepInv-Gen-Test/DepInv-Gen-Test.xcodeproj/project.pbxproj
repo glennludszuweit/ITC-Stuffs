@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40B7C4929ED7A3C00D7697E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B7C4829ED7A3C00D7697E /* ViewController.swift */; };
 		D44B440E29EC5088002884AE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B440D29EC5088002884AE /* UserViewModel.swift */; };
 		D44B441029EC50D7002884AE /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B440F29EC50D7002884AE /* UsersViewController.swift */; };
 		D44B441229EC5126002884AE /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B441129EC5126002884AE /* FruitViewModel.swift */; };
 		D44B441429EC5147002884AE /* FruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B441329EC5147002884AE /* FruitViewController.swift */; };
 		D44B441829EC58EC002884AE /* UserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B441629EC58EC002884AE /* UserViewCell.swift */; };
 		D44B441929EC58EC002884AE /* UserViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44B441729EC58EC002884AE /* UserViewCell.xib */; };
-		D489F4C429EC5AF7003BEBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489F4C329EC5AF7003BEBB3 /* ViewController.swift */; };
 		D489F4CE29EC64A6003BEBB3 /* FruitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489F4CC29EC64A6003BEBB3 /* FruitViewCell.swift */; };
 		D489F4CF29EC64A6003BEBB3 /* FruitViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D489F4CD29EC64A6003BEBB3 /* FruitViewCell.xib */; };
 		D489F4D329EC68CE003BEBB3 /* TestNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489F4D229EC68CE003BEBB3 /* TestNetworkManager.swift */; };
@@ -52,13 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D40B7C4829ED7A3C00D7697E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D44B440D29EC5088002884AE /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D44B440F29EC50D7002884AE /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		D44B441129EC5126002884AE /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		D44B441329EC5147002884AE /* FruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewController.swift; sourceTree = "<group>"; };
 		D44B441629EC58EC002884AE /* UserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewCell.swift; sourceTree = "<group>"; };
 		D44B441729EC58EC002884AE /* UserViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewCell.xib; sourceTree = "<group>"; };
-		D489F4C329EC5AF7003BEBB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D489F4CC29EC64A6003BEBB3 /* FruitViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewCell.swift; sourceTree = "<group>"; };
 		D489F4CD29EC64A6003BEBB3 /* FruitViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitViewCell.xib; sourceTree = "<group>"; };
 		D489F4D229EC68CE003BEBB3 /* TestNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkManager.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 				D491226629EBF30600E99EF8 /* Services */,
 				D491223329EBF2C200E99EF8 /* AppDelegate.swift */,
 				D491223529EBF2C200E99EF8 /* SceneDelegate.swift */,
-				D489F4C329EC5AF7003BEBB3 /* ViewController.swift */,
+				D40B7C4829ED7A3C00D7697E /* ViewController.swift */,
 				D491223929EBF2C200E99EF8 /* Main.storyboard */,
 				D491223E29EBF2C400E99EF8 /* LaunchScreen.storyboard */,
 				D491223C29EBF2C400E99EF8 /* Assets.xcassets */,
@@ -381,8 +381,8 @@
 				D491227629EBF3F400E99EF8 /* NetworkManager.swift in Sources */,
 				D44B441829EC58EC002884AE /* UserViewCell.swift in Sources */,
 				D491226829EBF35E00E99EF8 /* User.swift in Sources */,
-				D489F4C429EC5AF7003BEBB3 /* ViewController.swift in Sources */,
 				D491227829EBF40700E99EF8 /* NetworkProtocol.swift in Sources */,
+				D40B7C4929ED7A3C00D7697E /* ViewController.swift in Sources */,
 				D44B441429EC5147002884AE /* FruitViewController.swift in Sources */,
 				D44B441229EC5126002884AE /* FruitViewModel.swift in Sources */,
 				D491223429EBF2C200E99EF8 /* AppDelegate.swift in Sources */,
