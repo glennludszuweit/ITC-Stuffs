@@ -41,7 +41,7 @@ final class FruitViewModelTests: XCTestCase {
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-            XCTAssertEqual(self.fruits.count, 40)
+            XCTAssertEqual(self.fruitViewModel.fruit.count, 40)
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: duration)
@@ -55,7 +55,7 @@ final class FruitViewModelTests: XCTestCase {
         stubFruitsViewModel.getFruits {
             self.stubbedFruit = stubNetworkManager.stubbedData[0]
         }
-        
+
         fruitViewModel = FruitViewModel(networkManager: FakeNetworkManager())
         fruitViewModel.getFruits(urlString: "fruits") {
             self.fruits = self.fruitViewModel.fruit
@@ -64,22 +64,22 @@ final class FruitViewModelTests: XCTestCase {
         let duration: Double = 3.0
         let expectation = expectation(description: "Get fruit nutrition.")
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-//            XCTAssertEqual(self.fruits[0].id, self.stubbedFruit.id)
-//            XCTAssertNotEqual(self.fruits[0].name, self.stubbedFruit.name)
+            XCTAssertEqual(self.fruits[0].id, self.stubbedFruit.id)
+            XCTAssertNotEqual(self.fruits[0].name, self.stubbedFruit.name)
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: duration)
     }
-    
+
     func testGetAllMockFruits () throws {
         let duration: Double = 3.0
         let expectation = expectation(description: "Get all mock fruits.")
-        
+
         mockFruitsViewModel = FruitViewModel(networkManager: MockNetworkManager())
         mockFruitsViewModel.getFruits(urlString: "fruits") {
             self.mockFruits = self.mockFruitsViewModel.fruit
         }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
             XCTAssertEqual(self.mockFruitsViewModel.fruit.count, 3)
             expectation.fulfill()
