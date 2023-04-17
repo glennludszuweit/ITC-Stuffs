@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonUsersView(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let userViewController = storyboard.instantiateViewController(withIdentifier: "UserViewController") as! UsersViewController
-        self.navigationController?.pushViewController(userViewController, animated: true)
+        let usersViewController = storyboard.instantiateViewController(withIdentifier: "UsersViewController") as! UsersViewController
+        self.navigationController?.pushViewController(usersViewController, animated: true)
     }
 }

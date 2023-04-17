@@ -24,7 +24,6 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonFruitView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7QC-Aj-vsX"/>
                                     <action selector="buttonFruitsView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1K-7a-bCy"/>
                                 </connections>
                             </button>
