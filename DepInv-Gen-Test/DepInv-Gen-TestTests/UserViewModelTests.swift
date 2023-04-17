@@ -60,6 +60,13 @@ final class UserViewModelTests: XCTestCase {
     
     func testGetUserEmailAndUserName () throws {
         let expectation = expectation(description: "Get user email and username.")
+        
+        userViewModel = UserViewModel(networkManager: FakeNetworkManager())
+        self.userViewModel.getUsers(urlString: "users") {
+            self.users = self.userViewModel.users
+        }
+        self.user = userViewModel.users[0]
+        
         XCTAssertEqual(self.user.username, "Bret")
         XCTAssertEqual(self.user.email, "Sincere@april.biz")
         expectation.fulfill()

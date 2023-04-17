@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D40B7C4929ED7A3C00D7697E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B7C4829ED7A3C00D7697E /* ViewController.swift */; };
-		D449A7CF29ED7FC900135D01 /* fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = D449A7CD29ED7FC900135D01 /* fruits.json */; };
-		D449A7D029ED7FC900135D01 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = D449A7CE29ED7FC900135D01 /* users.json */; };
 		D44B440E29EC5088002884AE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B440D29EC5088002884AE /* UserViewModel.swift */; };
 		D44B441029EC50D7002884AE /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B440F29EC50D7002884AE /* UsersViewController.swift */; };
 		D44B441229EC5126002884AE /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B441129EC5126002884AE /* FruitViewModel.swift */; };
@@ -32,6 +30,8 @@
 		D491227829EBF40700E99EF8 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491227729EBF40700E99EF8 /* NetworkProtocol.swift */; };
 		D491227C29EBF52400E99EF8 /* FruitViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491227B29EBF52400E99EF8 /* FruitViewModelTests.swift */; };
 		D491227E29EBF53700E99EF8 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491227D29EBF53700E99EF8 /* UserViewModelTests.swift */; };
+		D4AAF15029ED8E550028BB2F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = D449A7CE29ED7FC900135D01 /* users.json */; };
+		D4AAF15129ED8E5A0028BB2F /* fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = D449A7CD29ED7FC900135D01 /* fruits.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +196,9 @@
 		D491224929EBF2C400E99EF8 /* DepInv-Gen-TestTests */ = {
 			isa = PBXGroup;
 			children = (
+				D449A7CD29ED7FC900135D01 /* fruits.json */,
+				D449A7CE29ED7FC900135D01 /* users.json */,
+				D489F4D229EC68CE003BEBB3 /* TestNetworkManager.swift */,
 				D491227B29EBF52400E99EF8 /* FruitViewModelTests.swift */,
 				D491227D29EBF53700E99EF8 /* UserViewModelTests.swift */,
 			);
@@ -214,7 +217,6 @@
 		D491226629EBF30600E99EF8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D4B306D029ED56D7002861ED /* Test */,
 				D4B306CF29ED56CC002861ED /* Network */,
 			);
 			path = Services;
@@ -227,16 +229,6 @@
 				D491227729EBF40700E99EF8 /* NetworkProtocol.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		D4B306D029ED56D7002861ED /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				D449A7CD29ED7FC900135D01 /* fruits.json */,
-				D449A7CE29ED7FC900135D01 /* users.json */,
-				D489F4D229EC68CE003BEBB3 /* TestNetworkManager.swift */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,11 +335,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D449A7CF29ED7FC900135D01 /* fruits.json in Resources */,
 				D44B441929EC58EC002884AE /* UserViewCell.xib in Resources */,
 				D491224029EBF2C400E99EF8 /* LaunchScreen.storyboard in Resources */,
 				D491223D29EBF2C400E99EF8 /* Assets.xcassets in Resources */,
-				D449A7D029ED7FC900135D01 /* users.json in Resources */,
 				D491223B29EBF2C200E99EF8 /* Main.storyboard in Resources */,
 				D489F4CF29EC64A6003BEBB3 /* FruitViewCell.xib in Resources */,
 			);
@@ -357,6 +347,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4AAF15129ED8E5A0028BB2F /* fruits.json in Resources */,
+				D4AAF15029ED8E550028BB2F /* users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
