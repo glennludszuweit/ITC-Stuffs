@@ -14,11 +14,6 @@ final class UserViewModelTests: XCTestCase {
     var user: User!
     
     override func setUpWithError() throws {
-        userViewModel = UserViewModel(networkManager: FakeNetworkManager())
-        self.userViewModel.getUsers(urlString: "users") {
-            self.users = self.userViewModel.users
-        }
-        self.user = userViewModel.users[0]
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -33,6 +28,11 @@ final class UserViewModelTests: XCTestCase {
         let duration: Double = 3.0
         let expectation = expectation(description: "Get all users.")
         
+        userViewModel = UserViewModel(networkManager: FakeNetworkManager())
+        self.userViewModel.getUsers(urlString: "users") {
+            self.users = self.userViewModel.users
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
             XCTAssertEqual(self.users.count, 10)
             expectation.fulfill()
@@ -43,6 +43,12 @@ final class UserViewModelTests: XCTestCase {
     func testGetFristUserName () throws {
         let duration: Double = 3.0
         let expectation = expectation(description: "Get first user name.")
+        
+        userViewModel = UserViewModel(networkManager: FakeNetworkManager())
+        self.userViewModel.getUsers(urlString: "users") {
+            self.users = self.userViewModel.users
+        }
+        self.user = userViewModel.users[0]
         
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
             let user = self.users[0]
