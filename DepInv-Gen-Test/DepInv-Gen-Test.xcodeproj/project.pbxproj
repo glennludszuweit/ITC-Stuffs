@@ -16,7 +16,7 @@
 		D489F4C429EC5AF7003BEBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489F4C329EC5AF7003BEBB3 /* ViewController.swift */; };
 		D489F4CE29EC64A6003BEBB3 /* FruitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489F4CC29EC64A6003BEBB3 /* FruitViewCell.swift */; };
 		D489F4CF29EC64A6003BEBB3 /* FruitViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D489F4CD29EC64A6003BEBB3 /* FruitViewCell.xib */; };
-		D489F4D329EC68CE003BEBB3 /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489F4D229EC68CE003BEBB3 /* FakeNetworkManager.swift */; };
+		D489F4D329EC68CE003BEBB3 /* TestNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489F4D229EC68CE003BEBB3 /* TestNetworkManager.swift */; };
 		D491223429EBF2C200E99EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491223329EBF2C200E99EF8 /* AppDelegate.swift */; };
 		D491223629EBF2C200E99EF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491223529EBF2C200E99EF8 /* SceneDelegate.swift */; };
 		D491223B29EBF2C200E99EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D491223929EBF2C200E99EF8 /* Main.storyboard */; };
@@ -61,7 +61,7 @@
 		D489F4C329EC5AF7003BEBB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D489F4CC29EC64A6003BEBB3 /* FruitViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewCell.swift; sourceTree = "<group>"; };
 		D489F4CD29EC64A6003BEBB3 /* FruitViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitViewCell.xib; sourceTree = "<group>"; };
-		D489F4D229EC68CE003BEBB3 /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		D489F4D229EC68CE003BEBB3 /* TestNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkManager.swift; sourceTree = "<group>"; };
 		D491223029EBF2C200E99EF8 /* DepInv-Gen-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DepInv-Gen-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491223329EBF2C200E99EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D491223529EBF2C200E99EF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 			children = (
 				D4B306C729EC6B40002861ED /* fruits.json */,
 				D4B306C829EC6B40002861ED /* users.json */,
-				D489F4D229EC68CE003BEBB3 /* FakeNetworkManager.swift */,
+				D489F4D229EC68CE003BEBB3 /* TestNetworkManager.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -396,7 +396,7 @@
 			files = (
 				D491227E29EBF53700E99EF8 /* UserViewModelTests.swift in Sources */,
 				D491227C29EBF52400E99EF8 /* FruitViewModelTests.swift in Sources */,
-				D489F4D329EC68CE003BEBB3 /* FakeNetworkManager.swift in Sources */,
+				D489F4D329EC68CE003BEBB3 /* TestNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

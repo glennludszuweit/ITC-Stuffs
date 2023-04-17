@@ -12,17 +12,29 @@ import XCTest
 final class FruitViewModelTests: XCTestCase {
     var fruitViewModel: FruitViewModel!
     var fruits: [Fruit]!
+    var mockFruitsViewModel: FruitViewModel!
+    var mockFruits: [Fruit]!
+    var stubFruitsViewModel: FruitViewModel!
+    var stubbedFruit: Fruit!
     
     override func setUpWithError() throws {
         fruitViewModel = FruitViewModel(networkManager: FakeNetworkManager())
         fruitViewModel.getFruits(urlString: "fruits") {
             self.fruits = self.fruitViewModel.fruit
         }
+        
+        mockFruitsViewModel = FruitViewModel(networkManager: MockNetworkManager())
+        mockFruitsViewModel.getFruits(urlString: "fruits") {
+            self.mockFruits = self.mockFruitsViewModel.fruit
+        }
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDownWithError() throws {
         fruitViewModel = nil
+        fruits = nil
+        mockFruitsViewModel = nil
+        mockFruits = nil
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
@@ -38,12 +50,28 @@ final class FruitViewModelTests: XCTestCase {
     }
     
     func testGetFruit () throws {
+        let stubNetworkManager = StubNetworkManager()
+        stubNetworkManager.stubbedData = [Fruit(id: 52, name: "Guava", genus: "Seeded", family: "Round fruit", order: "Some order", nutritions: Nutritions(carbohydrates: 55.0, protein: 5.5, fat: 0.6, calories: 25, sugar: 33.0))]
+        stubFruitsViewModel = FruitViewModel(networkManager: stubNetworkManager)
+        stubFruitsViewModel.getFruits {
+            self.stubbedFruit = stubNetworkManager.stubbedData[0]
+        }
         let duration: Double = 3.0
         let expectation = expectation(description: "Get fruit nutrition.")
-        let fruit = Fruit(id: 52, name: "Guava", genus: "Seeded", family: "Round fruit", order: "Some order", nutritions: Nutritions(carbohydrates: 55.0, protein: 5.5, fat: 0.6, calories: 25, sugar: 33.0))
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-            XCTAssertEqual(self.fruits[0].id, fruit.id)
-            XCTAssertNotEqual(self.fruits[0].name, fruit.name)
+            XCTAssertEqual(self.fruits[0].id, self.stubbedFruit.id)
+            XCTAssertNotEqual(self.fruits[0].name, self.stubbedFruit.name)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: duration)
+    }
+    
+    func testGetAllMockFruits () throws {
+        let duration: Double = 3.0
+        let expectation = expectation(description: "Get all mock fruits.")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+            XCTAssertEqual(self.mockFruitsViewModel.fruit.count, 3)
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: duration)
