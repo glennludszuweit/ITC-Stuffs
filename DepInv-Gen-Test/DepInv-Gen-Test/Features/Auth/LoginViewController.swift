@@ -28,4 +28,15 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(registerViewController, animated: true)
     }
     
+    @IBAction func buttonLoginSubmit(_ sender: Any) {
+        let backgroundQueue = DispatchQueue.global(qos: .background)
+        let decoder = JSONDecoder()
+        backgroundQueue.async {
+            let url = URL(string: "https://fruityvice.com/api/fruit/all")!
+            URLSession.shared.dataTask(with: url) { data , response, error  in
+                print(data!)
+            }
+            .resume()
+        }
+    }
 }

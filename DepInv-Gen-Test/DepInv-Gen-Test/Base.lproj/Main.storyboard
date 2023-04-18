@@ -198,6 +198,9 @@
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                     <color key="baseBackgroundColor" red="1" green="0.69892816869999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonLoginSubmit:" destination="uRJ-KW-4wv" eventType="touchUpInside" id="Gkq-Dv-zfY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2D-Zl-vMp">
                                 <rect key="frame" x="25" y="405" width="343" height="12"/>
