@@ -17,13 +17,12 @@ class LoginViewController: UIViewController {
         textFieldEmailUsername.placeholder = "Enter email or username"
         textFieldPassword.placeholder = "Enter password"
         
-        fetchDataWithBGQueue()
+        
     }
     
     func fetchDataWithBGQueue() {
-        let backgroundQueue = DispatchQueue.global(qos: .background)
-        let decoder = JSONDecoder()
-        backgroundQueue.async {
+        DispatchQueue.global(qos: .userInitiated).async {
+            let decoder = JSONDecoder()
             let url = URL(string: "https://fruityvice.com/api/fruit/all")!
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else { return }
@@ -51,6 +50,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func buttonLoginSubmit(_ sender: Any) {
-        printContent("Clicked")
+        fetchDataWithBGQueue()
     }
 }

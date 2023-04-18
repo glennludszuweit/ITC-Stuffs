@@ -38,6 +38,12 @@
          location = "group:Initializers.playground">
       </FileRef>
       <FileRef
+         location = "group:GlobalQueue.playground">
+      </FileRef>
+      <FileRef
+         location = "group:OperationQueue.playground">
+      </FileRef>
+      <FileRef
          location = "group:Multithreading.playground">
       </FileRef>
    </Group>

@@ -43,7 +43,7 @@ final class LoginUITests: XCTestCase {
     }
     
     func testLoginScreenButtons() throws {
-        let buttonForgotPassword = app.buttons["buttonForgotPassword"]
+        let buttonForgotPassword = app.buttons["buttonResetPass"]
         let buttonRegister = app.buttons["buttonRegister"]
         let buttonLoginSubmit = app.buttons["buttonLoginSubmit"]
         XCTAssertTrue(buttonForgotPassword.exists)

@@ -40,5 +40,17 @@ concurrentQueue.sync {
     // Perform some work.
 }
 concurrentQueue.async {
-    // Perform some work.
+    print("start")
+    for x in fruitArr {
+        print(x)
+    }
+    print("end")
 }
+concurrentQueue.async {
+    print("start")
+    for x in nameArr {
+        print(x)
+    }
+    print("end")
+}
+
