@@ -13,11 +13,33 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         textFieldEmailUsername.placeholder = "Enter email or username"
         textFieldPassword.placeholder = "Enter password"
+        
+        fetchDataWithBGQueue()
     }
-
+    
+    func fetchDataWithBGQueue() {
+        let backgroundQueue = DispatchQueue.global(qos: .background)
+        let decoder = JSONDecoder()
+        backgroundQueue.async {
+            let url = URL(string: "https://fruityvice.com/api/fruit/all")!
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else { return }
+                guard error == nil else { return }
+                guard let data = data else { return }
+                do {
+                    let jsonData = try decoder.decode([Fruit].self, from: data)
+                    print(jsonData)
+                } catch {
+                    print(error)
+                }
+            }
+            .resume()
+        }
+    }
+    
     @IBAction func goToResetPassword(_ sender: Any) {
         let resetPassViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResetPassViewController") as! ResetPassViewController
         self.navigationController?.pushViewController(resetPassViewController, animated: true)
@@ -29,14 +51,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func buttonLoginSubmit(_ sender: Any) {
-        let backgroundQueue = DispatchQueue.global(qos: .background)
-        let decoder = JSONDecoder()
-        backgroundQueue.async {
-            let url = URL(string: "https://fruityvice.com/api/fruit/all")!
-            URLSession.shared.dataTask(with: url) { data , response, error  in
-                print(data!)
-            }
-            .resume()
-        }
+        printContent("Clicked")
     }
 }
