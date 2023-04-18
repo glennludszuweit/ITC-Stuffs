@@ -37,6 +37,9 @@
       <FileRef
          location = "group:Initializers.playground">
       </FileRef>
+      <FileRef
+         location = "group:Multithreading.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Storyboard/Assignments.xcodeproj">

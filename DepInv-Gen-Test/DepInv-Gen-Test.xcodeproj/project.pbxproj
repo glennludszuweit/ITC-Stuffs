@@ -22,8 +22,6 @@
 		D491223B29EBF2C200E99EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D491223929EBF2C200E99EF8 /* Main.storyboard */; };
 		D491223D29EBF2C400E99EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D491223C29EBF2C400E99EF8 /* Assets.xcassets */; };
 		D491224029EBF2C400E99EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D491223E29EBF2C400E99EF8 /* LaunchScreen.storyboard */; };
-		D491225529EBF2C400E99EF8 /* DepInv_Gen_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491225429EBF2C400E99EF8 /* DepInv_Gen_TestUITests.swift */; };
-		D491225729EBF2C400E99EF8 /* DepInv_Gen_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491225629EBF2C400E99EF8 /* DepInv_Gen_TestUITestsLaunchTests.swift */; };
 		D491226829EBF35E00E99EF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491226729EBF35E00E99EF8 /* User.swift */; };
 		D491226A29EBF36C00E99EF8 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491226929EBF36C00E99EF8 /* Fruit.swift */; };
 		D491227629EBF3F400E99EF8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491227529EBF3F400E99EF8 /* NetworkManager.swift */; };
@@ -32,6 +30,14 @@
 		D491227E29EBF53700E99EF8 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491227D29EBF53700E99EF8 /* UserViewModelTests.swift */; };
 		D4AAF15029ED8E550028BB2F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = D449A7CE29ED7FC900135D01 /* users.json */; };
 		D4AAF15129ED8E5A0028BB2F /* fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = D449A7CD29ED7FC900135D01 /* fruits.json */; };
+		D4AAF19C29EE8A9B0028BB2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF19B29EE8A9B0028BB2F /* LoginViewController.swift */; };
+		D4AAF19E29EE8BA00028BB2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF19D29EE8BA00028BB2F /* RegisterViewController.swift */; };
+		D4AAF1A029EE8BC10028BB2F /* ResetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF19F29EE8BC10028BB2F /* ResetPassViewController.swift */; };
+		D4AAF1A529EE8CCA0028BB2F /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF1A429EE8CCA0028BB2F /* LoginUITests.swift */; };
+		D4AAF1A729EE8CE70028BB2F /* RegisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF1A629EE8CE70028BB2F /* RegisterUITests.swift */; };
+		D4AAF1A929EE8D080028BB2F /* ResetPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF1A829EE8D080028BB2F /* ResetPassUITests.swift */; };
+		D4AAF1AD29EE92EB0028BB2F /* DepInv_Gen_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF1AA29EE92EA0028BB2F /* DepInv_Gen_TestUITests.swift */; };
+		D4AAF1AE29EE92EB0028BB2F /* DepInv_Gen_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAF1AB29EE92EB0028BB2F /* DepInv_Gen_TestUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,14 +79,21 @@
 		D491224129EBF2C400E99EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D491224629EBF2C400E99EF8 /* DepInv-Gen-TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DepInv-Gen-TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491225029EBF2C400E99EF8 /* DepInv-Gen-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DepInv-Gen-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D491225429EBF2C400E99EF8 /* DepInv_Gen_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepInv_Gen_TestUITests.swift; sourceTree = "<group>"; };
-		D491225629EBF2C400E99EF8 /* DepInv_Gen_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepInv_Gen_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D491226729EBF35E00E99EF8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D491226929EBF36C00E99EF8 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		D491227529EBF3F400E99EF8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D491227729EBF40700E99EF8 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		D491227B29EBF52400E99EF8 /* FruitViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModelTests.swift; sourceTree = "<group>"; };
 		D491227D29EBF53700E99EF8 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
+		D4AAF19B29EE8A9B0028BB2F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D4AAF19D29EE8BA00028BB2F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D4AAF19F29EE8BC10028BB2F /* ResetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassViewController.swift; sourceTree = "<group>"; };
+		D4AAF1A429EE8CCA0028BB2F /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
+		D4AAF1A629EE8CE70028BB2F /* RegisterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUITests.swift; sourceTree = "<group>"; };
+		D4AAF1A829EE8D080028BB2F /* ResetPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassUITests.swift; sourceTree = "<group>"; };
+		D4AAF1AA29EE92EA0028BB2F /* DepInv_Gen_TestUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepInv_Gen_TestUITests.swift; sourceTree = "<group>"; };
+		D4AAF1AB29EE92EB0028BB2F /* DepInv_Gen_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepInv_Gen_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4AAF1AC29EE92EB0028BB2F /* DepInv-Gen-TestUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DepInv-Gen-TestUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +124,7 @@
 		D44B440429EC4F04002884AE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D4AAF19A29EE8A8B0028BB2F /* Auth */,
 				D44B440629EC4FAB002884AE /* Fruit */,
 				D44B440529EC4F2C002884AE /* User */,
 			);
@@ -208,8 +222,12 @@
 		D491225329EBF2C400E99EF8 /* DepInv-Gen-TestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D491225429EBF2C400E99EF8 /* DepInv_Gen_TestUITests.swift */,
-				D491225629EBF2C400E99EF8 /* DepInv_Gen_TestUITestsLaunchTests.swift */,
+				D4AAF1A429EE8CCA0028BB2F /* LoginUITests.swift */,
+				D4AAF1A629EE8CE70028BB2F /* RegisterUITests.swift */,
+				D4AAF1A829EE8D080028BB2F /* ResetPassUITests.swift */,
+				D4AAF1AA29EE92EA0028BB2F /* DepInv_Gen_TestUITests.swift */,
+				D4AAF1AB29EE92EB0028BB2F /* DepInv_Gen_TestUITestsLaunchTests.swift */,
+				D4AAF1AC29EE92EB0028BB2F /* DepInv-Gen-TestUITests-Bridging-Header.h */,
 			);
 			path = "DepInv-Gen-TestUITests";
 			sourceTree = "<group>";
@@ -220,6 +238,16 @@
 				D4B306CF29ED56CC002861ED /* Network */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		D4AAF19A29EE8A8B0028BB2F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D4AAF19B29EE8A9B0028BB2F /* LoginViewController.swift */,
+				D4AAF19D29EE8BA00028BB2F /* RegisterViewController.swift */,
+				D4AAF19F29EE8BC10028BB2F /* ResetPassViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		D4B306CF29ED56CC002861ED /* Network */ = {
@@ -306,6 +334,7 @@
 					};
 					D491224F29EBF2C400E99EF8 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1430;
 						TestTargetID = D491222F29EBF2C200E99EF8;
 					};
 				};
@@ -366,11 +395,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4AAF19C29EE8A9B0028BB2F /* LoginViewController.swift in Sources */,
+				D4AAF1A029EE8BC10028BB2F /* ResetPassViewController.swift in Sources */,
 				D491226A29EBF36C00E99EF8 /* Fruit.swift in Sources */,
 				D44B441029EC50D7002884AE /* UsersViewController.swift in Sources */,
 				D44B440E29EC5088002884AE /* UserViewModel.swift in Sources */,
 				D489F4CE29EC64A6003BEBB3 /* FruitViewCell.swift in Sources */,
 				D491227629EBF3F400E99EF8 /* NetworkManager.swift in Sources */,
+				D4AAF19E29EE8BA00028BB2F /* RegisterViewController.swift in Sources */,
 				D44B441829EC58EC002884AE /* UserViewCell.swift in Sources */,
 				D491226829EBF35E00E99EF8 /* User.swift in Sources */,
 				D491227829EBF40700E99EF8 /* NetworkProtocol.swift in Sources */,
@@ -396,8 +428,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D491225529EBF2C400E99EF8 /* DepInv_Gen_TestUITests.swift in Sources */,
-				D491225729EBF2C400E99EF8 /* DepInv_Gen_TestUITestsLaunchTests.swift in Sources */,
+				D4AAF1AE29EE92EB0028BB2F /* DepInv_Gen_TestUITestsLaunchTests.swift in Sources */,
+				D4AAF1A729EE8CE70028BB2F /* RegisterUITests.swift in Sources */,
+				D4AAF1A529EE8CCA0028BB2F /* LoginUITests.swift in Sources */,
+				D4AAF1AD29EE92EB0028BB2F /* DepInv_Gen_TestUITests.swift in Sources */,
+				D4AAF1A929EE8D080028BB2F /* ResetPassUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -653,6 +689,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.DepInv-Gen-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "DepInv-Gen-TestUITests/DepInv-Gen-TestUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "DepInv-Gen-Test";
@@ -663,6 +701,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -670,6 +709,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.DepInv-Gen-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "DepInv-Gen-TestUITests/DepInv-Gen-TestUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "DepInv-Gen-Test";
