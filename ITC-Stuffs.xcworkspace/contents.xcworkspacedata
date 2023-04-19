@@ -13,6 +13,9 @@
    <FileRef
       location = "group:ObstMania-UIKit/ObstMania-UIKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Storyboard/Assignments.xcodeproj">
+   </FileRef>
    <Group
       location = "container:"
       name = "Playgrounds">
@@ -47,7 +50,4 @@
          location = "group:Multithreading.playground">
       </FileRef>
    </Group>
-   <FileRef
-      location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Storyboard/Assignments.xcodeproj">
-   </FileRef>
 </Workspace>
