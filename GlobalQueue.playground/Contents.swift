@@ -46,12 +46,12 @@ DispatchQueue.global(qos: .utility).async {
     print("Good for performing long running operations, like downloading images or videos.")
     let url = URL(string: "https://via.placeholder.com/150")!
     do {
-            let imageData = try Data(contentsOf: url)
-            guard let image = UIImage(data: imageData) else { return }
-            print("This image size is \(image.size)")
-        } catch {
-            print(error.localizedDescription)
-        }
+        let imageData = try Data(contentsOf: url)
+        guard let image = UIImage(data: imageData) else { return }
+        print("This image size is \(image.size)")
+    } catch {
+        print(error.localizedDescription)
+    }
 }
 
 // 4. background

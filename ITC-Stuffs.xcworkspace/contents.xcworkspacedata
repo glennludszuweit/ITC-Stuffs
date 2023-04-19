@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftUI-GettingStarted/SwiftUI-GettingStarted.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIImage-UIKit/UIImage-UIKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Lifecycle-Methods/Lifecycle-Methods.xcodeproj">
    </FileRef>
    <FileRef
