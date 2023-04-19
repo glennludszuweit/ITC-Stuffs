@@ -15,7 +15,6 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         textFieldEmail.placeholder = "Enter email address"
         textFieldUsername.placeholder = "Enter username"
         textFieldPassword.placeholder = "Enter password"
