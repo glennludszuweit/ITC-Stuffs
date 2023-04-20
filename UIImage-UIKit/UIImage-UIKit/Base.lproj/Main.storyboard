@@ -49,38 +49,57 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fid-yx-m73">
                                 <rect key="frame" x="25" y="84" width="343" height="28.666666666666671"/>
+                                <accessibility key="accessibilityConfiguration" identifier="productBrand"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe8-rx-s1v">
                                 <rect key="frame" x="25" y="127.66666666666669" width="343" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="productModel"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDG-20-4qO">
                                 <rect key="frame" x="25" y="163.66666666666666" width="343" height="20.333333333333343"/>
+                                <accessibility key="accessibilityConfiguration" identifier="productDescription"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ceM-hu-9jD">
+                                <rect key="frame" x="10" y="209" width="373" height="609"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D47-Ek-fmU">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C17-U6-yDh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fid-yx-m73" firstAttribute="leading" secondItem="C17-U6-yDh" secondAttribute="leading" constant="25" id="DlF-Dr-yyq"/>
+                            <constraint firstItem="ceM-hu-9jD" firstAttribute="leading" secondItem="C17-U6-yDh" secondAttribute="leading" constant="10" id="Hap-3B-PY8"/>
                             <constraint firstItem="Pe8-rx-s1v" firstAttribute="leading" secondItem="C17-U6-yDh" secondAttribute="leading" constant="25" id="HjD-qu-RkF"/>
                             <constraint firstItem="Pe8-rx-s1v" firstAttribute="top" secondItem="fid-yx-m73" secondAttribute="bottom" constant="15" id="HrJ-AA-5Qs"/>
+                            <constraint firstItem="C17-U6-yDh" firstAttribute="bottom" secondItem="ceM-hu-9jD" secondAttribute="bottom" id="INH-5L-eXv"/>
                             <constraint firstItem="C17-U6-yDh" firstAttribute="trailing" secondItem="Pe8-rx-s1v" secondAttribute="trailing" constant="25" id="Imk-vR-F5u"/>
+                            <constraint firstItem="C17-U6-yDh" firstAttribute="trailing" secondItem="ceM-hu-9jD" secondAttribute="trailing" constant="10" id="JsC-7s-QGU"/>
                             <constraint firstItem="C17-U6-yDh" firstAttribute="trailing" secondItem="mDG-20-4qO" secondAttribute="trailing" constant="25" id="a5p-UM-qh3"/>
                             <constraint firstItem="fid-yx-m73" firstAttribute="top" secondItem="C17-U6-yDh" secondAttribute="top" constant="25" id="aMf-y7-LZh"/>
                             <constraint firstItem="mDG-20-4qO" firstAttribute="leading" secondItem="C17-U6-yDh" secondAttribute="leading" constant="25" id="hKY-cj-vml"/>
                             <constraint firstItem="mDG-20-4qO" firstAttribute="top" secondItem="Pe8-rx-s1v" secondAttribute="bottom" constant="15" id="owp-g8-pyF"/>
                             <constraint firstItem="C17-U6-yDh" firstAttribute="trailing" secondItem="fid-yx-m73" secondAttribute="trailing" constant="25" id="tmL-PY-Ww0"/>
+                            <constraint firstItem="ceM-hu-9jD" firstAttribute="top" secondItem="mDG-20-4qO" secondAttribute="bottom" constant="25" id="urY-dB-yeo"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="ceM-hu-9jD" id="uvI-6u-JcH"/>
                         <outlet property="labelBrand" destination="fid-yx-m73" id="KZf-7a-aJ7"/>
                         <outlet property="labelDescription" destination="mDG-20-4qO" id="6j5-Er-q2J"/>
                         <outlet property="labelModel" destination="Pe8-rx-s1v" id="7ki-5h-XF0"/>

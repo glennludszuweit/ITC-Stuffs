@@ -8,26 +8,24 @@
 import Foundation
 import UIKit
 
-//do {
-//    let url = URL(string: data.thumbnail)!
-//    let imageData = try Data(contentsOf: url)
-//    let image = UIImage(data: imageData)
-//    cell.imageProductThumb.image = image
-//} catch {
-//    print("Missing image")
-//}
+var imageCache = NSCache<AnyObject, UIImage>()
 
-//extension UIImage{
-//    func loadImge(url: String) {
-//        let apiUrl = URL(string: url)!
-//        DispatchQueue.global().async { [weak self] in
-//            if let imageData = try? Data(contentsOf: apiUrl) {
-//                if let image = UIImage(data: imageData) {
-//                    DispatchQueue.main.async {
-//                        self?.image = image
-//                    }
-//                }
-//            }
-//        }
-//    }
-//}
+extension UIImageView{
+    func loadImage(url: String, cell: UIImageView) {
+        let apiUrl = URL(string: url)!
+        if let image = imageCache.object(forKey: url as NSString) {
+            cell.image = image
+            return
+        }
+        DispatchQueue.global().async {
+            if let imageData = try? Data(contentsOf: apiUrl) {
+                if let image = UIImage(data: imageData) {
+                    DispatchQueue.main.async {
+                        imageCache.setObject(image, forKey: url as NSString)
+                        cell.image = image
+                    }
+                }
+            }
+        }
+    }
+}
