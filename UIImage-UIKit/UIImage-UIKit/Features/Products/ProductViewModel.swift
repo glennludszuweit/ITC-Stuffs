@@ -16,7 +16,7 @@ class ProductViewModel {
     }
     
     func getProducts(urlString: String = "https://dummyjson.com/products", completion: @escaping () -> Void) {
-        networkManager.getAll(apiURL: urlString) { (result: Result<Products, Error>) in
+        networkManager.getAll(apiURL: urlString) { (result: Result<ProductData, Error>) in
             switch result {
             case .success(let data):
                 self.products = data.products

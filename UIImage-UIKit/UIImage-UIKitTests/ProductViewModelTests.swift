@@ -24,7 +24,7 @@ final class ProductViewModelTests: XCTestCase {
 
     func testGetAllProducts () throws {
         let duration: Double = 3.0
-        let expectation = expectation(description: "Get all fruits.")
+        let expectation = expectation(description: "Get all products.")
 
         productViewModel = ProductViewModel(networkManager: FakeNetworkManager())
         productViewModel.getProducts(urlString: "products") {
