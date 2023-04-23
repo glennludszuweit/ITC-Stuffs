@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftUI_ScreensApp: App {
+    let userModel = UserModel()
+    
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .environmentObject(userModel)
         }
     }
 }

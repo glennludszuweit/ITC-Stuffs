@@ -8,16 +8,28 @@
 import SwiftUI
 
 struct ProductsGridView: View {
-    let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    @Environment(\.colorScheme) private var colorScheme
+    @ObservedObject var colorSchemeMode = ColorSchemeMode()
     
     var body: some View {
         ScrollView {
+            Button(action: {
+                colorSchemeMode.toggle()
+            }) {
+                if colorSchemeMode.isDarkMode {
+                    Text("Switch to Light Mode")
+                } else {
+                    Text("Switch to Dark Mode")
+                }
+            }.padding()
+                .buttonStyle(.borderedProminent)
+                .tint(colorSchemeMode.isDarkMode ? .indigo : .orange)
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                ForEach(numbers, id: \.self) { item in
+                ForEach(1...20, id: \.self) { item in
                     NavigationLink(destination: ProductDetailsView(text: "\(item)")) {
                         Text("\(item)")
                             .frame(width: 100, height: 100)
-                            .background(.orange)
+                            .background(colorSchemeMode.isDarkMode ? .indigo : .orange)
                             .cornerRadius(10)
                             .foregroundColor(.white)
                     }

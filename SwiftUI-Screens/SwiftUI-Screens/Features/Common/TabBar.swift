@@ -8,28 +8,40 @@
 import SwiftUI
 
 struct TabBar: View {
+    @EnvironmentObject var userModel: UserModel
+    
     var body: some View {
+        if userModel.isLoggedIn {
+            Text("You're Verified!")
+        }
         TabView {
             ProductsTableView()
                 .tabItem {
-                    Image(systemName: "1.circle")
+                    Image(systemName: "tablecells.fill")
                     Text("ListView")
                 }
             
             ProductsGridView()
                 .tabItem {
-                    Image(systemName: "2.circle")
+                    Image(systemName: "photo.fill.on.rectangle.fill")
                     Text("GridView")
                 }
             
             WebView()
                 .tabItem {
-                    Image(systemName: "3.circle")
+                    Image(systemName: "globe")
                     Text("WebView")
+                }
+            
+            UserView()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
                 }
         }
         .navigationBarBackButtonHidden(true)
     }
+    
 }
 
 struct ProductsTabBar_Previews: PreviewProvider {

@@ -24,7 +24,7 @@ struct WebViewGenerator: UIViewRepresentable {
 
 struct WebView: View {
     var body: some View {
-        WebViewGenerator(url: URL(string: "https://www.google.com")!)
+        WebViewGenerator(url: URL(string: "https://www.apple.com")!)
     }
 }
 
