@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct UserUpdateView: View {
-    @State var newEmail: String = ""
     @Binding var isUpdating: Bool
     @ObservedObject var user = UserModel()
     
     var body: some View {
         VStack {
             Group {
-                TextField(user.email, text: $newEmail)
+                TextField(user.email, text: $user.email)
             }.padding()
                 .textFieldStyle(.roundedBorder)
+                .keyboardType(.emailAddress)
+            
             
             Button {
                 isUpdating.toggle()
-                user.updateEmail(newEmail: newEmail)
+                user.updateEmail(newEmail: user.email)
             } label: {
                 Text("Save Email")
             }.buttonStyle(.borderedProminent)

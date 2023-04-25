@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D43DFE8F29F2CA5C0090BFAD /* ResetPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43DFE8E29F2CA5C0090BFAD /* ResetPassView.swift */; };
-		D4AF2A7229F5BD55004C5EA3 /* ColorSchemeMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF2A7129F5BD55004C5EA3 /* ColorSchemeMode.swift */; };
 		D4B2DDB329F2DD0C00223E37 /* ProductsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2DDB229F2DD0C00223E37 /* ProductsGridView.swift */; };
 		D4B2DDB529F2DDC400223E37 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2DDB429F2DDC400223E37 /* TabBar.swift */; };
 		D4D4C0E629F2EC6E00273B28 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D4C0E529F2EC6E00273B28 /* WebView.swift */; };
@@ -48,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		D43DFE8E29F2CA5C0090BFAD /* ResetPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassView.swift; sourceTree = "<group>"; };
-		D4AF2A7129F5BD55004C5EA3 /* ColorSchemeMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeMode.swift; sourceTree = "<group>"; };
 		D4B2DDB229F2DD0C00223E37 /* ProductsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsGridView.swift; sourceTree = "<group>"; };
 		D4B2DDB429F2DDC400223E37 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		D4D4C0E529F2EC6E00273B28 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			children = (
 				D4B2DDB429F2DDC400223E37 /* TabBar.swift */,
 				D4D4C0E529F2EC6E00273B28 /* WebView.swift */,
-				D4AF2A7129F5BD55004C5EA3 /* ColorSchemeMode.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -353,7 +350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E3C3B929F3FDCC00BE8B9F /* AuthViewModel.swift in Sources */,
-				D4AF2A7229F5BD55004C5EA3 /* ColorSchemeMode.swift in Sources */,
 				D4E3C3B729F3FDA300BE8B9F /* RegisterView.swift in Sources */,
 				D4F437C629F282CE00D055DF /* LoginView.swift in Sources */,
 				D43DFE8F29F2CA5C0090BFAD /* ResetPassView.swift in Sources */,

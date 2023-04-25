@@ -13,6 +13,7 @@ class UserModel: ObservableObject {
     @Published var name: String = "Glenn Ludszuweit"
     @Published var job: String = "iOS Developer"
     @Published var username: String = "ghludszuweit"
+    
     @AppStorage("email") var email: String = "glenn@email.com"
     
     func updateEmail(newEmail: String) {
