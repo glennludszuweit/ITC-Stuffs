@@ -9,35 +9,51 @@ import SwiftUI
 
 struct PokemonGalleryView: View {
     @StateObject var pokemonViewModel: PokemonViewModel
-    @State private var showDetails = false
+    @State private var showDetails: Bool = false
+    @State private var hasError: Bool = false
     @State var largeImage: String = ""
     
+    func getApiData() async {
+        await pokemonViewModel.getAll()
+        if pokemonViewModel.customError != nil {
+            hasError = true
+        }
+    }
+    
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                ForEach(pokemonViewModel.pokemons, id: \.self) { item in
-                    
-                    AsyncImage(url: URL(string: item.images.small!)) {
-                        Image in
-                        Image.resizable()
-                            .scaledToFit()
-                            .onTapGesture {
-                                showDetails = true
-                                largeImage = item.images.large!
-                            }
-                            .sheet(isPresented: $showDetails) {
-                                PokemonDetailsView(largeImageUrl: largeImage)
-                            }
-                    } placeholder: {
-                        ProgressView()
+        if pokemonViewModel.customError != nil {
+            ProgressView().alert(isPresented: $hasError) {
+                Alert(title: Text("Something went wrong!"), message: Text((pokemonViewModel.customError?.errorDescription)!))
+            }
+        } else {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                    ForEach(pokemonViewModel.pokemons, id: \.self) { item in
+                        
+                        AsyncImage(url: URL(string: item.images.small!)) {
+                            Image in
+                            Image.resizable()
+                                .scaledToFit()
+                                .onTapGesture {
+                                    showDetails = true
+                                    largeImage = item.images.large!
+                                }
+                                .sheet(isPresented: $showDetails) {
+                                    PokemonDetailsView(largeImageUrl: largeImage)
+                                }
+                        } placeholder: {
+                            ProgressView()
+                        }
                     }
                 }
             }
             .padding(.horizontal)
             .padding(.vertical, 20)
-        }
-        .task {
-            await pokemonViewModel.getAll()
+            .task {
+                await getApiData()
+            }.refreshable {
+                await getApiData()
+            }
         }
     }
 }

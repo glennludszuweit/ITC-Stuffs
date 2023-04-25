@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 class PokemonViewModel: ObservableObject {
     @Published var pokemons = [Pokemon]()
-    @Published var errorHandler: ErrorHandler?
+    @Published var customError: ErrorHandler?
     
     var manager: NetworkProtocol
     init(manager: NetworkProtocol) {
@@ -19,15 +19,19 @@ class PokemonViewModel: ObservableObject {
     
     func getAll(_ urlString: String = API.pokemonCardsApi) async {
         guard let url = URL(string: urlString) else {
-            errorHandler = ErrorHandler.invalidUrlError
+            customError = ErrorHandler.invalidUrlError
             return
         }
         do {
             let result = try await self.manager.getAll(apiURL: url)
             let pokemondData = try JSONDecoder().decode(PokemonData.self, from: result)
             self.pokemons = pokemondData.data
-        } catch {
-            errorHandler = ErrorHandler.parsingError
+        } catch let error {
+            if error as? ErrorHandler == .parsingError {
+                customError = ErrorHandler.parsingError
+            } else {
+                customError = ErrorHandler.apiEndpointError
+            }
         }
     }
 }
