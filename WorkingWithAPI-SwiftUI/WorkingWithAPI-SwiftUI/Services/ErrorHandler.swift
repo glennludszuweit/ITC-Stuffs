@@ -24,7 +24,7 @@ extension ErrorHandler: LocalizedError {
         case .invalidUrlError:
             return NSLocalizedString("Invalid URL check for typo.", comment: "Invalid URL error")
         case .imageDoesNotExist:
-            return NSLocalizedString("Invalid URL check for typo.", comment: "Image does not exist.")
+            return NSLocalizedString("Image does not exist.", comment: "Image does not exist.")
         }
     }
 }

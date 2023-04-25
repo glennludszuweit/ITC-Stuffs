@@ -28,31 +28,35 @@ struct PokemonGalleryView: View {
         } else {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                    ForEach(pokemonViewModel.pokemons, id: \.self) { item in
-                        
+                    ForEach(pokemonViewModel.pokemons) { item in
                         AsyncImage(url: URL(string: item.images.small!)) {
-                            Image in
-                            Image.resizable()
-                                .scaledToFit()
-                                .onTapGesture {
-                                    showDetails = true
-                                    largeImage = item.images.large!
-                                }
-                                .sheet(isPresented: $showDetails) {
-                                    PokemonDetailsView(largeImageUrl: largeImage)
-                                }
-                        } placeholder: {
-                            ProgressView()
+                            phase in
+                            if let image = phase.image { 
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .onTapGesture {
+                                        showDetails = true
+                                        largeImage = item.images.large!
+                                    }
+                                    .sheet(isPresented: $showDetails) {
+                                        PokemonDetailsView(largeImageUrl: largeImage)
+                                    }
+                            } else if phase.error != nil {
+                                Text(ErrorHandler.imageDoesNotExist.errorDescription!)
+                            } else {
+                                ProgressView()
+                            }
                         }
                     }
                 }
-            }
-            .padding(.horizontal)
-            .padding(.vertical, 20)
-            .task {
-                await getApiData()
-            }.refreshable {
-                await getApiData()
+                .padding(.horizontal)
+                .padding(.vertical, 20)
+                .task {
+                    await getApiData()
+                }.refreshable {
+                    await getApiData()
+                }
             }
         }
     }
