@@ -20,18 +20,23 @@ struct PokemonGalleryView: View {
         }
     }
     
+    @ViewBuilder
+    func displayAlert() -> some View {
+        ProgressView().alert(isPresented: $hasError) {
+            Alert(title: Text("Something went wrong!"), message: Text((pokemonViewModel.customError?.errorDescription)!))
+        }
+    }
+    
     var body: some View {
         if pokemonViewModel.customError != nil {
-            ProgressView().alert(isPresented: $hasError) {
-                Alert(title: Text("Something went wrong!"), message: Text((pokemonViewModel.customError?.errorDescription)!))
-            }
+            displayAlert()
         } else {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                     ForEach(pokemonViewModel.pokemons) { item in
                         AsyncImage(url: URL(string: item.images.small!)) {
                             phase in
-                            if let image = phase.image { 
+                            if let image = phase.image {
                                 image
                                     .resizable()
                                     .scaledToFit()

@@ -8,9 +8,11 @@
 import Foundation
 
 enum ErrorHandler {
+    // API errors
     case apiEndpointError
     case parsingError
     case invalidUrlError
+    // UI errors
     case imageDoesNotExist
 }
 

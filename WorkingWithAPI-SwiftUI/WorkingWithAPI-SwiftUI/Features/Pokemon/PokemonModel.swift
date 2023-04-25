@@ -15,8 +15,7 @@ struct Pokemon: Codable, Identifiable, Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
-    
-    //    var id = UUID()
+
     let id: String
     let name: String
     let images: Images

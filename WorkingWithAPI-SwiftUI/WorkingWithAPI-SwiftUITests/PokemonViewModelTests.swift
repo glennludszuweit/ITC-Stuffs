@@ -8,7 +8,7 @@
 import XCTest
 @testable import WorkingWithAPI_SwiftUI
 
-final class WorkingWithAPI_SwiftUITests: XCTestCase {
+final class PokemonViewModelTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,7 +18,8 @@ final class WorkingWithAPI_SwiftUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testPokemonViewModel_GoodData() async throws {
+        guard let url = URL(string: "pokemon") else { throw ErrorHandler.invalidUrlError }
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
