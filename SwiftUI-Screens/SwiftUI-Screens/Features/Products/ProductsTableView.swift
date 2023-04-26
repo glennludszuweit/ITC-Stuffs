@@ -12,14 +12,14 @@ struct ProductsTableView: View {
     
     var body: some View {
         List {
-            Section(header: Text("Section 1")) {
+            Section(header: Text("")) {
                 ForEach(1...20, id: \.self) { item in
                     NavigationLink("\(item)") {
                         ProductDetailsView(text: "\(item)")
                     }
                 }
             }
-            Section(header: Text("Section 2")) {
+            Section(header: Text("")) {
                 ForEach(section2Data, id: \.self) { item in
                     Text(item)
                 }

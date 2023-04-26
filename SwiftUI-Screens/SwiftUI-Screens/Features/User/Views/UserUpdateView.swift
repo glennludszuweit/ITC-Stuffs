@@ -24,7 +24,7 @@ struct UserUpdateView: View {
                 isUpdating.toggle()
                 user.updateEmail(newEmail: user.email)
             } label: {
-                Text("Save Email")
+                Text(NSLocalizedString("button_save", comment: "Save Button"))
             }.buttonStyle(.borderedProminent)
                 .padding()
                 .tint(.orange)

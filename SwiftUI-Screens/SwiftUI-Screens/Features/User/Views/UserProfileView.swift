@@ -24,7 +24,7 @@ struct UserProfileView: View {
             Button {
                 isUpdating.toggle()
             } label: {
-                Text("Edit Profile")
+                Text(NSLocalizedString("button_edit", comment: "Edit Button"))
             }.buttonStyle(.borderedProminent)
                 .padding()
                 .tint(.orange)

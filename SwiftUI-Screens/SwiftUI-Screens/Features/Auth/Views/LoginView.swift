@@ -22,8 +22,8 @@ struct LoginView: View {
                     .frame(width: 250, height: 250)
                 
                 Group {
-                    TextField("Username or Email address", text: $email)
-                    SecureField("Password", text: $password)
+                    TextField(NSLocalizedString("placeholder_username_email", comment: "Username Email"), text: $email)
+                    SecureField(NSLocalizedString("placeholder_password", comment: "Password"), text: $password)
                 }.padding(10)
                     .textFieldStyle(.roundedBorder)
                 
@@ -31,7 +31,7 @@ struct LoginView: View {
                     NavigationLink(destination: {
                         ResetPassView()
                     },label: {
-                        Text("Forgot password?")
+                        Text(NSLocalizedString("button_forgot_pass", comment: "Forgot Pass"))
                             .foregroundColor(.orange)
                     }).padding()
                         .padding(.top, -10)
@@ -47,7 +47,7 @@ struct LoginView: View {
                         print("Invalid user!")
                     }
                 }, label: {
-                    Text("Submit")
+                    Text(NSLocalizedString("button_submit", comment: "Login"))
                         .frame(maxWidth: .infinity)
                 }).padding(10)
                     .buttonStyle(.borderedProminent)
@@ -61,7 +61,7 @@ struct LoginView: View {
                     NavigationLink(destination: {
                         RegisterView()
                     },label: {
-                        Text("Register")
+                        Text(NSLocalizedString("button_register", comment: "Register"))
                             .foregroundColor(.orange)
                     })
                 }

@@ -11,18 +11,18 @@ struct ResetPassView: View {
     @State var email: String = ""
     var body: some View {
         VStack {
-            TextField("Email address", text: $email)
+            TextField(NSLocalizedString("placeholder_email", comment: "Email"), text: $email)
                 .padding(10)
                 .textFieldStyle(.roundedBorder)
             
-            Text("Enter registered email address.")
+            Text(NSLocalizedString("text_registered_email", comment: "Email"))
                 .frame(maxWidth: .infinity)
                 .foregroundColor(.gray)
             
             Button(action: {
-                print("Submit")
+                print(NSLocalizedString("button_submit", comment: "Submit"))
             }, label: {
-                Text("Submit")
+                Text(NSLocalizedString("button_submit", comment: "Submit"))
                     .frame(maxWidth: .infinity)
             }).padding(10)
                 .buttonStyle(.borderedProminent)

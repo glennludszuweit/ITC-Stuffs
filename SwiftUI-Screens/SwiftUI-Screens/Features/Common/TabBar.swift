@@ -18,25 +18,25 @@ struct TabBar: View {
             ProductsTableView()
                 .tabItem {
                     Image(systemName: "tablecells.fill")
-                    Text("ListView")
+                    Text(NSLocalizedString("bar_label_listview", comment: "ListView"))
                 }
             
             ProductsGridView()
                 .tabItem {
                     Image(systemName: "photo.fill.on.rectangle.fill")
-                    Text("GridView")
+                    Text(NSLocalizedString("bar_label_gridview", comment: "GridView"))
                 }
             
             WebView()
                 .tabItem {
                     Image(systemName: "globe")
-                    Text("WebView")
+                    Text(NSLocalizedString("bar_label_webview", comment: "WebView"))
                 }
             
             UserView()
                 .tabItem {
                     Image(systemName: "person.fill")
-                    Text("Profile")
+                    Text(NSLocalizedString("bar_label_profile", comment: "Profile"))
                 }
         }
         .navigationBarBackButtonHidden(true)
