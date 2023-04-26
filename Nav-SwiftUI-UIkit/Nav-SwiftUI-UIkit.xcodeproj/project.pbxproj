@@ -17,6 +17,7 @@
 		D433FFB529F92F14007C146E /* Nav_SwiftUI_UIkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433FFB429F92F14007C146E /* Nav_SwiftUI_UIkitUITests.swift */; };
 		D433FFB729F92F14007C146E /* Nav_SwiftUI_UIkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433FFB629F92F14007C146E /* Nav_SwiftUI_UIkitUITestsLaunchTests.swift */; };
 		D433FFC629F92FAB007C146E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433FFC529F92FAB007C146E /* SwiftUIView.swift */; };
+		D433FFC829F937E8007C146E /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433FFC729F937E8007C146E /* GeometryReaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D433FFB429F92F14007C146E /* Nav_SwiftUI_UIkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav_SwiftUI_UIkitUITests.swift; sourceTree = "<group>"; };
 		D433FFB629F92F14007C146E /* Nav_SwiftUI_UIkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav_SwiftUI_UIkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D433FFC529F92FAB007C146E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D433FFC729F937E8007C146E /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				D433FF9329F92F11007C146E /* AppDelegate.swift */,
 				D433FF9529F92F11007C146E /* SceneDelegate.swift */,
 				D433FFC529F92FAB007C146E /* SwiftUIView.swift */,
+				D433FFC729F937E8007C146E /* GeometryReaderView.swift */,
 				D433FF9729F92F11007C146E /* ViewController.swift */,
 				D433FF9929F92F11007C146E /* Main.storyboard */,
 				D433FF9C29F92F14007C146E /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 				D433FF9829F92F11007C146E /* ViewController.swift in Sources */,
 				D433FF9429F92F11007C146E /* AppDelegate.swift in Sources */,
 				D433FF9629F92F11007C146E /* SceneDelegate.swift in Sources */,
+				D433FFC829F937E8007C146E /* GeometryReaderView.swift in Sources */,
 				D433FFC629F92FAB007C146E /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

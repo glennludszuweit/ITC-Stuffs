@@ -11,13 +11,24 @@ struct SwiftUIView: View {
     weak var navigationController: UINavigationController?
     var body: some View {
         VStack {
-            Button {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
-                navigationController?.pushViewController(secondViewController, animated: true)
-            } label: {
-                Text("UIKit").frame(maxWidth: .infinity)
-            }.buttonStyle(.borderedProminent).padding(25).padding(.top, 100)
+            Group {
+                Button {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
+                    navigationController?.pushViewController(secondViewController, animated: true)
+                } label: {
+                    Text("UIKit").frame(maxWidth: .infinity)
+                }.tint(.purple)
+                    .padding(.top, 25)
+                
+                NavigationLink {
+                    GeometryReaderView()
+                } label: {
+                    Text("Geometry Reader").frame(maxWidth: .infinity)
+                }.tint(.mint)
+                
+            }.buttonStyle(.borderedProminent)
+                .padding(10)
             
             Spacer()
         }
