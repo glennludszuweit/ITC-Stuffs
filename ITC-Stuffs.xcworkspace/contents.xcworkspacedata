@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Nav-SwiftUI-UIkit/Nav-SwiftUI-UIkit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:WorkingWithAPI-SwiftUI/WorkingWithAPI-SwiftUI.xcodeproj">
    </FileRef>
    <FileRef
