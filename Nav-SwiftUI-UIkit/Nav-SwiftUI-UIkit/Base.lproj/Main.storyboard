@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rd-DF-baT">
-                                <rect key="frame" x="25" y="203" width="343" height="35"/>
+                                <rect key="frame" x="25" y="202" width="343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="SwiftUIView">
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
@@ -26,16 +26,39 @@
                                     <action selector="swiftUIView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIO-eN-9h2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-4d-EVb">
+                                <rect key="frame" x="25" y="153" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Of-NB-c0p">
+                                <rect key="frame" x="100" y="262" width="193" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Logout"/>
+                                <connections>
+                                    <action selector="removeUserDefaults:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NfW-mZ-G9v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5rd-DF-baT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="CbN-dn-8D2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BNe-4d-EVb" secondAttribute="trailing" constant="25" id="Av1-wh-VQl"/>
                             <constraint firstItem="5rd-DF-baT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="FCt-rc-icb"/>
+                            <constraint firstItem="BNe-4d-EVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="IVm-CG-kIj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5rd-DF-baT" secondAttribute="trailing" constant="25" id="aFO-iy-7KN"/>
+                            <constraint firstItem="BNe-4d-EVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="faJ-jg-G9f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Of-NB-c0p" secondAttribute="trailing" constant="100" id="lYX-Nz-tEU"/>
+                            <constraint firstItem="9Of-NB-c0p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="t2z-Zc-KMY"/>
+                            <constraint firstItem="5rd-DF-baT" firstAttribute="top" secondItem="BNe-4d-EVb" secondAttribute="bottom" constant="15" id="xKg-20-Z0H"/>
+                            <constraint firstItem="9Of-NB-c0p" firstAttribute="top" secondItem="5rd-DF-baT" secondAttribute="bottom" constant="25" id="zLb-L3-1B9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NdJ-Ob-Pab"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="9Of-NB-c0p" id="GB3-j5-0d7"/>
+                        <outlet property="usernameTextField" destination="BNe-4d-EVb" id="QU1-F0-lYm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
