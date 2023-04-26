@@ -22,7 +22,7 @@ struct PokemonDetailsView: View {
             }.padding()
             
             AsyncImage(url: URL(string: largeImageUrl)) { Image in
-                Image.resizable().scaledToFit().padding()
+                Image.resizable().scaledToFit().padding().id(largeImageUrl)
             } placeholder: {
                 ProgressView()
             }

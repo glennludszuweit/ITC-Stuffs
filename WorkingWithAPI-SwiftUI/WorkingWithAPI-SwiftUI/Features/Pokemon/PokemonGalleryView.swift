@@ -47,6 +47,7 @@ struct PokemonGalleryView: View {
                                     .sheet(isPresented: $showDetails) {
                                         PokemonDetailsView(largeImageUrl: largeImage)
                                     }
+                                    .id(item.id)
                             } else if phase.error != nil {
                                 Text(ErrorHandler.imageDoesNotExist.errorDescription!)
                             } else {

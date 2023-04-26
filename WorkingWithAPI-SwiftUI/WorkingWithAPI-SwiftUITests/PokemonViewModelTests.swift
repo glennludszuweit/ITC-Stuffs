@@ -19,12 +19,21 @@ final class PokemonViewModelTests: XCTestCase {
     }
 
     func testPokemonViewModel_GoodData() async throws {
-        guard let url = URL(string: "pokemon") else { throw ErrorHandler.invalidUrlError }
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let pokemonViewModel = await PokemonViewModel(manager: FakeNetworkManager())
+        let fetchData: () = await pokemonViewModel.getAll("pokemon")
+        let data = await pokemonViewModel.pokemons
+        
+        XCTAssertNotNil(data)
+        XCTAssertNoThrow(fetchData)
+        XCTAssertEqual(data.count, 15)
+    }
+    
+    func testPokemonViewModel_BadData() async throws {
+        let pokemonViewModel = await PokemonViewModel(manager: FakeNetworkManager())
+        await pokemonViewModel.getAll("empty")
+        let data = await pokemonViewModel.pokemons
+        
+        XCTAssertEqual(data.count, 0)
     }
 
     func testPerformanceExample() throws {
