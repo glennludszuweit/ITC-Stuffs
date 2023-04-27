@@ -56,6 +56,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="NdJ-Ob-Pab"/>
                     <connections>
+                        <outlet property="buttonText" destination="5rd-DF-baT" id="4ko-xM-txx"/>
                         <outlet property="logoutButton" destination="9Of-NB-c0p" id="GB3-j5-0d7"/>
                         <outlet property="usernameTextField" destination="BNe-4d-EVb" id="QU1-F0-lYm"/>
                     </connections>
