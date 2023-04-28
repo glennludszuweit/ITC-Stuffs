@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Keychain-GettingStarted/Keychain-GettingStarted.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CoreData-GettingStarted/CoreData-GettingStarted.xcodeproj">
    </FileRef>
    <FileRef

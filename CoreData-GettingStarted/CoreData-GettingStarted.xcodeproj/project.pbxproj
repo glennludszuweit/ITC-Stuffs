@@ -163,10 +163,10 @@
 		D43300C929FA6E0E007C146E /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
-				D43300CA29FA6E0E007C146E /* PokemonDetailsView.swift */,
-				D43300CB29FA6E0E007C146E /* PokemonViewModel.swift */,
 				D43300CC29FA6E0E007C146E /* PokemonModel.swift */,
 				D43300CD29FA6E0E007C146E /* PokemonGalleryView.swift */,
+				D43300CA29FA6E0E007C146E /* PokemonDetailsView.swift */,
+				D43300CB29FA6E0E007C146E /* PokemonViewModel.swift */,
 			);
 			path = Pokemon;
 			sourceTree = "<group>";
