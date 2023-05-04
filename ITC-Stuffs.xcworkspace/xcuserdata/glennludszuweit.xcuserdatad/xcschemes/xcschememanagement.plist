@@ -30,7 +30,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>Closures (Playground) 1.xcscheme</key>
 		<dict>
@@ -58,7 +58,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>14</integer>
 		</dict>
 		<key>ConcurrentQueue (Playground) 1.xcscheme</key>
 		<dict>
@@ -128,7 +128,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>22</integer>
 		</dict>
 		<key>GCD (Playground) 1.xcscheme</key>
 		<dict>
@@ -191,7 +191,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>18</integer>
 		</dict>
 		<key>HigherOrderFuctions (Playground) 1.xcscheme</key>
 		<dict>
@@ -219,7 +219,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>17</integer>
 		</dict>
 		<key>Initializers (Playground) 1.xcscheme</key>
 		<dict>
@@ -247,7 +247,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>15</integer>
 		</dict>
 		<key>Multithreading (Playground) 1.xcscheme</key>
 		<dict>
@@ -296,7 +296,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>23</integer>
 		</dict>
 		<key>OperationQueue (Playground) 1.xcscheme</key>
 		<dict>
@@ -338,7 +338,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>19</integer>
 		</dict>
 		<key>Promises (Playground) 1.xcscheme</key>
 		<dict>
@@ -387,7 +387,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>21</integer>
 		</dict>
 		<key>SerialQueue (Playground) 1.xcscheme</key>
 		<dict>
@@ -436,7 +436,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>16</integer>
 		</dict>
 	</dict>
 </dict>
