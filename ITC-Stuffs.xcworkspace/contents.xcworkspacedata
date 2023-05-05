@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Combine-GettingStarted/Combine-GettingStarted.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Design-Patterns/Design-Patterns.xcodeproj">
    </FileRef>
    <FileRef
