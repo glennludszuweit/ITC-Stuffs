@@ -41,16 +41,8 @@ class PlanetViewModel: ObservableObject {
                     self.errorMessage = self.errorManager.handleError(error)
                 }
             } receiveValue: { data in
-                if self.searchText.isEmpty {
-                    self.planets = data.results
-                } else {
-                    self.planets = data.results.filter { planet in
-                        planet.name.localizedCaseInsensitiveContains(self.searchText)
-                    }
-                }
+                self.planets = data.results
             }
             .store(in: &cancellable)
     }
-    
-    func searchPlanet() {}
 }

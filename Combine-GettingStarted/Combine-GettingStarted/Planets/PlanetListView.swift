@@ -9,10 +9,19 @@ import SwiftUI
 
 struct PlanetListView: View {
     @StateObject var planetViewModel = PlanetViewModel(networkManager: NetworkManager(), errorManager: ErrorManager())
+    @State private var searchText = ""
+    
+    var filteredPlanets: [PlanetEntity] {
+        if searchText.isEmpty {
+            return planetViewModel.planetList
+        } else {
+            return planetViewModel.planetList.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+        }
+    }
     
     var body: some View {
         NavigationStack {
-            List(planetViewModel.planetList) { planet in
+            List(filteredPlanets) { planet in
                 NavigationLink {
                     PlanetDetailsView(planet: planet)
                 } label: {
@@ -21,14 +30,16 @@ struct PlanetListView: View {
                         Spacer()
                     }
                 }
-
+                
             }.padding()
         }
         .onAppear {
             planetViewModel.getAllPlanets(apiUrl: APIServices.planetsApi)
-            print(planetViewModel.errorMessage)
         }
-        .searchable(text: $planetViewModel.searchText)
+        .refreshable {
+            planetViewModel.getAllPlanets(apiUrl: APIServices.planetsApi)
+        }
+        .searchable(text: $searchText)
     }
 }
 
