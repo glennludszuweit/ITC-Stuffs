@@ -10,6 +10,7 @@ import Combine
 
 class PlanetViewModel: ObservableObject {
     @Published var planetList: [PlanetEntity] = []
+    @Published var searchText = ""
     @Published var errorMessage: String = ""
     
     private var cancellable = Set<AnyCancellable>()
@@ -40,8 +41,16 @@ class PlanetViewModel: ObservableObject {
                     self.errorMessage = self.errorManager.handleError(error)
                 }
             } receiveValue: { data in
-                self.planets = data.results
+                if self.searchText.isEmpty {
+                    self.planets = data.results
+                } else {
+                    self.planets = data.results.filter { planet in
+                        planet.name.localizedCaseInsensitiveContains(self.searchText)
+                    }
+                }
             }
             .store(in: &cancellable)
     }
+    
+    func searchPlanet() {}
 }

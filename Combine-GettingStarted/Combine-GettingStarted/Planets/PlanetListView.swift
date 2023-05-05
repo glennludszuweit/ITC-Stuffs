@@ -23,10 +23,12 @@ struct PlanetListView: View {
                 }
 
             }.padding()
-        }.onAppear {
+        }
+        .onAppear {
             planetViewModel.getAllPlanets(apiUrl: APIServices.planetsApi)
             print(planetViewModel.errorMessage)
         }
+        .searchable(text: $planetViewModel.searchText)
     }
 }
 
