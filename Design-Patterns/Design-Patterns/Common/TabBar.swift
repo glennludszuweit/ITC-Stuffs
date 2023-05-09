@@ -12,15 +12,33 @@ struct TabBar: View {
         TabView {
             CarFactoryView()
                 .tabItem {
-                    Image(systemName: "tablecells.fill")
+                    Image(systemName: "square.fill")
                     Text("Factory")
                 }
             
-//            ObserverView()
-//                .tabItem {
-//                    Image(systemName: "tablecells.fill")
-//                    Text("Publisher")
-//                }
+            CarFacadeView()
+                .tabItem {
+                    Image(systemName: "square.fill")
+                    Text("Facade")
+                }
+            
+            CarObserverView()
+                .tabItem {
+                    Image(systemName: "square.fill")
+                    Text("Observer")
+                }
+            
+            CarProtocolDelegateView()
+                .tabItem {
+                    Image(systemName: "square.fill")
+                    Text("Protocol")
+                }
+            
+            CarClosureView()
+                .tabItem {
+                    Image(systemName: "square.fill")
+                    Text("Closure")
+                }
         }
         .navigationBarBackButtonHidden(true)
     }

@@ -11,17 +11,9 @@ struct PlanetListView: View {
     @StateObject var planetViewModel = PlanetViewModel(networkManager: NetworkManager(), errorManager: ErrorManager())
     @State private var searchText = ""
     
-    var filteredPlanets: [PlanetEntity] {
-        if searchText.isEmpty {
-            return planetViewModel.planetList
-        } else {
-            return planetViewModel.planetList.filter { $0.name.lowercased().contains(searchText.lowercased()) }
-        }
-    }
-    
     var body: some View {
         NavigationStack {
-            List(filteredPlanets) { planet in
+            List(planetViewModel.filteredPlanets) { planet in
                 NavigationLink {
                     PlanetDetailsView(planet: planet)
                 } label: {
@@ -35,11 +27,15 @@ struct PlanetListView: View {
         }
         .onAppear {
             planetViewModel.getAllPlanets(apiUrl: APIServices.planetsApi)
+            print(planetViewModel.errorMessage)
         }
         .refreshable {
             planetViewModel.getAllPlanets(apiUrl: APIServices.planetsApi)
         }
-        .searchable(text: $searchText)
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+        .onChange(of: searchText) { text in
+            planetViewModel.searchPlanets(searchText: text)
+        }
     }
 }
 

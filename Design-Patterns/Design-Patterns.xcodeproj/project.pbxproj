@@ -19,7 +19,12 @@
 		D47CE9522A03B583001F596C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9512A03B583001F596C /* TabBar.swift */; };
 		D47CE9542A03B79F001F596C /* CarFactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9532A03B79F001F596C /* CarFactoryView.swift */; };
 		D47CE9562A03B8CD001F596C /* CarFactoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9552A03B8CD001F596C /* CarFactoryManager.swift */; };
-		D47CE9582A03D302001F596C /* ObserverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9572A03D302001F596C /* ObserverView.swift */; };
+		D47CE9582A03D302001F596C /* CarObserverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9572A03D302001F596C /* CarObserverView.swift */; };
+		D4966F3C2A0A4E870076FFB8 /* CarFacadeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966F3B2A0A4E870076FFB8 /* CarFacadeModel.swift */; };
+		D4966F3E2A0A4EBE0076FFB8 /* CarFacadeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966F3D2A0A4EBE0076FFB8 /* CarFacadeManager.swift */; };
+		D4966F402A0A4EF10076FFB8 /* CarFacadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966F3F2A0A4EF10076FFB8 /* CarFacadeView.swift */; };
+		D4966F422A0A4FD50076FFB8 /* CarProtocolDelegateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966F412A0A4FD50076FFB8 /* CarProtocolDelegateView.swift */; };
+		D4966F442A0A4FFB0076FFB8 /* CarClosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966F432A0A4FFB0076FFB8 /* CarClosureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +60,12 @@
 		D47CE9512A03B583001F596C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		D47CE9532A03B79F001F596C /* CarFactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFactoryView.swift; sourceTree = "<group>"; };
 		D47CE9552A03B8CD001F596C /* CarFactoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFactoryManager.swift; sourceTree = "<group>"; };
-		D47CE9572A03D302001F596C /* ObserverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverView.swift; sourceTree = "<group>"; };
+		D47CE9572A03D302001F596C /* CarObserverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarObserverView.swift; sourceTree = "<group>"; };
+		D4966F3B2A0A4E870076FFB8 /* CarFacadeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFacadeModel.swift; sourceTree = "<group>"; };
+		D4966F3D2A0A4EBE0076FFB8 /* CarFacadeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFacadeManager.swift; sourceTree = "<group>"; };
+		D4966F3F2A0A4EF10076FFB8 /* CarFacadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFacadeView.swift; sourceTree = "<group>"; };
+		D4966F412A0A4FD50076FFB8 /* CarProtocolDelegateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarProtocolDelegateView.swift; sourceTree = "<group>"; };
+		D4966F432A0A4FFB0076FFB8 /* CarClosureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarClosureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +119,8 @@
 				D47CE9462A03B078001F596C /* Common */,
 				D47CE93E2A03A331001F596C /* Singleton */,
 				D47CE9452A03AF95001F596C /* Factory */,
-				D47CE9472A03B0DA001F596C /* Publisher */,
+				D4966F3A2A0A4E660076FFB8 /* Facade */,
+				D47CE9472A03B0DA001F596C /* Observer */,
 				D47CE9482A03B0FE001F596C /* ProtocolDelegte */,
 				D47CE9492A03B120001F596C /* Closure */,
 				D47CE91A2A039F3E001F596C /* Preview Content */,
@@ -171,17 +182,18 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		D47CE9472A03B0DA001F596C /* Publisher */ = {
+		D47CE9472A03B0DA001F596C /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				D47CE9572A03D302001F596C /* ObserverView.swift */,
+				D47CE9572A03D302001F596C /* CarObserverView.swift */,
 			);
-			path = Publisher;
+			path = Observer;
 			sourceTree = "<group>";
 		};
 		D47CE9482A03B0FE001F596C /* ProtocolDelegte */ = {
 			isa = PBXGroup;
 			children = (
+				D4966F412A0A4FD50076FFB8 /* CarProtocolDelegateView.swift */,
 			);
 			path = ProtocolDelegte;
 			sourceTree = "<group>";
@@ -189,8 +201,19 @@
 		D47CE9492A03B120001F596C /* Closure */ = {
 			isa = PBXGroup;
 			children = (
+				D4966F432A0A4FFB0076FFB8 /* CarClosureView.swift */,
 			);
 			path = Closure;
+			sourceTree = "<group>";
+		};
+		D4966F3A2A0A4E660076FFB8 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				D4966F3B2A0A4E870076FFB8 /* CarFacadeModel.swift */,
+				D4966F3D2A0A4EBE0076FFB8 /* CarFacadeManager.swift */,
+				D4966F3F2A0A4EF10076FFB8 /* CarFacadeView.swift */,
+			);
+			path = Facade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,12 +348,17 @@
 			files = (
 				D47CE9152A039F3D001F596C /* DesignPatternsApp.swift in Sources */,
 				D47CE9562A03B8CD001F596C /* CarFactoryManager.swift in Sources */,
+				D4966F422A0A4FD50076FFB8 /* CarProtocolDelegateView.swift in Sources */,
 				D47CE9442A03A6AF001F596C /* AuthManager.swift in Sources */,
 				D47CE9422A03A49C001F596C /* LoginView.swift in Sources */,
 				D47CE9402A03A45F001F596C /* AuthViewModel.swift in Sources */,
+				D4966F3C2A0A4E870076FFB8 /* CarFacadeModel.swift in Sources */,
+				D4966F3E2A0A4EBE0076FFB8 /* CarFacadeManager.swift in Sources */,
 				D47CE9542A03B79F001F596C /* CarFactoryView.swift in Sources */,
+				D4966F402A0A4EF10076FFB8 /* CarFacadeView.swift in Sources */,
 				D47CE9522A03B583001F596C /* TabBar.swift in Sources */,
-				D47CE9582A03D302001F596C /* ObserverView.swift in Sources */,
+				D4966F442A0A4FFB0076FFB8 /* CarClosureView.swift in Sources */,
+				D47CE9582A03D302001F596C /* CarObserverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

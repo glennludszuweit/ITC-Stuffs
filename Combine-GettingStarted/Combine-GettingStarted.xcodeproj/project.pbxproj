@@ -11,7 +11,7 @@
 		D47CE9682A04CCC0001F596C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9672A04CCC0001F596C /* ContentView.swift */; };
 		D47CE96A2A04CCC5001F596C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47CE9692A04CCC5001F596C /* Assets.xcassets */; };
 		D47CE96D2A04CCC5001F596C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47CE96C2A04CCC5001F596C /* Preview Assets.xcassets */; };
-		D47CE9772A04CCC5001F596C /* Combine_GettingStartedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9762A04CCC5001F596C /* Combine_GettingStartedTests.swift */; };
+		D47CE9772A04CCC5001F596C /* PlanetViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9762A04CCC5001F596C /* PlanetViewModelTests.swift */; };
 		D47CE9812A04CCC6001F596C /* Combine_GettingStartedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9802A04CCC6001F596C /* Combine_GettingStartedUITests.swift */; };
 		D47CE9832A04CCC6001F596C /* Combine_GettingStartedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9822A04CCC6001F596C /* Combine_GettingStartedUITestsLaunchTests.swift */; };
 		D47CE9922A04CD7B001F596C /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9912A04CD7B001F596C /* PlanetModel.swift */; };
@@ -21,6 +21,8 @@
 		D47CE99E2A04CE0F001F596C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE99D2A04CE0F001F596C /* NetworkManager.swift */; };
 		D47CE9A02A04CE1F001F596C /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE99F2A04CE1F001F596C /* APIServices.swift */; };
 		D47CE9A42A051982001F596C /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE9A32A051982001F596C /* ErrorManager.swift */; };
+		D4966F372A091D280076FFB8 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966F362A091D280076FFB8 /* TestManager.swift */; };
+		D4966F392A0A3F140076FFB8 /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = D4966F382A0A3F140076FFB8 /* planets.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,7 @@
 		D47CE9692A04CCC5001F596C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D47CE96C2A04CCC5001F596C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D47CE9722A04CCC5001F596C /* Combine-GettingStartedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine-GettingStartedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D47CE9762A04CCC5001F596C /* Combine_GettingStartedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_GettingStartedTests.swift; sourceTree = "<group>"; };
+		D47CE9762A04CCC5001F596C /* PlanetViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModelTests.swift; sourceTree = "<group>"; };
 		D47CE97C2A04CCC6001F596C /* Combine-GettingStartedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine-GettingStartedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47CE9802A04CCC6001F596C /* Combine_GettingStartedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_GettingStartedUITests.swift; sourceTree = "<group>"; };
 		D47CE9822A04CCC6001F596C /* Combine_GettingStartedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_GettingStartedUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -58,6 +60,8 @@
 		D47CE99D2A04CE0F001F596C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D47CE99F2A04CE1F001F596C /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		D47CE9A32A051982001F596C /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		D4966F362A091D280076FFB8 /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
+		D4966F382A0A3F140076FFB8 /* planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +133,9 @@
 		D47CE9752A04CCC5001F596C /* Combine-GettingStartedTests */ = {
 			isa = PBXGroup;
 			children = (
-				D47CE9762A04CCC5001F596C /* Combine_GettingStartedTests.swift */,
+				D4966F382A0A3F140076FFB8 /* planets.json */,
+				D4966F362A091D280076FFB8 /* TestManager.swift */,
+				D47CE9762A04CCC5001F596C /* PlanetViewModelTests.swift */,
 			);
 			path = "Combine-GettingStartedTests";
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4966F392A0A3F140076FFB8 /* planets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47CE9772A04CCC5001F596C /* Combine_GettingStartedTests.swift in Sources */,
+				D47CE9772A04CCC5001F596C /* PlanetViewModelTests.swift in Sources */,
+				D4966F372A091D280076FFB8 /* TestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
