@@ -22,7 +22,6 @@ struct MapView: View {
             return staticRegion.getBinding()
         }
         
-        print("CURENT LOCATION: \(cl)")
         DispatchQueue.main.async {
             locations.append(Location(name: "You", coordinate: cl.coordinate))
         }

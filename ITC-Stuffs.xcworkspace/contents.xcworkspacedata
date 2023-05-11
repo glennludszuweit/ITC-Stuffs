@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIKit-MVVMC/UIKit-MVVMC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalAuth-GettingStarted/LocalAuth-GettingStarted.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MapKit-GettingStarted/MapKit-GettingStarted.xcodeproj">
    </FileRef>
    <FileRef

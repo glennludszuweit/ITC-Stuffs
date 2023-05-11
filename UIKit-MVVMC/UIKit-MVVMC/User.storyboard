@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Users View Controller-->
+        <scene sceneID="Hck-H8-wwF">
+            <objects>
+                <viewController storyboardIdentifier="UsersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ds-64-4AK" customClass="UsersViewController" customModule="Tabs_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6sT-Jc-EmG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-2j-JCe">
+                                <rect key="frame" x="0.0" y="128" width="393" height="641"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q83-yJ-0Q5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6TD-2j-JCe" firstAttribute="top" secondItem="q83-yJ-0Q5" secondAttribute="top" constant="25" id="2JB-AZ-FnX"/>
+                            <constraint firstItem="6TD-2j-JCe" firstAttribute="leading" secondItem="q83-yJ-0Q5" secondAttribute="leading" id="8vJ-bI-mj2"/>
+                            <constraint firstItem="q83-yJ-0Q5" firstAttribute="bottom" secondItem="6TD-2j-JCe" secondAttribute="bottom" id="Y30-jA-Doy"/>
+                            <constraint firstItem="q83-yJ-0Q5" firstAttribute="trailing" secondItem="6TD-2j-JCe" secondAttribute="trailing" id="stA-Bx-O32"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fup-RZ-xjk"/>
+                    <connections>
+                        <outlet property="tableView" destination="6TD-2j-JCe" id="Q9k-d7-RUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1J-v7-5Ih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3579.3893129770991" y="86.619718309859152"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="X0V-vD-bzS">
+            <objects>
+                <viewController storyboardIdentifier="UserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="crA-hU-4uO" customClass="UserViewController" customModule="Tabs_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GuN-pV-FaK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Od9-ha-dgz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5B6-nH-Ovb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2813" y="87"/>
+        </scene>
+        <!--Users-->
+        <scene sceneID="dpd-Wy-VbO">
+            <objects>
+                <navigationController storyboardIdentifier="UserNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tVg-Ws-Rmy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Users" image="externaldrive.fill" catalog="system" selectedImage="externaldrive.fill" id="kht-4e-yt3"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="raT-Cq-GCN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Ds-64-4AK" kind="relationship" relationship="rootViewController" id="laJ-4j-JBb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UYY-Uh-nQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4506.1068702290077" y="86.619718309859152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="externaldrive.fill" catalog="system" width="128" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

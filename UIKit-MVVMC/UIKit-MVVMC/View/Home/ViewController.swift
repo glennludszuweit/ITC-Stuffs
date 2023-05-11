@@ -9,16 +9,17 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController {
+    var homeCoordinator: HomeCoordinator?
     override func viewDidLoad() {
         // Do any additional setup after loading the view.
     }
     
     @IBAction func buttonToUsers(_ sender: Any) {
-       self.tabBarController!.selectedIndex = 1
+        homeCoordinator?.gotToUsers()
     }
     
     @IBAction func buttonToLogin(_ sender: Any) {
-       self.tabBarController!.selectedIndex = 2
+        homeCoordinator?.gotToLogin()
     }
 }
 

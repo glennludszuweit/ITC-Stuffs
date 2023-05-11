@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="xIm-dg-407">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C3X-YT-QNz" customClass="TabBarViewController" customModule="UIKit_MVVMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hXm-7P-UAG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xt3-KE-7TS" kind="relationship" relationship="viewControllers" id="FTL-Nq-GWp"/>
+                        <segue destination="xsC-9O-eLq" kind="relationship" relationship="viewControllers" id="Ur9-nj-fLG"/>
+                        <segue destination="c4d-ps-zEd" kind="relationship" relationship="viewControllers" id="rzM-cP-PsK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Haf-Um-TQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-954"/>
+        </scene>
+        <!--HomeNavigationController-->
+        <scene sceneID="aPd-HL-WFg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeNavigationController" id="xt3-KE-7TS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="iqw-de-K4w"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezr-kD-9sf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="-473"/>
+        </scene>
+        <!--AuthNavigationController-->
+        <scene sceneID="G7g-tB-2gh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auth" referencedIdentifier="AuthNavigationController" id="c4d-ps-zEd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Login" image="person.fill" catalog="system" selectedImage="person.fill" id="IJK-H7-zR2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qe7-sI-viP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="-473"/>
+        </scene>
+        <!--UserNavigationController-->
+        <scene sceneID="wFY-mD-Zdn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="User" referencedIdentifier="UserNavigationController" id="xsC-9O-eLq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Users" image="externaldrive.fill" catalog="system" selectedImage="externaldrive.fill" id="phv-mh-0Cb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTW-Ul-pqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="-473"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="externaldrive.fill" catalog="system" width="128" height="87"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

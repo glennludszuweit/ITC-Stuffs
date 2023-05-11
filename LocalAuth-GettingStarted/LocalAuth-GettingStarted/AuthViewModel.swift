@@ -2,19 +2,22 @@
 //  AuthViewModel.swift
 //  SwiftUI-Screens
 //
-//  Created by Glenn Ludszuweit on 22/04/2023.
+//  Created by Glenn Ludszuweit on 10/05/2023.
 //
 
 import Foundation
 import Security
 import SwiftUI
+import LocalAuthentication
 
 class AuthViewModel: ObservableObject {
     @Published var isUserInKC: Bool?
+    @Published var credentials = Credentials()
+    @Published var authError: AuthError?
     
-    init() {
-        getDataFromKeychain(key: "user-infor")
-    }
+//    init() {
+//        getDataFromKeychain(key: "user-infor")
+//    }
     
     func validateAdminUser(email: String?, pass: String?) -> Bool {
         guard email != nil else { return false }
@@ -30,6 +33,57 @@ class AuthViewModel: ObservableObject {
             return true
         } else {
             return false
+        }
+    }
+    
+    func biometricType() -> BiometricType {
+        let authContext = LAContext()
+        let _ = authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+        
+        switch authContext.biometryType {
+        case .none:
+            return .none
+        case .touchID:
+            return .touch
+        case .faceID:
+            return .face
+        @unknown default:
+            return .none
+        }
+    }
+    
+    func authenticateUser(email: String, password: String, completion: @escaping (Result<Credentials, AuthError>) -> ()) {
+        let credentials = Credentials(email: email, password: password)
+        let authContext = LAContext()
+        var error: NSError?
+        let canEval = authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)
+        
+        if let error = error {
+            switch error.code {
+            case -6:
+                completion(.failure(.denied))
+            case -7:
+                if authContext.biometryType == .faceID {
+                    completion(.failure(.noFace))
+                } else {
+                    completion(.failure(.noTouch))
+                }
+            default:
+                completion(.failure(.biometricError))
+            }
+        }
+        
+        if canEval {
+            if authContext.biometryType != .none {
+                authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Access Keychain") { success, error in
+                    if error != nil {
+                        completion(.failure(.biometricError))
+                    } else {
+                        self.credentials = credentials
+                        completion(.success(credentials))
+                    }
+                }
+            }
         }
     }
     

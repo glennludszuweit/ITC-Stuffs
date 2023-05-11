@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4966F982A0BDE810076FFB8 /* LocalAuth_GettingStartedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966F972A0BDE810076FFB8 /* LocalAuth_GettingStartedApp.swift */; };
+		D4966F9C2A0BDE840076FFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4966F9B2A0BDE840076FFB8 /* Assets.xcassets */; };
+		D4966F9F2A0BDE840076FFB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4966F9E2A0BDE840076FFB8 /* Preview Assets.xcassets */; };
+		D4966FA92A0BDE840076FFB8 /* LocalAuth_GettingStartedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966FA82A0BDE840076FFB8 /* LocalAuth_GettingStartedTests.swift */; };
+		D4966FB32A0BDE840076FFB8 /* LocalAuth_GettingStartedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966FB22A0BDE840076FFB8 /* LocalAuth_GettingStartedUITests.swift */; };
+		D4966FB52A0BDE840076FFB8 /* LocalAuth_GettingStartedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966FB42A0BDE840076FFB8 /* LocalAuth_GettingStartedUITestsLaunchTests.swift */; };
+		D4966FC32A0BDEFE0076FFB8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966FC12A0BDEFE0076FFB8 /* LoginView.swift */; };
+		D4966FC42A0BDEFE0076FFB8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4966FC22A0BDEFE0076FFB8 /* AuthViewModel.swift */; };
+		D49670AB2A0CF8150076FFB8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49670AA2A0CF8150076FFB8 /* Model.swift */; };
+		D49670AD2A0CFAF50076FFB8 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49670AC2A0CFAF50076FFB8 /* Enums.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4966FA52A0BDE840076FFB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4966F8C2A0BDE810076FFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4966F932A0BDE810076FFB8;
+			remoteInfo = "LocalAuth-GettingStarted";
+		};
+		D4966FAF2A0BDE840076FFB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4966F8C2A0BDE810076FFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4966F932A0BDE810076FFB8;
+			remoteInfo = "LocalAuth-GettingStarted";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4966F942A0BDE810076FFB8 /* LocalAuth-GettingStarted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LocalAuth-GettingStarted.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4966F972A0BDE810076FFB8 /* LocalAuth_GettingStartedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuth_GettingStartedApp.swift; sourceTree = "<group>"; };
+		D4966F9B2A0BDE840076FFB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4966F9E2A0BDE840076FFB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4966FA42A0BDE840076FFB8 /* LocalAuth-GettingStartedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LocalAuth-GettingStartedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4966FA82A0BDE840076FFB8 /* LocalAuth_GettingStartedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuth_GettingStartedTests.swift; sourceTree = "<group>"; };
+		D4966FAE2A0BDE840076FFB8 /* LocalAuth-GettingStartedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LocalAuth-GettingStartedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4966FB22A0BDE840076FFB8 /* LocalAuth_GettingStartedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuth_GettingStartedUITests.swift; sourceTree = "<group>"; };
+		D4966FB42A0BDE840076FFB8 /* LocalAuth_GettingStartedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuth_GettingStartedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4966FC12A0BDEFE0076FFB8 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D4966FC22A0BDEFE0076FFB8 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D49670AA2A0CF8150076FFB8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D49670AC2A0CFAF50076FFB8 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		D49670AE2A0CFE690076FFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4966F912A0BDE810076FFB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4966FA12A0BDE840076FFB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4966FAB2A0BDE840076FFB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4966F8B2A0BDE810076FFB8 = {
+			isa = PBXGroup;
+			children = (
+				D4966F962A0BDE810076FFB8 /* LocalAuth-GettingStarted */,
+				D4966FA72A0BDE840076FFB8 /* LocalAuth-GettingStartedTests */,
+				D4966FB12A0BDE840076FFB8 /* LocalAuth-GettingStartedUITests */,
+				D4966F952A0BDE810076FFB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4966F952A0BDE810076FFB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4966F942A0BDE810076FFB8 /* LocalAuth-GettingStarted.app */,
+				D4966FA42A0BDE840076FFB8 /* LocalAuth-GettingStartedTests.xctest */,
+				D4966FAE2A0BDE840076FFB8 /* LocalAuth-GettingStartedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4966F962A0BDE810076FFB8 /* LocalAuth-GettingStarted */ = {
+			isa = PBXGroup;
+			children = (
+				D49670AE2A0CFE690076FFB8 /* Info.plist */,
+				D49670AA2A0CF8150076FFB8 /* Model.swift */,
+				D49670AC2A0CFAF50076FFB8 /* Enums.swift */,
+				D4966FC22A0BDEFE0076FFB8 /* AuthViewModel.swift */,
+				D4966FC12A0BDEFE0076FFB8 /* LoginView.swift */,
+				D4966F972A0BDE810076FFB8 /* LocalAuth_GettingStartedApp.swift */,
+				D4966F9B2A0BDE840076FFB8 /* Assets.xcassets */,
+				D4966F9D2A0BDE840076FFB8 /* Preview Content */,
+			);
+			path = "LocalAuth-GettingStarted";
+			sourceTree = "<group>";
+		};
+		D4966F9D2A0BDE840076FFB8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4966F9E2A0BDE840076FFB8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4966FA72A0BDE840076FFB8 /* LocalAuth-GettingStartedTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4966FA82A0BDE840076FFB8 /* LocalAuth_GettingStartedTests.swift */,
+			);
+			path = "LocalAuth-GettingStartedTests";
+			sourceTree = "<group>";
+		};
+		D4966FB12A0BDE840076FFB8 /* LocalAuth-GettingStartedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4966FB22A0BDE840076FFB8 /* LocalAuth_GettingStartedUITests.swift */,
+				D4966FB42A0BDE840076FFB8 /* LocalAuth_GettingStartedUITestsLaunchTests.swift */,
+			);
+			path = "LocalAuth-GettingStartedUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4966F932A0BDE810076FFB8 /* LocalAuth-GettingStarted */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4966FB82A0BDE840076FFB8 /* Build configuration list for PBXNativeTarget "LocalAuth-GettingStarted" */;
+			buildPhases = (
+				D4966F902A0BDE810076FFB8 /* Sources */,
+				D4966F912A0BDE810076FFB8 /* Frameworks */,
+				D4966F922A0BDE810076FFB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LocalAuth-GettingStarted";
+			productName = "LocalAuth-GettingStarted";
+			productReference = D4966F942A0BDE810076FFB8 /* LocalAuth-GettingStarted.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4966FA32A0BDE840076FFB8 /* LocalAuth-GettingStartedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4966FBB2A0BDE840076FFB8 /* Build configuration list for PBXNativeTarget "LocalAuth-GettingStartedTests" */;
+			buildPhases = (
+				D4966FA02A0BDE840076FFB8 /* Sources */,
+				D4966FA12A0BDE840076FFB8 /* Frameworks */,
+				D4966FA22A0BDE840076FFB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4966FA62A0BDE840076FFB8 /* PBXTargetDependency */,
+			);
+			name = "LocalAuth-GettingStartedTests";
+			productName = "LocalAuth-GettingStartedTests";
+			productReference = D4966FA42A0BDE840076FFB8 /* LocalAuth-GettingStartedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4966FAD2A0BDE840076FFB8 /* LocalAuth-GettingStartedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4966FBE2A0BDE840076FFB8 /* Build configuration list for PBXNativeTarget "LocalAuth-GettingStartedUITests" */;
+			buildPhases = (
+				D4966FAA2A0BDE840076FFB8 /* Sources */,
+				D4966FAB2A0BDE840076FFB8 /* Frameworks */,
+				D4966FAC2A0BDE840076FFB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4966FB02A0BDE840076FFB8 /* PBXTargetDependency */,
+			);
+			name = "LocalAuth-GettingStartedUITests";
+			productName = "LocalAuth-GettingStartedUITests";
+			productReference = D4966FAE2A0BDE840076FFB8 /* LocalAuth-GettingStartedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4966F8C2A0BDE810076FFB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D4966F932A0BDE810076FFB8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					D4966FA32A0BDE840076FFB8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = D4966F932A0BDE810076FFB8;
+					};
+					D4966FAD2A0BDE840076FFB8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = D4966F932A0BDE810076FFB8;
+					};
+				};
+			};
+			buildConfigurationList = D4966F8F2A0BDE810076FFB8 /* Build configuration list for PBXProject "LocalAuth-GettingStarted" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4966F8B2A0BDE810076FFB8;
+			productRefGroup = D4966F952A0BDE810076FFB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4966F932A0BDE810076FFB8 /* LocalAuth-GettingStarted */,
+				D4966FA32A0BDE840076FFB8 /* LocalAuth-GettingStartedTests */,
+				D4966FAD2A0BDE840076FFB8 /* LocalAuth-GettingStartedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4966F922A0BDE810076FFB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4966F9F2A0BDE840076FFB8 /* Preview Assets.xcassets in Resources */,
+				D4966F9C2A0BDE840076FFB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4966FA22A0BDE840076FFB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4966FAC2A0BDE840076FFB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4966F902A0BDE810076FFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4966FC42A0BDEFE0076FFB8 /* AuthViewModel.swift in Sources */,
+				D4966FC32A0BDEFE0076FFB8 /* LoginView.swift in Sources */,
+				D49670AD2A0CFAF50076FFB8 /* Enums.swift in Sources */,
+				D4966F982A0BDE810076FFB8 /* LocalAuth_GettingStartedApp.swift in Sources */,
+				D49670AB2A0CF8150076FFB8 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4966FA02A0BDE840076FFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4966FA92A0BDE840076FFB8 /* LocalAuth_GettingStartedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4966FAA2A0BDE840076FFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4966FB32A0BDE840076FFB8 /* LocalAuth_GettingStartedUITests.swift in Sources */,
+				D4966FB52A0BDE840076FFB8 /* LocalAuth_GettingStartedUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4966FA62A0BDE840076FFB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4966F932A0BDE810076FFB8 /* LocalAuth-GettingStarted */;
+			targetProxy = D4966FA52A0BDE840076FFB8 /* PBXContainerItemProxy */;
+		};
+		D4966FB02A0BDE840076FFB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4966F932A0BDE810076FFB8 /* LocalAuth-GettingStarted */;
+			targetProxy = D4966FAF2A0BDE840076FFB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4966FB62A0BDE840076FFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4966FB72A0BDE840076FFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4966FB92A0BDE840076FFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocalAuth-GettingStarted/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LocalAuth-GettingStarted/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID access";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.LocalAuth-GettingStarted";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4966FBA2A0BDE840076FFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocalAuth-GettingStarted/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LocalAuth-GettingStarted/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID access";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.LocalAuth-GettingStarted";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4966FBC2A0BDE840076FFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.LocalAuth-GettingStartedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalAuth-GettingStarted.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LocalAuth-GettingStarted";
+			};
+			name = Debug;
+		};
+		D4966FBD2A0BDE840076FFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.LocalAuth-GettingStartedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalAuth-GettingStarted.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LocalAuth-GettingStarted";
+			};
+			name = Release;
+		};
+		D4966FBF2A0BDE840076FFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.LocalAuth-GettingStartedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LocalAuth-GettingStarted";
+			};
+			name = Debug;
+		};
+		D4966FC02A0BDE840076FFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.LocalAuth-GettingStartedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LocalAuth-GettingStarted";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4966F8F2A0BDE810076FFB8 /* Build configuration list for PBXProject "LocalAuth-GettingStarted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4966FB62A0BDE840076FFB8 /* Debug */,
+				D4966FB72A0BDE840076FFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4966FB82A0BDE840076FFB8 /* Build configuration list for PBXNativeTarget "LocalAuth-GettingStarted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4966FB92A0BDE840076FFB8 /* Debug */,
+				D4966FBA2A0BDE840076FFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4966FBB2A0BDE840076FFB8 /* Build configuration list for PBXNativeTarget "LocalAuth-GettingStartedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4966FBC2A0BDE840076FFB8 /* Debug */,
+				D4966FBD2A0BDE840076FFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4966FBE2A0BDE840076FFB8 /* Build configuration list for PBXNativeTarget "LocalAuth-GettingStartedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4966FBF2A0BDE840076FFB8 /* Debug */,
+				D4966FC02A0BDE840076FFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4966F8C2A0BDE810076FFB8 /* Project object */;
+}

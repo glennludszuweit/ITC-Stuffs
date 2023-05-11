@@ -19,54 +19,6 @@ struct LoginView: View {
     @State var password: String = ""
     @State var user = User(email: "", password: "")
     
-    func saveDataToKeychain (value: User, key: String) throws {
-        let encoder = JSONEncoder()
-        do {
-            let userData = try encoder.encode(value)
-            let dataDict: [String: Any] = [
-                kSecClass as String: kSecClassGenericPassword,
-                kSecAttrService as String: "com.ghl.keychain-gettingstarted",
-                kSecAttrAccount as String: key,
-                kSecValueData as String: userData
-            ]
-            let status = SecItemAdd(dataDict as CFDictionary, nil)
-            if status == noErr {
-                print("saved")
-            } else{
-                print("not working")
-            }
-        } catch let error {
-            throw error
-        }
-    }
-    
-    func getDataFromKeychain(key: String) {
-        let decoder = JSONDecoder()
-        
-        let dataDict: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrAccount as String: key,
-            kSecAttrService as String: "com.ghl.keychain-gettingstarted",
-            kSecReturnData as String: kCFBooleanTrue!,
-            kSecMatchLimit as String: kSecMatchLimitOne
-        ]
-        
-        var result: AnyObject?
-        let status: OSStatus = SecItemCopyMatching(dataDict as CFDictionary, &result)
-        
-        if status == noErr , let data = result as? Data {
-            do {
-                let userData = try decoder.decode(User.self, from: data)
-                print(userData.email)
-                print(userData.password)
-            } catch {
-                print("error")
-            }
-        } else {
-            print("error")
-        }
-    }
-    
     var body: some View {
         NavigationStack {
             VStack {
@@ -81,7 +33,7 @@ struct LoginView: View {
                         if authViewModel.validateAdminUser(email: email, pass: password) {
                             user.email = email
                             user.password = password
-                            try? saveDataToKeychain(value: user, key: "user-info")
+                            try? authViewModel.saveDataToKeychain(value: user, key: "user-info")
                         } else {
                             print("Invalid user!")
                         }
@@ -91,11 +43,18 @@ struct LoginView: View {
                     }).tint(.orange)
                     
                     Button(action: {
-                        getDataFromKeychain(key: "user-info")
+                        authViewModel.getDataFromKeychain(key: "user-info")
                     }, label: {
                         Text("Retrieve from Keychain")
                             .frame(maxWidth: .infinity)
                     }).tint(.cyan)
+                    
+                    Button(action: {
+                        authViewModel.removeDataFromKeychain(key: "user-info")
+                    }, label: {
+                        Text("Remove from Keychain")
+                            .frame(maxWidth: .infinity)
+                    }).tint(.red)
                 }.padding(10)
                     .buttonStyle(.borderedProminent)
             }
