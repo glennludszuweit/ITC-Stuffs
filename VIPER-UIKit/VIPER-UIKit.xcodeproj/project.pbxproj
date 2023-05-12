@@ -28,6 +28,10 @@
 		D479D7892A0E318A00176907 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D7882A0E318A00176907 /* ViewProtocol.swift */; };
 		D479D78B2A0E3E7A00176907 /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D78A2A0E3E7A00176907 /* ProductPresenter.swift */; };
 		D479D78D2A0E41CB00176907 /* ProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D78C2A0E41CB00176907 /* ProductInteractor.swift */; };
+		D479D83D2A0E966D00176907 /* ProductPhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D479D83C2A0E966D00176907 /* ProductPhotoViewCell.xib */; };
+		D479D83F2A0E967B00176907 /* ProductPhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D83E2A0E967B00176907 /* ProductPhotoViewCell.swift */; };
+		D479D8412A0E969000176907 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8402A0E969000176907 /* ProductViewCell.swift */; };
+		D479D8432A0E969B00176907 /* ProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D479D8422A0E969B00176907 /* ProductViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		D479D7882A0E318A00176907 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		D479D78A2A0E3E7A00176907 /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
 		D479D78C2A0E41CB00176907 /* ProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInteractor.swift; sourceTree = "<group>"; };
+		D479D83C2A0E966D00176907 /* ProductPhotoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductPhotoViewCell.xib; sourceTree = "<group>"; };
+		D479D83E2A0E967B00176907 /* ProductPhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPhotoViewCell.swift; sourceTree = "<group>"; };
+		D479D8402A0E969000176907 /* ProductViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		D479D8422A0E969B00176907 /* ProductViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +178,10 @@
 			isa = PBXGroup;
 			children = (
 				D479D7882A0E318A00176907 /* ViewProtocol.swift */,
+				D479D83E2A0E967B00176907 /* ProductPhotoViewCell.swift */,
+				D479D8402A0E969000176907 /* ProductViewCell.swift */,
+				D479D8422A0E969B00176907 /* ProductViewCell.xib */,
+				D479D83C2A0E966D00176907 /* ProductPhotoViewCell.xib */,
 				D479D7692A0D36A500176907 /* ProductsViewController.swift */,
 				D479D76A2A0D36A500176907 /* ProductViewController.swift */,
 			);
@@ -315,9 +327,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D479D8432A0E969B00176907 /* ProductViewCell.xib in Resources */,
 				D479D73C2A0D363400176907 /* LaunchScreen.storyboard in Resources */,
 				D479D77B2A0D36B400176907 /* Main.storyboard in Resources */,
 				D479D7392A0D363400176907 /* Assets.xcassets in Resources */,
+				D479D83D2A0E966D00176907 /* ProductPhotoViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +360,7 @@
 				D479D7302A0D363100176907 /* AppDelegate.swift in Sources */,
 				D479D78B2A0E3E7A00176907 /* ProductPresenter.swift in Sources */,
 				D479D7742A0D36A600176907 /* ProductsViewController.swift in Sources */,
+				D479D8412A0E969000176907 /* ProductViewCell.swift in Sources */,
 				D479D7812A0D387A00176907 /* RouterProtocol.swift in Sources */,
 				D479D7702A0D36A600176907 /* NetworkProtocol.swift in Sources */,
 				D479D7852A0D3BBC00176907 /* PresenterProtocol.swift in Sources */,
@@ -353,6 +368,7 @@
 				D479D78D2A0E41CB00176907 /* ProductInteractor.swift in Sources */,
 				D479D7892A0E318A00176907 /* ViewProtocol.swift in Sources */,
 				D479D7322A0D363100176907 /* SceneDelegate.swift in Sources */,
+				D479D83F2A0E967B00176907 /* ProductPhotoViewCell.swift in Sources */,
 				D479D7872A0D3D3300176907 /* InteractorProtocol.swift in Sources */,
 				D479D7772A0D36A600176907 /* ProductEntity.swift in Sources */,
 				D479D7752A0D36A600176907 /* ProductViewController.swift in Sources */,
