@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             TabView {
-                ProductsListView(presenter: ProductsListPresenter())
+                ProductRouter.navigateToProductsList()
                     .tabItem {
                         Image(systemName: "tablecells.fill")
                         Text(NSLocalizedString("bar_label_listview", comment: "ListView"))

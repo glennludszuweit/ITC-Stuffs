@@ -8,7 +8,13 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class ProductRouter {
+    static func navigateToProductsList() -> some View {
+        let presenter = ProductsListPresenter()
+        return ProductsListView(presenter: presenter)
+    }
+    
     static func navigateToProductDetailView(product: Product) -> some View {
         let presenter = ProductDetailsPresenter(product: product)
         return NavigationLink {
