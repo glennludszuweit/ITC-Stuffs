@@ -136,7 +136,6 @@
 				D479D77F2A0D379400176907 /* Presenter */,
 				D479D77C2A0D371E00176907 /* Entity */,
 				D479D77D2A0D374800176907 /* Router */,
-				D479D75F2A0D36A500176907 /* Services */,
 				D479D72F2A0D363100176907 /* AppDelegate.swift */,
 				D479D7312A0D363100176907 /* SceneDelegate.swift */,
 				D479D7792A0D36B300176907 /* Main.storyboard */,
@@ -182,8 +181,8 @@
 				D479D8402A0E969000176907 /* ProductViewCell.swift */,
 				D479D8422A0E969B00176907 /* ProductViewCell.xib */,
 				D479D83C2A0E966D00176907 /* ProductPhotoViewCell.xib */,
-				D479D7692A0D36A500176907 /* ProductsViewController.swift */,
 				D479D76A2A0D36A500176907 /* ProductViewController.swift */,
+				D479D7692A0D36A500176907 /* ProductsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +200,7 @@
 			children = (
 				D479D7802A0D387A00176907 /* RouterProtocol.swift */,
 				D479D7822A0D38A500176907 /* ProductRouter.swift */,
+				D479D75F2A0D36A500176907 /* Services */,
 			);
 			path = Router;
 			sourceTree = "<group>";

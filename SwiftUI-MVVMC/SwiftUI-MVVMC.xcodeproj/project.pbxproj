@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D479D8132A0E674700176907 /* SwiftUI_MVVMCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8122A0E674700176907 /* SwiftUI_MVVMCApp.swift */; };
-		D479D8152A0E674700176907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8142A0E674700176907 /* ContentView.swift */; };
 		D479D8172A0E674900176907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D479D8162A0E674900176907 /* Assets.xcassets */; };
 		D479D81A2A0E674900176907 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D479D8192A0E674900176907 /* Preview Assets.xcassets */; };
 		D479D8242A0E674A00176907 /* SwiftUI_MVVMCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8232A0E674A00176907 /* SwiftUI_MVVMCTests.swift */; };
 		D479D82E2A0E674A00176907 /* SwiftUI_MVVMCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D82D2A0E674A00176907 /* SwiftUI_MVVMCUITests.swift */; };
 		D479D8302A0E674A00176907 /* SwiftUI_MVVMCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D82F2A0E674A00176907 /* SwiftUI_MVVMCUITestsLaunchTests.swift */; };
+		D479D84D2A12227400176907 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8452A12227400176907 /* APIServices.swift */; };
+		D479D84E2A12227400176907 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8462A12227400176907 /* NetworkManager.swift */; };
+		D479D84F2A12227400176907 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8472A12227400176907 /* ErrorManager.swift */; };
+		D479D8502A12227400176907 /* PlanetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8492A12227400176907 /* PlanetDetailsView.swift */; };
+		D479D8512A12227400176907 /* PlanetsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D84A2A12227400176907 /* PlanetsListView.swift */; };
+		D479D8522A12227400176907 /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D84B2A12227400176907 /* PlanetViewModel.swift */; };
+		D479D8532A12227400176907 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D84C2A12227400176907 /* PlanetModel.swift */; };
+		D479D8552A12250500176907 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8542A12250500176907 /* Coordinator.swift */; };
+		D479D8572A12307000176907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8562A12307000176907 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		D479D80F2A0E674700176907 /* SwiftUI-MVVMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVVMC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479D8122A0E674700176907 /* SwiftUI_MVVMCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMCApp.swift; sourceTree = "<group>"; };
-		D479D8142A0E674700176907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D479D8162A0E674900176907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D479D8192A0E674900176907 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D479D81F2A0E674A00176907 /* SwiftUI-MVVMCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-MVVMCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,15 @@
 		D479D8292A0E674A00176907 /* SwiftUI-MVVMCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-MVVMCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479D82D2A0E674A00176907 /* SwiftUI_MVVMCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMCUITests.swift; sourceTree = "<group>"; };
 		D479D82F2A0E674A00176907 /* SwiftUI_MVVMCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D479D8452A12227400176907 /* APIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		D479D8462A12227400176907 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D479D8472A12227400176907 /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		D479D8492A12227400176907 /* PlanetDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetDetailsView.swift; sourceTree = "<group>"; };
+		D479D84A2A12227400176907 /* PlanetsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetsListView.swift; sourceTree = "<group>"; };
+		D479D84B2A12227400176907 /* PlanetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
+		D479D84C2A12227400176907 /* PlanetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
+		D479D8542A12250500176907 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D479D8562A12307000176907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,12 @@
 		D479D8112A0E674700176907 /* SwiftUI-MVVMC */ = {
 			isa = PBXGroup;
 			children = (
-				D479D8122A0E674700176907 /* SwiftUI_MVVMCApp.swift */,
-				D479D8142A0E674700176907 /* ContentView.swift */,
-				D479D8162A0E674900176907 /* Assets.xcassets */,
+				D479D8482A12227400176907 /* Planets */,
+				D479D8442A12227400176907 /* Services */,
 				D479D8182A0E674900176907 /* Preview Content */,
+				D479D8122A0E674700176907 /* SwiftUI_MVVMCApp.swift */,
+				D479D8562A12307000176907 /* ContentView.swift */,
+				D479D8162A0E674900176907 /* Assets.xcassets */,
 			);
 			path = "SwiftUI-MVVMC";
 			sourceTree = "<group>";
@@ -125,6 +143,28 @@
 				D479D82F2A0E674A00176907 /* SwiftUI_MVVMCUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-MVVMCUITests";
+			sourceTree = "<group>";
+		};
+		D479D8442A12227400176907 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D479D8452A12227400176907 /* APIServices.swift */,
+				D479D8462A12227400176907 /* NetworkManager.swift */,
+				D479D8472A12227400176907 /* ErrorManager.swift */,
+				D479D8542A12250500176907 /* Coordinator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D479D8482A12227400176907 /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				D479D8492A12227400176907 /* PlanetDetailsView.swift */,
+				D479D84A2A12227400176907 /* PlanetsListView.swift */,
+				D479D84B2A12227400176907 /* PlanetViewModel.swift */,
+				D479D84C2A12227400176907 /* PlanetModel.swift */,
+			);
+			path = Planets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D479D8152A0E674700176907 /* ContentView.swift in Sources */,
+				D479D8522A12227400176907 /* PlanetViewModel.swift in Sources */,
+				D479D84E2A12227400176907 /* NetworkManager.swift in Sources */,
+				D479D8512A12227400176907 /* PlanetsListView.swift in Sources */,
 				D479D8132A0E674700176907 /* SwiftUI_MVVMCApp.swift in Sources */,
+				D479D8532A12227400176907 /* PlanetModel.swift in Sources */,
+				D479D8502A12227400176907 /* PlanetDetailsView.swift in Sources */,
+				D479D8572A12307000176907 /* ContentView.swift in Sources */,
+				D479D84D2A12227400176907 /* APIServices.swift in Sources */,
+				D479D84F2A12227400176907 /* ErrorManager.swift in Sources */,
+				D479D8552A12250500176907 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

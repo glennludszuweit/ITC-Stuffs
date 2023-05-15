@@ -2,20 +2,26 @@
 //  ContentView.swift
 //  SwiftUI-MVVMC
 //
-//  Created by Glenn Ludszuweit on 12/05/2023.
+//  Created by Glenn Ludszuweit on 15/05/2023.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var coordinator: Coordinator
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack(path: $coordinator.navigationPath) {
+            PlanetsListView()
+                .navigationDestination(for: CurrentPage.self) { navigation in
+                    switch navigation {
+                    case .planetsList:
+                        PlanetsListView()
+                    case .planetDetails:
+                        PlanetDetailsView(planet: coordinator.planet)
+                    }
+                }
         }
-        .padding()
     }
 }
 
