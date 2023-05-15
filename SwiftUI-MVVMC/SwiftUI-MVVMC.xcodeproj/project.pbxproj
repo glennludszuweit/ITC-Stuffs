@@ -22,6 +22,10 @@
 		D479D8532A12227400176907 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D84C2A12227400176907 /* PlanetModel.swift */; };
 		D479D8552A12250500176907 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8542A12250500176907 /* Coordinator.swift */; };
 		D479D8572A12307000176907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8562A12307000176907 /* ContentView.swift */; };
+		D479D85F2A12461D00176907 /* TestNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D85E2A12461D00176907 /* TestNetworkManager.swift */; };
+		D479D8612A12463300176907 /* PlanetViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479D8602A12463300176907 /* PlanetViewModelTests.swift */; };
+		D48CD63C2A1254DE0026FE29 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = D48CD63B2A1254DE0026FE29 /* Quick */; };
+		D48CD63E2A1254E30026FE29 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = D48CD63D2A1254E30026FE29 /* Nimble */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,8 @@
 		D479D84C2A12227400176907 /* PlanetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
 		D479D8542A12250500176907 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D479D8562A12307000176907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D479D85E2A12461D00176907 /* TestNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkManager.swift; sourceTree = "<group>"; };
+		D479D8602A12463300176907 /* PlanetViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48CD63C2A1254DE0026FE29 /* Quick in Frameworks */,
+				D48CD63E2A1254E30026FE29 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,7 @@
 				D479D8222A0E674A00176907 /* SwiftUI-MVVMCTests */,
 				D479D82C2A0E674A00176907 /* SwiftUI-MVVMCUITests */,
 				D479D8102A0E674700176907 /* Products */,
+				D48CD63A2A1254DE0026FE29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +140,8 @@
 		D479D8222A0E674A00176907 /* SwiftUI-MVVMCTests */ = {
 			isa = PBXGroup;
 			children = (
+				D479D85E2A12461D00176907 /* TestNetworkManager.swift */,
+				D479D8602A12463300176907 /* PlanetViewModelTests.swift */,
 				D479D8232A0E674A00176907 /* SwiftUI_MVVMCTests.swift */,
 			);
 			path = "SwiftUI-MVVMCTests";
@@ -167,6 +178,13 @@
 			path = Planets;
 			sourceTree = "<group>";
 		};
+		D48CD63A2A1254DE0026FE29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +201,8 @@
 			dependencies = (
 			);
 			name = "SwiftUI-MVVMC";
+			packageProductDependencies = (
+			);
 			productName = "SwiftUI-MVVMC";
 			productReference = D479D80F2A0E674700176907 /* SwiftUI-MVVMC.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +221,10 @@
 				D479D8212A0E674A00176907 /* PBXTargetDependency */,
 			);
 			name = "SwiftUI-MVVMCTests";
+			packageProductDependencies = (
+				D48CD63B2A1254DE0026FE29 /* Quick */,
+				D48CD63D2A1254E30026FE29 /* Nimble */,
+			);
 			productName = "SwiftUI-MVVMCTests";
 			productReference = D479D81F2A0E674A00176907 /* SwiftUI-MVVMCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -255,6 +279,10 @@
 				Base,
 			);
 			mainGroup = D479D8062A0E674700176907;
+			packageReferences = (
+				D479D8582A12409300176907 /* XCRemoteSwiftPackageReference "Quick" */,
+				D479D85B2A1240C700176907 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = D479D8102A0E674700176907 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D479D85F2A12461D00176907 /* TestNetworkManager.swift in Sources */,
+				D479D8612A12463300176907 /* PlanetViewModelTests.swift in Sources */,
 				D479D8242A0E674A00176907 /* SwiftUI_MVVMCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,8 +550,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LIBRARY_SEARCH_PATHS = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.SwiftUI-MVVMCTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,8 +571,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LIBRARY_SEARCH_PATHS = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghl.SwiftUI-MVVMCTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -625,6 +659,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D479D8582A12409300176907 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D479D85B2A1240C700176907 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D48CD63B2A1254DE0026FE29 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D479D8582A12409300176907 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		D48CD63D2A1254E30026FE29 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D479D85B2A1240C700176907 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D479D8072A0E674700176907 /* Project object */;
 }

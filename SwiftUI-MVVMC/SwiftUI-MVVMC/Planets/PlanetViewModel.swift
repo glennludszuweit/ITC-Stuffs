@@ -12,9 +12,9 @@ class PlanetViewModel: ObservableObject {
     @Published var filteredPlanets: [PlanetEntity] = []
     @Published var errorMessage: String = ""
     
-    private var cancellable = Set<AnyCancellable>()
-    private var planetList: [PlanetEntity] = []
-    private var planets: [Planet] = []
+    var cancellable = Set<AnyCancellable>()
+    var planetList: [PlanetEntity] = []
+    var planets: [Planet] = []
     var networkManager: NetworkProtocol
     var errorManager: ErrorProtocol
     init(networkManager: NetworkProtocol, errorManager: ErrorProtocol) {
