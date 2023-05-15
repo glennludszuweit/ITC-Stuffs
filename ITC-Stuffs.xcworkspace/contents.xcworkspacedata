@@ -2,13 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:VIPER-SwiftUI/VIPER-SwiftUI.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SwiftUI-MVVMC/SwiftUI-MVVMC.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:VIPER-UIKit/VIPER-UIKit.xcodeproj">
+      location = "group:UIKit-MVVMC/UIKit-MVVMC.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UIKit-MVVMC/UIKit-MVVMC.xcodeproj">
+      location = "group:VIPER-UIKit/VIPER-UIKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LocalAuth-GettingStarted/LocalAuth-GettingStarted.xcodeproj">
