@@ -1,13 +1,13 @@
 //
-//  NSObject+NSStringCategory.m
+//  NSString+Category.m
 //  ObjectiveC-UIKit
 //
 //  Created by Glenn Ludszuweit on 16/05/2023.
 //
 
-#import "NSObject+NSStringCategory.h"
+#import "NSString+Category.h"
 
-@implementation NSObject (NSStringCategory)
+@implementation NSString (Category)
 
 - (NSString*)concatPersonDetails:(nonnull NSString*)name :(nonnull NSNumber*)age {
     return [NSString stringWithFormat:@"Name: %@ Age: %@", name, age];

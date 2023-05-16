@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4B656212A13AC4B00F1E870 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B656202A13AC4B00F1E870 /* NSString+Category.m */; };
 		D4C8D41C2A12E57300C1D7F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8D41B2A12E57300C1D7F6 /* AppDelegate.m */; };
 		D4C8D41F2A12E57300C1D7F6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8D41E2A12E57300C1D7F6 /* SceneDelegate.m */; };
 		D4C8D4222A12E57300C1D7F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8D4212A12E57300C1D7F6 /* ViewController.m */; };
@@ -19,7 +20,6 @@
 		D4C8D4432A12E57700C1D7F6 /* ObjectiveC_UIKitUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8D4422A12E57700C1D7F6 /* ObjectiveC_UIKitUITestsLaunchTests.m */; };
 		D4C8D4552A13507800C1D7F6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8D4542A13507800C1D7F6 /* Person.m */; };
 		D4C8D4582A13514800C1D7F6 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8D4572A13514800C1D7F6 /* PersonViewController.m */; };
-		D4C8D4622A13562600C1D7F6 /* NSObject+NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8D4612A13562600C1D7F6 /* NSObject+NSStringCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D4B6561F2A13AC4B00F1E870 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		D4B656202A13AC4B00F1E870 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		D4C8D4172A12E57300C1D7F6 /* ObjectiveC-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjectiveC-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C8D41A2A12E57300C1D7F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4C8D41B2A12E57300C1D7F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,8 +64,6 @@
 		D4C8D4572A13514800C1D7F6 /* PersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		D4C8D4592A13515500C1D7F6 /* PersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		D4C8D45A2A1352DB00C1D7F6 /* PersonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonProtocol.h; sourceTree = "<group>"; };
-		D4C8D4602A13562600C1D7F6 /* NSObject+NSStringCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSStringCategory.h"; sourceTree = "<group>"; };
-		D4C8D4612A13562600C1D7F6 /* NSObject+NSStringCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSStringCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,8 +211,8 @@
 		D4C8D45F2A13560800C1D7F6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				D4C8D4602A13562600C1D7F6 /* NSObject+NSStringCategory.h */,
-				D4C8D4612A13562600C1D7F6 /* NSObject+NSStringCategory.m */,
+				D4B6561F2A13AC4B00F1E870 /* NSString+Category.h */,
+				D4B656202A13AC4B00F1E870 /* NSString+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -352,8 +352,8 @@
 				D4C8D4552A13507800C1D7F6 /* Person.m in Sources */,
 				D4C8D42D2A12E57600C1D7F6 /* main.m in Sources */,
 				D4C8D41F2A12E57300C1D7F6 /* SceneDelegate.m in Sources */,
-				D4C8D4622A13562600C1D7F6 /* NSObject+NSStringCategory.m in Sources */,
 				D4C8D4582A13514800C1D7F6 /* PersonViewController.m in Sources */,
+				D4B656212A13AC4B00F1E870 /* NSString+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

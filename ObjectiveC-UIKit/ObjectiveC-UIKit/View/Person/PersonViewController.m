@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "PersonViewController.h"
-#import "NSObject+NSStringCategory.h"
+#import "NSString+Category.h"
 
 @interface PersonViewController ()
 
@@ -22,7 +22,7 @@
 
 - (void)printPersonDetails {
     Person* person = [self getPerson];
-    NSLog(@"%@", [self concatPersonDetails:person.name :person.age]);
+    NSLog(@"%@", [@"" concatPersonDetails:person.name :person.age]);
 }
 
 - (Person*)getPerson {

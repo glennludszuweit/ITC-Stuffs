@@ -1,5 +1,5 @@
 //
-//  NSObject+NSStringCategory.h
+//  NSString+Category.h
 //  ObjectiveC-UIKit
 //
 //  Created by Glenn Ludszuweit on 16/05/2023.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (NSStringCategory)
+@interface NSString (Category)
 
 - (NSString*)concatPersonDetails:(NSString*)name :(NSNumber*)age;
 

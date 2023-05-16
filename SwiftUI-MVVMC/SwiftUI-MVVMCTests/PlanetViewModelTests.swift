@@ -38,6 +38,10 @@ class PlanetViewModelSpec: QuickSpec {
                 }
             }
             
+            afterEach {
+                planetsEntity = []
+            }
+            
             describe("getAllPlanets") {
                 context("when a valid API URL is provided") {
                     it("should fetch and populate the planetList") {
@@ -60,31 +64,32 @@ class PlanetViewModelSpec: QuickSpec {
                         }
                     }
                 }
+                context("when searchText is empty") {
+                    it("should return all planets") {
+                        let searchText = ""
+                        viewModel.filteredPlanets = planetsEntity
+
+                        viewModel.searchPlanets(searchText: searchText)
+                        print(planetsEntity.count)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            expect(viewModel.filteredPlanets.count).to(equal(3))
+                        }
+                    }
+                }
+
+                context("when searchText matches one planet") {
+                    it("should return the matching planet") {
+                        let searchText = "venus"
+                        viewModel.filteredPlanets = planetsEntity
+
+                        viewModel.searchPlanets(searchText: searchText)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            expect(viewModel.filteredPlanets.count).to(equal(1))
+                            expect(viewModel.filteredPlanets[0].name).to(equal("Venus"))
+                        }
+                    }
+                }
             }
-//            describe("searchPlanets") {
-//                context("when searchText is empty") {
-//                    it("should return all planets") {
-//                        let searchText = ""
-//                        viewModel.filteredPlanets = planetsEntity
-//
-//                        viewModel.searchPlanets(searchText: searchText)
-//
-//                        expect(viewModel.filteredPlanets.count).to(equal(3))
-//                    }
-//                }
-//
-//                context("when searchText matches one planet") {
-//                    it("should return the matching planet") {
-//                        let searchText = "venus"
-//                        viewModel.filteredPlanets = planetsEntity
-//
-//                        viewModel.searchPlanets(searchText: searchText)
-//
-//                        expect(viewModel.filteredPlanets.count).to(equal(1))
-//                        expect(viewModel.filteredPlanets[0].name).to(equal("Venus"))
-//                    }
-//                }
-//            }
         }
     }
 }
