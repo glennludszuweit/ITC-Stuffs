@@ -9,10 +9,13 @@ import Foundation
 
 class ProductInteractor {
     func fetchProducts() async throws -> [Product] {
-        let url = URL(string: "https://dummyjson.com/product")!
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let decoder = JSONDecoder()
-        let result = try decoder.decode(ProductData.self, from: data)
-        return result.products
+        guard let url = URL(string: "https://dummyjson.com/product") else { fatalError("Invalid URL") }
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let result = try JSONDecoder().decode(ProductData.self, from: data)
+            return result.products
+        } catch let error {
+            fatalError(error.localizedDescription)
+        }
     }
 }

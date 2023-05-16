@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ObjectiveC-UIKit/ObjectiveC-UIKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:VIPER-SwiftUI/VIPER-SwiftUI.xcodeproj">
    </FileRef>
    <FileRef
