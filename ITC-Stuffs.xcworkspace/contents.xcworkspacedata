@@ -2,7 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Chaining-Requests/Chaining-Requests.xcodeproj">
+      location = "group:Swift-CoreData/Swift-CoreData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Swift-Combine/Swift-Combine.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Chaining-Requests/Chaining-Requests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Async-Await-MVVM/Async-Await-MVVM.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ObjectiveC-UIKit/ObjectiveC-UIKit.xcodeproj">
