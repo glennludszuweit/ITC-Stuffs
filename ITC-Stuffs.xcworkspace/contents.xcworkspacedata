@@ -103,5 +103,8 @@
       <FileRef
          location = "group:Multithreading.playground">
       </FileRef>
+      <FileRef
+         location = "group:DataStructure.playground">
+      </FileRef>
    </Group>
 </Workspace>

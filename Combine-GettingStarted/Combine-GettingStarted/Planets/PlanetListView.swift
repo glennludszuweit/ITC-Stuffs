@@ -22,7 +22,6 @@ struct PlanetListView: View {
                         Spacer()
                     }
                 }
-                
             }.padding()
         }
         .onAppear {
