@@ -132,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				D4B656AB2A13DF2000F1E870 /* planets.json */,
-				D4B656AC2A13DF2000F1E870 /* PlanetViewModelTests.swift */,
 				D4B656AD2A13DF2000F1E870 /* TestManager.swift */,
+				D4B656AC2A13DF2000F1E870 /* PlanetViewModelTests.swift */,
 				D4B656AA2A13DF1F00F1E870 /* Swift-CombineTests-Bridging-Header.h */,
 			);
 			path = "Swift-CombineTests";

@@ -7,7 +7,25 @@
 		<key>SwiftUI-Screens.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D4F4379429F2827200D055DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4F437A429F2827400D055DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4F437AE29F2827400D055DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

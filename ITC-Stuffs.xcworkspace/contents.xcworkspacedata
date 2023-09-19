@@ -71,16 +71,10 @@
       location = "group:DepInv-Gen-Test/DepInv-Gen-Test.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Tabs-UIKit/Tabs-UIKit.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Users-UIKit-MVVM/Users-UIKit-MVVM.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ObstMania-UIKit/ObstMania-UIKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/glennludszuweit/Desktop/Projects/ITC-Stuffs/Storyboard/Assignments.xcodeproj">
    </FileRef>
    <Group
       location = "container:"
@@ -117,6 +111,12 @@
       </FileRef>
       <FileRef
          location = "group:DataStructure.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Palindrome.playground">
+      </FileRef>
+      <FileRef
+         location = "group:AnimatedPictureSequence.playground">
       </FileRef>
    </Group>
 </Workspace>
